@@ -3,7 +3,7 @@
 $EM_CONF[$_EXTKEY] = array(
     'title' => 'Typo3 Skins',
     'description' => 'This extension add a dark skin to the Typo3 backend.',
-    'category' => 'plugin',
+    'category' => 'be',
     'author' => 'Dominik Schüßler',
     'author_company' => '',
     'author_email' => 'dominikschuessler1337@gmail.com',
