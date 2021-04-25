@@ -1,0 +1,49 @@
+.nav-tabs {
+  background-color: transparent;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:active, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  border: 1px solid $color-6;
+  border-bottom-color: $color-4;
+  background-color: $color-4;
+  color: $color-5;
+}
+.nav-tabs>li>a:hover {
+  background-color: $color-4;
+  color: white;
+}
+.tab-content {
+  border-left: 1px solid $color-6;
+  border-right: 1px solid $color-6;
+}
+.help-teaser {
+  margin-right: 5px;
+}
+select.form-control:not([multiple][size]):not(.form-select-no-siblings),
+select.form-control:not([size]):not(.form-select-no-siblings),
+select.form-control[size="1"]:not(.form-select-no-siblings) {
+  background-image: url("/typo3conf/ext/c3base/Resources/Public/Backend/Style/Skin/Dark/Icons/actions-chevron-down.svg");
+  width: 100%;
+  border: none;
+}
+.help-block {
+  color: $color-5;
+}
+code {
+  padding: 0;
+  font-size: 100%;
+  color: $color-8;
+  background-color: rgb(0 0 0 / 0%);
+  border-radius: 0;
+}
+.icon-list {
+  background: $color-4;
+  margin-top: 9px;
+  border: none;
+  .active {
+    background-color: $color-8;
+  }
+  img {
+    width: 16px;
+    height: auto;
+  }
+}

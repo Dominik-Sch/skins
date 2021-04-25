@@ -1,0 +1,29 @@
+.panel-default>.panel-heading {
+  background-color: $color-2;
+  border-color: rgb(204 204 204);
+  color: $color-5;
+}
+.table>thead>tr {
+  background: $color-4;
+  color: $color-5;
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background: $color-4;
+  color: $color-5;
+  &:hover {
+    background: $color-2;
+  }
+}
+.table-striped>tbody>tr:nth-of-type(even) {
+  background: $color-4;
+  color: $color-5;
+  &:hover {
+    background: $color-2;
+  }
+}
+.table-fit {
+  border: none;
+}
+.table {
+  background: $color-4;
+}

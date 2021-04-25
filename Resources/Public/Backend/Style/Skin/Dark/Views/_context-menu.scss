@@ -1,0 +1,18 @@
+.context-menu .list-group {
+  background-color: $color-4;
+}
+.list-group-item {
+  background-color: $color-4;
+  color: $color-5;
+}
+a.list-group-item,
+button.list-group-item {
+  color: $color-5;
+  &:focus,
+  &:hover,
+  &:focus,
+  &:hover {
+    color: $color-5;
+    background-color: $color-2;
+  }
+}

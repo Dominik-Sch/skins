@@ -1,0 +1,36 @@
+.svg-tree-wrapper {
+  overflow-y: auto;
+  .node-selected {
+    fill: $color-4;
+    stroke: $color-4;
+  }
+  .nodes-wrapper--dragging {
+    .node-over {
+      fill: $color-4 !important;
+      stroke: $color-4;
+    }
+  }
+  .node-over:not(.node-selected) {
+    fill: $color-4;
+    stroke: $color-4;
+  }
+}
+.btn-default.active, .btn-default:active, .open>.btn-default.dropdown-toggle, .btn-default:hover {
+  background-color: $color-4;
+  &:hover {
+    background-color: $color-4;
+  }
+}
+[id=ext-backend-Modules-FileSystemNavigationFrame-index-php], [id=ext-backend-Modules-FileSystemNavigationFrame-index-php] .module-body, [id=typo3-pagetree-treeContainer] {
+  background-color: $color-2;
+  border-right: none;
+}
+text.node-name {
+  fill: $color-5;
+}
+path.chevron {
+  fill: $color-5 !important;
+  &.expanded {
+    fill: $color-5 !important;
+  }
+}

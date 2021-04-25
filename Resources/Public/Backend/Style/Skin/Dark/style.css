@@ -1,0 +1,553 @@
+.btn-default {
+  color: white;
+  border-color: transparent;
+  background: transparent;
+}
+.btn-default.focus, .btn-default:focus, .btn-default:hover {
+  border-color: whitesmoke;
+}
+
+.table .btn-default {
+  color: whitesmoke;
+  background-color: #3c3f41;
+  border-color: #3c3f41;
+}
+
+.btn-default.active:hover, .btn-default:active:hover, .open > .btn-default.dropdown-toggle:hover, .btn-default:hover:hover {
+  color: whitesmoke;
+}
+
+.icon-color {
+  fill: whitesmoke;
+}
+
+body {
+  color: whitesmoke;
+  background-color: #3c3f41;
+}
+
+.scaffold-modulemenu {
+  background-color: #1f1f1f;
+}
+
+.scaffold-content-navigation-expanded .topbar-button-navigationcomponent,
+.scaffold-modulemenu-expanded .topbar-button.topbar-button-modulemenu {
+  background-color: #1f1f1f;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-track-piece {
+  /* 4 */
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+  /* 6 */
+}
+
+::-webkit-resizer {
+  /* 7 */
+}
+
+body:hover ::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background: #fdc300;
+}
+
+.c3template-be-table table tr td {
+  border: 1px solid whitesmoke;
+}
+
+.c3template-be-table table caption {
+  caption-side: bottom;
+  color: whitesmoke;
+}
+
+.dashboard-header {
+  background-color: #3c3f41;
+  color: whitesmoke;
+}
+
+.widget {
+  background: #292929;
+  color: whitesmoke;
+}
+
+.widget-content-title {
+  background: #292929;
+  color: whitesmoke;
+}
+
+.widget-table {
+  color: whitesmoke;
+}
+
+.widget-table tr:nth-child(even) {
+  background-color: #151515;
+}
+
+.cke_top {
+  background-color: #292929 !important;
+  border-bottom-color: #c8c8c8;
+}
+
+body a.cke_dialog_close_button,
+body .cke_ltr .cke_dialog_close_button {
+  background-image: url("/typo3conf/ext/c3base/Resources/Public/Backend/Style/Skin/Dark/Icons/close.svg");
+  height: 30px;
+  width: 30px;
+  top: 0;
+  right: 0;
+}
+body a.cke_dialog_ui_button {
+  background: transparent;
+}
+body a.cke_dialog_ui_button:hover {
+  background: #fdc300;
+}
+body .cke_dialog .cke_dialog_tab,
+body .cke_dialog .cke_dialog_tab_selected {
+  background: transparent;
+}
+body .cke_dialog .cke_dialog_tab:hover,
+body .cke_dialog .cke_dialog_tab_selected:hover {
+  background: #fdc300;
+}
+body .cke_dialog .cke_dialog_footer {
+  background-color: #3c3f41;
+}
+body .cke_dialog .cke_dialog_contents {
+  background-color: #3c3f41;
+}
+body .cke_dialog .cke_dialog_body {
+  background-color: #3c3f41;
+  border: none;
+}
+body .cke_dialog .cke_dialog_body .cke_dialog_title {
+  background-color: #3c3f41;
+  border: none;
+}
+body .cke_combo_arrow {
+  border-top: 3px solid whitesmoke;
+}
+body .cke_reset_all,
+body .cke_reset_all *,
+body .cke_reset_all a,
+body .cke_reset_all textarea,
+body .cke_button_label {
+  color: whitesmoke;
+}
+body .cke_button_icon,
+body .cke_ltr .cke_button__anchor_icon,
+body .cke_ltr .cke_button__cut_icon,
+body .cke_ltr .cke_button__paste_icon,
+body .cke_ltr .cke_button__pastetext_icon,
+body .cke_ltr .cke_button__pastefromword_icon,
+body .cke_ltr .cke_button__undo_icon,
+body .cke_ltr .cke_button__redo_icon,
+body .cke_ltr .cke_button__numberedlist_icon,
+body .cke_ltr .cke_button__bulletedlist_icon,
+body .cke_ltr .cke_button__outdent_icon,
+body .cke_ltr .cke_button__indent_icon,
+body .cke_ltr .cke_button__find_icon,
+body .cke_ltr .cke_button__source_icon {
+  background-image: url(/typo3conf/ext/c3base/Resources/Public/Backend/Style/Skin/Dark/Icons/ckeditor-icons.png) !important;
+}
+body .cke_button__softhyphen_icon {
+  background-image: url(/typo3conf/ext/c3base/Resources/Public/Backend/Style/Skin/Dark/Icons/hyphens.png) !important;
+}
+body .cke_combo_text {
+  color: whitesmoke;
+}
+body a.cke_button_off:hover,
+body a.cke_button_off:focus,
+body a.cke_button_off:active,
+body a.cke_combo_button:hover,
+body a.cke_combo_button:focus,
+body a.cke_combo_button:focus,
+body .cke_combo_on a.cke_combo_button {
+  background-color: #3c3f41 !important;
+  border-color: transparent;
+}
+body .cke_button_on {
+  background-color: #fdc300 !important;
+  border-color: transparent;
+}
+body textarea.cke_source {
+  color: #292929;
+}
+
+.panel-default > .panel-heading {
+  background-color: #292929;
+  border-color: #cccccc;
+  color: whitesmoke;
+}
+
+.table > thead > tr {
+  background: #3c3f41;
+  color: whitesmoke;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background: #3c3f41;
+  color: whitesmoke;
+}
+.table-striped > tbody > tr:nth-of-type(odd):hover {
+  background: #292929;
+}
+
+.table-striped > tbody > tr:nth-of-type(even) {
+  background: #3c3f41;
+  color: whitesmoke;
+}
+.table-striped > tbody > tr:nth-of-type(even):hover {
+  background: #292929;
+}
+
+.table-fit {
+  border: none;
+}
+
+.table {
+  background: #3c3f41;
+}
+
+body .install-tool-modal .panel-flat.panel-default > .panel-heading,
+body .install-tool-modal .panel-rst.panel-default > .panel-heading,
+body .install-tool-modal .panel-version.panel-default > .panel-heading {
+  background: #3c3f41;
+  color: whitesmoke;
+}
+
+.module {
+  background-color: #3c3f41;
+}
+
+.module-body {
+  background-color: #3c3f41;
+  color: whitesmoke;
+}
+
+.module-docheader {
+  background-color: #3c3f41;
+  color: whitesmoke;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-tabs {
+  background-color: transparent;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:active, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+  border: 1px solid rgba(245, 245, 245, 0.3);
+  border-bottom-color: #3c3f41;
+  background-color: #3c3f41;
+  color: whitesmoke;
+}
+
+.nav-tabs > li > a:hover {
+  background-color: #3c3f41;
+  color: white;
+}
+
+.tab-content {
+  border-left: 1px solid rgba(245, 245, 245, 0.3);
+  border-right: 1px solid rgba(245, 245, 245, 0.3);
+}
+
+.help-teaser {
+  margin-right: 5px;
+}
+
+select.form-control:not([multiple][size]):not(.form-select-no-siblings),
+select.form-control:not([size]):not(.form-select-no-siblings),
+select.form-control[size="1"]:not(.form-select-no-siblings) {
+  background-image: url("/typo3conf/ext/c3base/Resources/Public/Backend/Style/Skin/Dark/Icons/actions-chevron-down.svg");
+  width: 100%;
+  border: none;
+}
+
+.help-block {
+  color: whitesmoke;
+}
+
+code {
+  padding: 0;
+  font-size: 100%;
+  color: #fdc300;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0;
+}
+
+.icon-list {
+  background: #3c3f41;
+  margin-top: 9px;
+  border: none;
+}
+.icon-list .active {
+  background-color: #fdc300;
+}
+.icon-list img {
+  width: 16px;
+  height: auto;
+}
+
+.t3-grid-cell {
+  background-color: #292929;
+  border-bottom: 1px solid #292929;
+  color: whitesmoke;
+}
+
+.t3-page-column-header {
+  background-color: #292929;
+  border-bottom: 1px solid #3c3f41;
+  color: whitesmoke;
+}
+
+.t3-page-ce .t3-page-ce-header {
+  background: #292929;
+  border: 1px solid #3c3f41;
+  color: whitesmoke;
+  border-bottom: none;
+}
+.t3-page-ce .t3-page-ce-body {
+  background: #292929;
+  border: 1px solid #3c3f41;
+  color: whitesmoke;
+}
+
+a {
+  color: whitesmoke;
+}
+a:hover {
+  color: whitesmoke;
+}
+
+.t3-page-ce:hover > div > .t3-page-ce-header, .t3-page-ce:hover > .t3-page-ce-header {
+  background: #3c3f41;
+}
+
+.t3-page-ce:hover .t3-page-ce-header, .t3-page-ce:hover .t3-page-ce-body {
+  background: #3c3f41;
+}
+
+.t3-page-ce .t3-page-ce-footer {
+  background: #292929;
+  color: whitesmoke;
+}
+
+.svg-tree-wrapper {
+  overflow-y: auto;
+}
+.svg-tree-wrapper .node-selected {
+  fill: #3c3f41;
+  stroke: #3c3f41;
+}
+.svg-tree-wrapper .nodes-wrapper--dragging .node-over {
+  fill: #3c3f41 !important;
+  stroke: #3c3f41;
+}
+.svg-tree-wrapper .node-over:not(.node-selected) {
+  fill: #3c3f41;
+  stroke: #3c3f41;
+}
+
+.btn-default.active, .btn-default:active, .open > .btn-default.dropdown-toggle, .btn-default:hover {
+  background-color: #3c3f41;
+}
+.btn-default.active:hover, .btn-default:active:hover, .open > .btn-default.dropdown-toggle:hover, .btn-default:hover:hover {
+  background-color: #3c3f41;
+}
+
+[id=ext-backend-Modules-FileSystemNavigationFrame-index-php], [id=ext-backend-Modules-FileSystemNavigationFrame-index-php] .module-body, [id=typo3-pagetree-treeContainer] {
+  background-color: #292929;
+  border-right: none;
+}
+
+text.node-name {
+  fill: whitesmoke;
+}
+
+path.chevron {
+  fill: whitesmoke !important;
+}
+path.chevron.expanded {
+  fill: whitesmoke !important;
+}
+
+.svg-toolbar {
+  background-color: #292929;
+  border-bottom: 1px solid #3c3f41;
+}
+
+.scaffold-topbar {
+  background-color: #151515;
+}
+
+.form-section {
+  border: none;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.3);
+  background-color: #3c3f41;
+  padding: 15px 12px 3px;
+}
+
+.form-control {
+  background-color: #292929 !important;
+  color: whitesmoke;
+  border: none;
+}
+
+.input-group-addon {
+  background: #292929;
+  color: whitesmoke;
+  border: none;
+}
+
+input {
+  border: none;
+}
+
+select {
+  border: none;
+}
+select option {
+  color: whitesmoke;
+}
+select optgroup {
+  font-weight: 700;
+  color: #fdc300;
+}
+select optgroup option {
+  color: whitesmoke;
+}
+
+input[type=submit] {
+  border: 1px solid;
+  color: whitesmoke;
+}
+
+.form-section + .form-section {
+  margin-top: 0;
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+  background: #151515 !important;
+}
+
+.form-inline-spaced {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+body .pagination > .disabled > a,
+body .pagination > .disabled > a:focus,
+body .pagination > .disabled > a:hover,
+body .pagination > .disabled > span,
+body .pagination > .disabled > span:focus,
+body .pagination > .disabled > span:hover {
+  color: whitesmoke;
+  cursor: not-allowed;
+  background-color: #292929;
+  border-color: transparent;
+}
+body .pagination > li > span, body .pagination > li > a {
+  background-color: #3c3f41;
+  color: whitesmoke;
+  border: transparent;
+}
+body .pagination > li.disabled {
+  background-color: #3c3f41;
+}
+
+.callout-info {
+  background: #292929;
+  color: whitesmoke;
+}
+
+body {
+  background-color: #3c3f41;
+}
+
+.element-browser-attributes {
+  background-color: #3c3f41;
+}
+
+.element-browser-body {
+  background-color: #292929;
+}
+
+.element-browser-main-sidebar .list-tree-control > .fa:before {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.element-browser-main-sidebar .list-tree li:last-child:before {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.modal-severity-notice .modal-header {
+  background-color: #151515;
+  color: whitesmoke;
+  border: none;
+}
+
+.modal-severity-warning .modal-header {
+  background-color: #292929;
+  color: whitesmoke;
+  border-bottom-color: #292929;
+}
+
+.modal-content {
+  background-color: #3c3f41;
+  color: whitesmoke;
+}
+
+.list-tree li:last-child:before {
+  background: rgba(0, 0, 0, 0);
+}
+
+.panel {
+  background-color: #3c3f41;
+}
+
+.context-menu .list-group {
+  background-color: #3c3f41;
+}
+
+.list-group-item {
+  background-color: #3c3f41;
+  color: whitesmoke;
+}
+
+a.list-group-item,
+button.list-group-item {
+  color: whitesmoke;
+}
+a.list-group-item:focus, a.list-group-item:hover, a.list-group-item:focus, a.list-group-item:hover,
+button.list-group-item:focus,
+button.list-group-item:hover,
+button.list-group-item:focus,
+button.list-group-item:hover {
+  color: whitesmoke;
+  background-color: #292929;
+}
+
+/*# sourceMappingURL=style.css.map */
