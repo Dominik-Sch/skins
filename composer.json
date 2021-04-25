@@ -1,0 +1,19 @@
+{
+    "name": "ds/skins",
+    "type": "typo3-cms-extension",
+    "description": "TYPO3 backend skins",
+    "version": "10.4.15",
+    "autoload": {
+        "psr-4": {
+            "Ds\\Skins\\": "Classes/"
+        }
+    },
+    "require": {
+        "typo3/cms-core": ">=10.4 <11"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "skins"
+        }
+    }
+}
