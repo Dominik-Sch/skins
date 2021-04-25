@@ -3,7 +3,7 @@
     "type": "typo3-cms-extension",
     "description": "TYPO3 backend skins",
     "version": "10.4.15",
-    "license": "GNU",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Rubb1\\Skins\\": "Classes/"
