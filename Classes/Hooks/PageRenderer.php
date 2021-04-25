@@ -1,6 +1,6 @@
 <?php
 
-namespace Ds\Skins\Hooks;
+namespace Rubb1\Skins\Hooks;
 
 use TYPO3\CMS\Core\SingletonInterface;
 

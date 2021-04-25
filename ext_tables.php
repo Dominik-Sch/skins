@@ -17,5 +17,5 @@ if (TYPO3_MODE == 'BE') {
         ';
 
     // add backend css
-    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_pagerenderer.php']['render-preProcess'][] = \Ds\Skins\Hooks\PageRenderer::class . '->darkmode';
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_pagerenderer.php']['render-preProcess'][] = \Rubb1\Skins\Hooks\PageRenderer::class . '->darkmode';
 }
