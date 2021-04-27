@@ -1,7 +1,10 @@
 .panel-default>.panel-heading {
   background-color: $color-2;
-  border-color: rgb(204 204 204);
+  border-color: $color-6;
   color: $color-5;
+}
+.panel-hover .panel-default:hover>.panel-heading {
+  background-color: $color-2;
 }
 .table>thead>tr {
   background: $color-4;

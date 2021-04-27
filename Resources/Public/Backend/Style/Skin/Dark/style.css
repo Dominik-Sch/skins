@@ -5,6 +5,8 @@
 }
 .btn-default.focus, .btn-default:focus, .btn-default:hover {
   border-color: whitesmoke;
+  background-color: #292929;
+  color: whitesmoke;
 }
 
 .table .btn-default {
@@ -27,6 +29,10 @@
 body {
   color: whitesmoke;
   background-color: #3c3f41;
+}
+
+.panel-body {
+  border-bottom: 1px solid whitesmoke;
 }
 
 .scaffold-modulemenu {
@@ -200,8 +206,12 @@ body textarea.cke_source {
 
 .panel-default > .panel-heading {
   background-color: #292929;
-  border-color: #cccccc;
+  border-color: rgba(245, 245, 245, 0.3);
   color: whitesmoke;
+}
+
+.panel-hover .panel-default:hover > .panel-heading {
+  background-color: #292929;
 }
 
 .table > thead > tr {
@@ -252,7 +262,7 @@ body .install-tool-modal .panel-version.panel-default > .panel-heading {
 .module-docheader {
   background-color: #3c3f41;
   color: whitesmoke;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.3);
 }
 
 .nav-tabs {
@@ -261,7 +271,10 @@ body .install-tool-modal .panel-version.panel-default > .panel-heading {
 .nav-tabs > li.has-validation-error.active > a {
   background-color: rgba(245, 245, 245, 0.3);
 }
-.nav-tabs > li.active > a, .nav-tabs > li.active:active, .nav-tabs > li.active:focus, .nav-tabs > li.active:hover {
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:active,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
   border: 1px solid rgba(245, 245, 245, 0.3);
   border-bottom-color: #3c3f41;
   background-color: #3c3f41;
@@ -564,6 +577,10 @@ button.list-group-item:focus,
 button.list-group-item:hover {
   color: whitesmoke;
   background-color: #292929;
+}
+
+#typo3-dblist-search .panel {
+  background-color: #3c3f41;
 }
 
 /*# sourceMappingURL=style.css.map */

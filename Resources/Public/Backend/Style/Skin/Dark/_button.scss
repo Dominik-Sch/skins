@@ -6,6 +6,8 @@
   &:focus,
   &:hover {
     border-color: $color-5;
+    background-color: $color-2;
+    color: $color-5;
   }
 }
 .table .btn-default {

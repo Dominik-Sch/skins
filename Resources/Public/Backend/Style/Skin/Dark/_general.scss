@@ -2,6 +2,9 @@ body {
   color: $color-5;
   background-color: $color-4;
 }
+.panel-body {
+  border-bottom: 1px solid $color-5;
+}
 .scaffold-modulemenu {
   background-color: $color-7;
 }
