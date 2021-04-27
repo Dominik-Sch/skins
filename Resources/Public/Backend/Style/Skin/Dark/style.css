@@ -22,6 +22,10 @@
   color: whitesmoke;
 }
 
+.btn-link {
+  color: whitesmoke;
+}
+
 .icon-color {
   fill: whitesmoke;
 }
@@ -47,6 +51,10 @@ body {
 .scaffold-content-navigation-expanded .topbar-button-navigationcomponent,
 .scaffold-modulemenu-expanded .topbar-button.topbar-button-modulemenu {
   background-color: #1f1f1f;
+}
+
+a:focus, a:hover {
+  color: whitesmoke;
 }
 
 .c3template-be-table table tr td {
@@ -290,6 +298,15 @@ body .install-tool-modal .panel-version.panel-default > .panel-heading {
 #t3-form-structure-panel .tree li > div:hover {
   background-color: rgba(245, 245, 245, 0.3);
   border-color: transparent;
+}
+
+.extension-list .inactive {
+  background: #292929 !important;
+  opacity: 0.5;
+}
+
+.list-tree-control > .fa:before {
+  background: transparent;
 }
 
 .module {

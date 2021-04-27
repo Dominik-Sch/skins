@@ -16,3 +16,6 @@ body {
 .scaffold-modulemenu-expanded .topbar-button.topbar-button-modulemenu {
   background-color: $color-7;
 }
+a:focus, a:hover {
+  color: $color-5;
+}
