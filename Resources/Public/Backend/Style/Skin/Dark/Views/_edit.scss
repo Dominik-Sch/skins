@@ -32,9 +32,9 @@
 select.form-control:not([multiple][size]):not(.form-select-no-siblings),
 select.form-control:not([size]):not(.form-select-no-siblings),
 select.form-control[size="1"]:not(.form-select-no-siblings) {
-  background-image: url("/typo3conf/ext/c3base/Resources/Public/Backend/Style/Skin/Dark/Icons/actions-chevron-down.svg");
+  background-image: url("/typo3conf/ext/skins/Resources/Public/Backend/Style/Skin/Dark/Icons/actions-chevron-down.svg");
   width: 100%;
-  border: none;
+  border: 1px solid $color-6;
 }
 .help-block {
   color: $color-5;

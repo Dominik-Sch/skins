@@ -1,6 +1,6 @@
 .btn-default {
   color: white;
-  border-color: transparent;
+  border-color: rgba(245, 245, 245, 0.3);
   background: transparent;
 }
 .btn-default.focus, .btn-default:focus, .btn-default:hover {
@@ -35,6 +35,11 @@ body {
   border-bottom: 1px solid whitesmoke;
 }
 
+.text-muted {
+  color: whitesmoke;
+  font-size: 95%;
+}
+
 .scaffold-modulemenu {
   background-color: #1f1f1f;
 }
@@ -42,6 +47,15 @@ body {
 .scaffold-content-navigation-expanded .topbar-button-navigationcomponent,
 .scaffold-modulemenu-expanded .topbar-button.topbar-button-modulemenu {
   background-color: #1f1f1f;
+}
+
+.c3template-be-table table tr td {
+  border: 1px solid whitesmoke;
+}
+
+.c3template-be-table table caption {
+  caption-side: bottom;
+  color: whitesmoke;
 }
 
 ::-webkit-scrollbar {
@@ -81,15 +95,6 @@ body:hover ::-webkit-scrollbar-thumb {
   background: #fdc300;
 }
 
-.c3template-be-table table tr td {
-  border: 1px solid whitesmoke;
-}
-
-.c3template-be-table table caption {
-  caption-side: bottom;
-  color: whitesmoke;
-}
-
 .dashboard-header {
   background-color: #3c3f41;
   color: whitesmoke;
@@ -120,7 +125,7 @@ body:hover ::-webkit-scrollbar-thumb {
 
 body a.cke_dialog_close_button,
 body .cke_ltr .cke_dialog_close_button {
-  background-image: url("/typo3conf/ext/c3base/Resources/Public/Backend/Style/Skin/Dark/Icons/close.svg");
+  background-image: url("/typo3conf/ext/skins/Resources/Public/Backend/Style/Skin/Dark/Icons/close.svg");
   height: 30px;
   width: 30px;
   top: 0;
@@ -178,10 +183,10 @@ body .cke_ltr .cke_button__outdent_icon,
 body .cke_ltr .cke_button__indent_icon,
 body .cke_ltr .cke_button__find_icon,
 body .cke_ltr .cke_button__source_icon {
-  background-image: url(/typo3conf/ext/c3base/Resources/Public/Backend/Style/Skin/Dark/Icons/ckeditor-icons.png) !important;
+  background-image: url(/typo3conf/ext/skins/Resources/Public/Backend/Style/Skin/Dark/Icons/ckeditor-icons.png) !important;
 }
 body .cke_button__softhyphen_icon {
-  background-image: url(/typo3conf/ext/c3base/Resources/Public/Backend/Style/Skin/Dark/Icons/hyphens.png) !important;
+  background-image: url(/typo3conf/ext/skins/Resources/Public/Backend/Style/Skin/Dark/Icons/hyphens.png) !important;
 }
 body .cke_combo_text {
   color: whitesmoke;
@@ -250,6 +255,43 @@ body .install-tool-modal .panel-version.panel-default > .panel-heading {
   color: whitesmoke;
 }
 
+.t3-form-x-component {
+  background: #292929;
+}
+
+#t3-form-inspector h4 {
+  background-color: #3c3f41;
+}
+
+.t3-form-collection-element {
+  background-color: #3c3f41;
+}
+
+.property-grid .table > tbody > tr {
+  background-color: transparent;
+}
+
+.property-grid .table .btn {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+#t3-form-structure-panel #t3-form-navigation-component-tree-root-container.t3-form-root-element-selected,
+#t3-form-structure-panel #t3-form-navigation-component-tree-root-container.t3-form-root-element-selected:hover,
+#t3-form-structure-panel .tree li > .t3-form-form-element-selected,
+#t3-form-structure-panel .tree li > .t3-form-form-element-selected:hover {
+  background-color: #3c3f41;
+  border-color: transparent;
+}
+
+#t3-form-structure-panel #t3-form-navigation-component-tree-root-container:hover,
+#t3-form-structure-panel .t3-form-form-element-selected,
+#t3-form-structure-panel .t3-form-root-element-selected,
+#t3-form-structure-panel .tree li > div:hover {
+  background-color: rgba(245, 245, 245, 0.3);
+  border-color: transparent;
+}
+
 .module {
   background-color: #3c3f41;
 }
@@ -297,9 +339,9 @@ body .install-tool-modal .panel-version.panel-default > .panel-heading {
 select.form-control:not([multiple][size]):not(.form-select-no-siblings),
 select.form-control:not([size]):not(.form-select-no-siblings),
 select.form-control[size="1"]:not(.form-select-no-siblings) {
-  background-image: url("/typo3conf/ext/c3base/Resources/Public/Backend/Style/Skin/Dark/Icons/actions-chevron-down.svg");
+  background-image: url("/typo3conf/ext/skins/Resources/Public/Backend/Style/Skin/Dark/Icons/actions-chevron-down.svg");
   width: 100%;
-  border: none;
+  border: 1px solid rgba(245, 245, 245, 0.3);
 }
 
 .help-block {
@@ -390,12 +432,14 @@ a:hover {
 .open > .btn-default.dropdown-toggle,
 .btn-default:hover {
   background-color: #3c3f41;
+  color: whitesmoke;
 }
 .btn-default.active:hover,
 .btn-default:active:hover,
 .open > .btn-default.dropdown-toggle:hover,
 .btn-default:hover:hover {
   background-color: #3c3f41;
+  color: whitesmoke;
 }
 
 [id=ext-backend-Modules-FileSystemNavigationFrame-index-php],
@@ -456,7 +500,7 @@ select optgroup option {
 .form-control {
   background-color: #292929 !important;
   color: whitesmoke;
-  border: none;
+  border: 1px solid rgba(245, 245, 245, 0.3);
 }
 
 .form-control[disabled],
@@ -554,6 +598,10 @@ body {
 }
 
 .panel {
+  background-color: #3c3f41;
+}
+
+.t3-new-content-element-wizard-window {
   background-color: #3c3f41;
 }
 

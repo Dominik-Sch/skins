@@ -5,7 +5,7 @@
 body {
   a.cke_dialog_close_button,
   .cke_ltr .cke_dialog_close_button {
-    background-image: url("/typo3conf/ext/c3base/Resources/Public/Backend/Style/Skin/Dark/Icons/close.svg");
+    background-image: url("/typo3conf/ext/skins/Resources/Public/Backend/Style/Skin/Dark/Icons/close.svg");
     height: 30px;
     width: 30px;
     top: 0;
@@ -64,10 +64,10 @@ body {
   .cke_ltr .cke_button__indent_icon,
   .cke_ltr .cke_button__find_icon,
   .cke_ltr .cke_button__source_icon {
-    background-image: url(/typo3conf/ext/c3base/Resources/Public/Backend/Style/Skin/Dark/Icons/ckeditor-icons.png) !important;
+    background-image: url(/typo3conf/ext/skins/Resources/Public/Backend/Style/Skin/Dark/Icons/ckeditor-icons.png) !important;
   }
   .cke_button__softhyphen_icon {
-    background-image: url(/typo3conf/ext/c3base/Resources/Public/Backend/Style/Skin/Dark/Icons/hyphens.png) !important;
+    background-image: url(/typo3conf/ext/skins/Resources/Public/Backend/Style/Skin/Dark/Icons/hyphens.png) !important;
   }
   .cke_combo_text {
     color: $color-5;

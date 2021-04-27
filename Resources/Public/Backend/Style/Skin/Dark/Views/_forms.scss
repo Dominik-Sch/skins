@@ -28,7 +28,7 @@ select {
 .form-control {
   background-color: $color-2 !important;
   color: $color-5;
-  border: none;
+  border: 1px solid $color-6;
 }
 .form-control[disabled],
 .form-control[readonly],

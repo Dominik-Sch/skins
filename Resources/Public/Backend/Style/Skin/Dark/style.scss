@@ -5,10 +5,13 @@
 
 @import "Extensions/c3template/index";
 
+@import "General/scrollbar";
+
 @import "Module/dashboard";
 @import "Module/ckeditor";
 @import "Module/list";
 @import "Module/install-tool";
+@import "Module/forms";
 
 @import "Views/module";
 @import "Views/edit";

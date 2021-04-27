@@ -20,8 +20,10 @@
 .open>.btn-default.dropdown-toggle,
 .btn-default:hover {
   background-color: $color-4;
+  color: $color-5;
   &:hover {
     background-color: $color-4;
+    color: $color-5;
   }
 }
 [id=ext-backend-Modules-FileSystemNavigationFrame-index-php],
