@@ -305,6 +305,14 @@ body .install-tool-modal .panel-version.panel-default > .panel-heading {
   opacity: 0.5;
 }
 
+.extension-list .installed td {
+  background-color: #292929;
+}
+.extension-list .installed td .btn-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+
 .list-tree-control > .fa:before {
   background: transparent;
 }
