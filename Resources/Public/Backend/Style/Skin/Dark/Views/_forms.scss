@@ -1,20 +1,4 @@
 // forms
-.form-section {
-  border: none;
-  border-bottom: 1px solid $color-6;
-  background-color: $color-4;
-  padding: 15px 12px 3px;
-}
-.form-control {
-  background-color: $color-2 !important;
-  color: $color-5;
-  border: none;
-}
-.input-group-addon {
-  background: $color-2;
-  color: $color-5;
-  border: none;
-}
 input {
   border: none;
 }
@@ -31,21 +15,45 @@ select {
     }
   }
 }
+.form-section {
+  border: none;
+  border-bottom: 1px solid $color-6;
+  background-color: $color-4;
+  padding: 15px 12px 3px;
+  &+.form-section {
+    margin-top: 0;
+  }
+}
+.form-control {
+  background-color: $color-2 !important;
+  color: $color-5;
+  border: none;
+}
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  background: $color-1 !important;
+}
+.has-change .input-group-addon,
+.input-group-btn {
+  background-color: $color-2;
+}
+.input-group-addon {
+  background: $color-2;
+  color: $color-5;
+  border: none;
+}
 input[type=submit] {
   border: 1px solid;
   color: $color-5;
-}
-.form-section+.form-section {
-  margin-top: 0;
-}
-.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
-  background: $color-1 !important;
 }
 .form-inline-spaced {
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
 }
+
+// list pagination
 body {
   .pagination {
     >.disabled {

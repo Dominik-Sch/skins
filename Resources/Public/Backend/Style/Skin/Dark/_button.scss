@@ -13,6 +13,9 @@
   background-color: $color-4;
   border-color: $color-4;
 }
-.btn-default.active:hover, .btn-default:active:hover, .open > .btn-default.dropdown-toggle:hover, .btn-default:hover:hover {
+.btn-default.active:hover,
+.btn-default:active:hover,
+.open > .btn-default.dropdown-toggle:hover,
+.btn-default:hover:hover {
   color: $color-5;
 }

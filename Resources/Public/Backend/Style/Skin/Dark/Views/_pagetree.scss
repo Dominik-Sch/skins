@@ -15,13 +15,18 @@
     stroke: $color-4;
   }
 }
-.btn-default.active, .btn-default:active, .open>.btn-default.dropdown-toggle, .btn-default:hover {
+.btn-default.active,
+.btn-default:active,
+.open>.btn-default.dropdown-toggle,
+.btn-default:hover {
   background-color: $color-4;
   &:hover {
     background-color: $color-4;
   }
 }
-[id=ext-backend-Modules-FileSystemNavigationFrame-index-php], [id=ext-backend-Modules-FileSystemNavigationFrame-index-php] .module-body, [id=typo3-pagetree-treeContainer] {
+[id=ext-backend-Modules-FileSystemNavigationFrame-index-php],
+[id=ext-backend-Modules-FileSystemNavigationFrame-index-php] .module-body,
+[id=typo3-pagetree-treeContainer] {
   background-color: $color-2;
   border-right: none;
 }

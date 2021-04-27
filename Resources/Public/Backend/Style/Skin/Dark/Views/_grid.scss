@@ -1,5 +1,3 @@
-
-
 // t3 body grids
 .t3-grid-cell {
   background-color: $color-2;
@@ -23,20 +21,25 @@
     border: 1px solid $color-4;
     color: $color-5;
   }
+  .t3-page-ce-footer {
+    background: $color-2;
+    color: $color-5;
+  }
+  &:hover {
+    .t3-page-ce-header {
+      background: initial;
+    }
+    > div {
+      > .t3-page-ce-header,
+      > .t3-page-ce-body {
+        background: $color-4;
+      }
+    }
+  }
 }
 a {
   color: $color-5;
   &:hover {
     color: $color-5;
   }
-}
-.t3-page-ce:hover > div > .t3-page-ce-header, .t3-page-ce:hover > .t3-page-ce-header {
-  background: $color-4;
-}
-.t3-page-ce:hover .t3-page-ce-header, .t3-page-ce:hover .t3-page-ce-body {
-  background: $color-4;
-}
-.t3-page-ce .t3-page-ce-footer {
-  background: $color-2;
-  color: $color-5;
 }

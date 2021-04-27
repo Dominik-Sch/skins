@@ -13,7 +13,10 @@
   border-color: #3c3f41;
 }
 
-.btn-default.active:hover, .btn-default:active:hover, .open > .btn-default.dropdown-toggle:hover, .btn-default:hover:hover {
+.btn-default.active:hover,
+.btn-default:active:hover,
+.open > .btn-default.dropdown-toggle:hover,
+.btn-default:hover:hover {
   color: whitesmoke;
 }
 
@@ -255,14 +258,15 @@ body .install-tool-modal .panel-version.panel-default > .panel-heading {
 .nav-tabs {
   background-color: transparent;
 }
-
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:active, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+.nav-tabs > li.has-validation-error.active > a {
+  background-color: rgba(245, 245, 245, 0.3);
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active:active, .nav-tabs > li.active:focus, .nav-tabs > li.active:hover {
   border: 1px solid rgba(245, 245, 245, 0.3);
   border-bottom-color: #3c3f41;
   background-color: #3c3f41;
   color: whitesmoke;
 }
-
 .nav-tabs > li > a:hover {
   background-color: #3c3f41;
   color: white;
@@ -333,24 +337,22 @@ code {
   border: 1px solid #3c3f41;
   color: whitesmoke;
 }
+.t3-page-ce .t3-page-ce-footer {
+  background: #292929;
+  color: whitesmoke;
+}
+.t3-page-ce:hover .t3-page-ce-header {
+  background: initial;
+}
+.t3-page-ce:hover > div > .t3-page-ce-header,
+.t3-page-ce:hover > div > .t3-page-ce-body {
+  background: #3c3f41;
+}
 
 a {
   color: whitesmoke;
 }
 a:hover {
-  color: whitesmoke;
-}
-
-.t3-page-ce:hover > div > .t3-page-ce-header, .t3-page-ce:hover > .t3-page-ce-header {
-  background: #3c3f41;
-}
-
-.t3-page-ce:hover .t3-page-ce-header, .t3-page-ce:hover .t3-page-ce-body {
-  background: #3c3f41;
-}
-
-.t3-page-ce .t3-page-ce-footer {
-  background: #292929;
   color: whitesmoke;
 }
 
@@ -370,14 +372,22 @@ a:hover {
   stroke: #3c3f41;
 }
 
-.btn-default.active, .btn-default:active, .open > .btn-default.dropdown-toggle, .btn-default:hover {
+.btn-default.active,
+.btn-default:active,
+.open > .btn-default.dropdown-toggle,
+.btn-default:hover {
   background-color: #3c3f41;
 }
-.btn-default.active:hover, .btn-default:active:hover, .open > .btn-default.dropdown-toggle:hover, .btn-default:hover:hover {
+.btn-default.active:hover,
+.btn-default:active:hover,
+.open > .btn-default.dropdown-toggle:hover,
+.btn-default:hover:hover {
   background-color: #3c3f41;
 }
 
-[id=ext-backend-Modules-FileSystemNavigationFrame-index-php], [id=ext-backend-Modules-FileSystemNavigationFrame-index-php] .module-body, [id=typo3-pagetree-treeContainer] {
+[id=ext-backend-Modules-FileSystemNavigationFrame-index-php],
+[id=ext-backend-Modules-FileSystemNavigationFrame-index-php] .module-body,
+[id=typo3-pagetree-treeContainer] {
   background-color: #292929;
   border-right: none;
 }
@@ -402,25 +412,6 @@ path.chevron.expanded {
   background-color: #151515;
 }
 
-.form-section {
-  border: none;
-  border-bottom: 1px solid rgba(245, 245, 245, 0.3);
-  background-color: #3c3f41;
-  padding: 15px 12px 3px;
-}
-
-.form-control {
-  background-color: #292929 !important;
-  color: whitesmoke;
-  border: none;
-}
-
-.input-group-addon {
-  background: #292929;
-  color: whitesmoke;
-  border: none;
-}
-
 input {
   border: none;
 }
@@ -439,17 +430,42 @@ select optgroup option {
   color: whitesmoke;
 }
 
-input[type=submit] {
-  border: 1px solid;
-  color: whitesmoke;
+.form-section {
+  border: none;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.3);
+  background-color: #3c3f41;
+  padding: 15px 12px 3px;
 }
-
 .form-section + .form-section {
   margin-top: 0;
 }
 
-.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+.form-control {
+  background-color: #292929 !important;
+  color: whitesmoke;
+  border: none;
+}
+
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
   background: #151515 !important;
+}
+
+.has-change .input-group-addon,
+.input-group-btn {
+  background-color: #292929;
+}
+
+.input-group-addon {
+  background: #292929;
+  color: whitesmoke;
+  border: none;
+}
+
+input[type=submit] {
+  border: 1px solid;
+  color: whitesmoke;
 }
 
 .form-inline-spaced {

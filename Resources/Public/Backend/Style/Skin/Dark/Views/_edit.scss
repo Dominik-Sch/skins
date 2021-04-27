@@ -1,15 +1,25 @@
 .nav-tabs {
   background-color: transparent;
-}
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:active, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-  border: 1px solid $color-6;
-  border-bottom-color: $color-4;
-  background-color: $color-4;
-  color: $color-5;
-}
-.nav-tabs>li>a:hover {
-  background-color: $color-4;
-  color: white;
+  >li {
+    &.has-validation-error.active>a {
+      background-color: $color-6;
+    }
+    &.active {
+      >a,
+      &:active,
+      &:focus,
+      &:hover {
+        border: 1px solid $color-6;
+        border-bottom-color: $color-4;
+        background-color: $color-4;
+        color: $color-5;
+      }
+    }
+    >a:hover {
+      background-color: $color-4;
+      color: white;
+    }
+  }
 }
 .tab-content {
   border-left: 1px solid $color-6;
