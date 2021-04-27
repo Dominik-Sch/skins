@@ -1,4 +1,11 @@
 # skins
-TYPO3 skins. 
+TYPO3 Backend Skins
 
-Currently added a dark skin for TYPO3 backend.
+### Available Skins
+- Dark
+
+
+### Usage
+1. Click on your account (in the backend, top right)
+2. Click on "User Settings"
+3. In the "Skins" tab active the skin
