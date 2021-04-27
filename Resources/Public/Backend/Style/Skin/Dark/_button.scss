@@ -23,4 +23,8 @@
 }
 .btn-link {
   color: $color-5;
+  &:focus,
+  &:hover {
+    color: $color-5;
+  }
 }

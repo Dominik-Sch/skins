@@ -25,6 +25,9 @@
 .btn-link {
   color: whitesmoke;
 }
+.btn-link:focus, .btn-link:hover {
+  color: whitesmoke;
+}
 
 .icon-color {
   fill: whitesmoke;
