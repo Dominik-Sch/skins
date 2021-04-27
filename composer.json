@@ -2,7 +2,7 @@
     "name": "rubb1/skins",
     "type": "typo3-cms-extension",
     "description": "TYPO3 backend skins",
-    "version": "10.4.16",
+    "version": "10.4.17",
     "license": "MIT",
     "autoload": {
         "psr-4": {
