@@ -2,29 +2,29 @@
   background-color: transparent;
   >li {
     &.has-validation-error.active>a {
-      background-color: $color-6;
+      background-color: var(--color-6);
     }
     &.active {
       >a,
       >a:active,
       >a:focus,
       >a:hover {
-        border: 1px solid $color-6;
-        border-bottom-color: $color-4;
-        background-color: $color-4;
-        color: $color-5;
+        border: 1px solid var(--color-6);
+        border-bottom-color: var(--color-4);
+        background-color: var(--color-4);
+        color: var(--color-5);
       }
     }
     >a:hover {
-      background-color: $color-4;
+      background-color: var(--color-4);
       color: white;
     }
   }
 }
 
 .tab-content {
-  border-left: 1px solid $color-6;
-  border-right: 1px solid $color-6;
+  border-left: 1px solid var(--color-6);
+  border-right: 1px solid var(--color-6);
 }
 .help-teaser {
   margin-right: 5px;
@@ -34,24 +34,24 @@ select.form-control:not([size]):not(.form-select-no-siblings),
 select.form-control[size="1"]:not(.form-select-no-siblings) {
   background-image: url("/typo3conf/ext/skins/Resources/Public/Backend/Style/Skin/Dark/Icons/actions-chevron-down.svg");
   width: 100%;
-  border: 1px solid $color-6;
+  border: 1px solid var(--color-6);
 }
 .help-block {
-  color: $color-5;
+  color: var(--color-5);
 }
 code {
   padding: 0;
   font-size: 100%;
-  color: $color-8;
+  color: var(--color-8);
   background-color: rgb(0 0 0 / 0%);
   border-radius: 0;
 }
 .icon-list {
-  background: $color-4;
+  background: var(--color-4);
   margin-top: 9px;
   border: none;
   .active {
-    background-color: $color-8;
+    background-color: var(--color-8);
   }
   img {
     width: 16px;

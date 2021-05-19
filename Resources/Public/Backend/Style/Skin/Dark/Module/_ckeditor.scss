@@ -1,5 +1,5 @@
 .cke_top {
-  background-color: $color-2 !important;
+  background-color: var(--color-2) !important;
   border-bottom-color: rgb(200, 200, 200);
 }
 body {
@@ -14,7 +14,7 @@ body {
   a.cke_dialog_ui_button {
     background: transparent;
     &:hover {
-      background: $color-8;
+      background: var(--color-8);
     }
   }
   .cke_dialog {
@@ -22,33 +22,33 @@ body {
     .cke_dialog_tab_selected {
       background: transparent;
       &:hover {
-        background: $color-8;
+        background: var(--color-8);
       }
     }
     .cke_dialog_footer {
-      background-color: $color-4;
+      background-color: var(--color-4);
     }
     .cke_dialog_contents {
-      background-color: $color-4;
+      background-color: var(--color-4);
     }
     .cke_dialog_body {
-      background-color: $color-4;
+      background-color: var(--color-4);
       border:none;
       .cke_dialog_title {
-        background-color: $color-4;
+        background-color: var(--color-4);
         border:none;
       }
     }
   }
   .cke_combo_arrow {
-    border-top: 3px solid $color-5;
+    border-top: 3px solid var(--color-5);
   }
   .cke_reset_all,
   .cke_reset_all *,
   .cke_reset_all a,
   .cke_reset_all textarea,
   .cke_button_label {
-    color: $color-5;
+    color: var(--color-5);
   }
   .cke_button_icon,
   .cke_ltr .cke_button__anchor_icon,
@@ -70,7 +70,7 @@ body {
     background-image: url(/typo3conf/ext/skins/Resources/Public/Backend/Style/Skin/Dark/Icons/hyphens.png) !important;
   }
   .cke_combo_text {
-    color: $color-5;
+    color: var(--color-5);
   }
 
   a.cke_button_off:hover,
@@ -80,15 +80,15 @@ body {
   a.cke_combo_button:focus,
   a.cke_combo_button:focus,
   .cke_combo_on a.cke_combo_button {
-    background-color: $color-4 !important;
+    background-color: var(--color-4) !important;
     border-color: transparent;
   }
   .cke_button_on {
-    background-color: $color-8 !important;
+    background-color: var(--color-8) !important;
     border-color: transparent;
   }
 
   textarea.cke_source {
-    color: $color-2;
+    color: var(--color-2);
   }
 }

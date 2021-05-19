@@ -1,21 +1,32 @@
 body {
-  color: $color-5;
-  background-color: $color-4;
+  color: var(--color-5);
+  background-color: var(--color-4);
 }
 .panel-body {
-  border-bottom: 1px solid $color-5;
+  border-bottom: 1px solid var(--color-5);
 }
 .text-muted {
   color: rgb(245, 245, 245);
   font-size: 95%;
 }
 .scaffold-modulemenu {
-  background-color: $color-7;
+  background-color: var(--color-7);
 }
 .scaffold-content-navigation-expanded .topbar-button-navigationcomponent,
 .scaffold-modulemenu-expanded .topbar-button.topbar-button-modulemenu {
-  background-color: $color-7;
+  background-color: var(--color-7);
 }
 a:focus, a:hover {
-  color: $color-5;
+  color: var(--color-5);
+}
+.popover-title {
+  background: transparent;
+  border-bottom: 1px solid var(--color-5);
+}
+.popover {
+  background: var(--color-2);
+  box-shadow: 0 0 10px 2px rgb(0 0 0 / 20%);
+  &.top>.arrow:after {
+    border-top-color: var(--color-2);
+  }
 }

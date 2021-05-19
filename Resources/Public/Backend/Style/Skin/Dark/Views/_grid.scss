@@ -1,29 +1,30 @@
 // t3 body grids
 .t3-grid-cell {
-  background-color: $color-2;
-  border-bottom: 1px solid $color-2;
-  color: $color-5;
+  background-color: var(--color-2);
+  border-bottom: 1px solid var(--color-2);
+  color: var(--color-5);
 }
 .t3-page-column-header {
-  background-color: $color-2;
-  border-bottom: 1px solid $color-4;
-  color: $color-5;
+  background-color: var(--color-2);
+  border-bottom: 1px solid var(--color-4);
+  color: var(--color-5);
 }
 .t3-page-ce {
   .t3-page-ce-header {
-    background: $color-2;
-    border: 1px solid $color-4;
-    color: $color-5;
+    background: var(--color-2);
+    border: 1px solid var(--color-4);
+    color: var(--color-5);
     border-bottom: none;
+    transition: none;
   }
   .t3-page-ce-body {
-    background: $color-2;
-    border: 1px solid $color-4;
-    color: $color-5;
+    background: var(--color-2);
+    border: 1px solid var(--color-4);
+    color: var(--color-5);
   }
   .t3-page-ce-footer {
-    background: $color-2;
-    color: $color-5;
+    background: var(--color-2);
+    color: var(--color-5);
   }
   &:hover {
     .t3-page-ce-header {
@@ -32,14 +33,14 @@
     > div {
       > .t3-page-ce-header,
       > .t3-page-ce-body {
-        background: $color-4;
+        background: var(--color-4);
       }
     }
   }
 }
 a {
-  color: $color-5;
+  color: var(--color-5);
   &:hover {
-    color: $color-5;
+    color: var(--color-5);
   }
 }

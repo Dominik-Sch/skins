@@ -1,45 +1,55 @@
+:root {
+  --color-1: rgb(21, 21,21);
+  --color-2: rgb(41, 41, 41);
+  --color-4: rgb(60, 63, 65);
+  --color-5: rgb(245, 245, 245);
+  --color-6: rgba(245, 245, 245, 0.3);
+  --color-7: rgb(31, 31, 31);
+  --color-8: rgb(253, 195, 0);
+}
+
 .btn-default {
   color: white;
-  border-color: rgba(245, 245, 245, 0.3);
+  border-color: var(--color-6);
   background: transparent;
 }
 .btn-default.focus, .btn-default:focus, .btn-default:hover {
-  border-color: whitesmoke;
-  background-color: #292929;
-  color: whitesmoke;
+  border-color: var(--color-5);
+  background-color: var(--color-2);
+  color: var(--color-5);
 }
 
 .table .btn-default {
-  color: whitesmoke;
-  background-color: #3c3f41;
-  border-color: #3c3f41;
+  color: var(--color-5);
+  background-color: var(--color-4);
+  border-color: var(--color-4);
 }
 
 .btn-default.active:hover,
 .btn-default:active:hover,
 .open > .btn-default.dropdown-toggle:hover,
 .btn-default:hover:hover {
-  color: whitesmoke;
+  color: var(--color-5);
 }
 
 .btn-link {
-  color: whitesmoke;
+  color: var(--color-5);
 }
 .btn-link:focus, .btn-link:hover {
-  color: whitesmoke;
+  color: var(--color-5);
 }
 
 .icon-color {
-  fill: whitesmoke;
+  fill: var(--color-5);
 }
 
 body {
-  color: whitesmoke;
-  background-color: #3c3f41;
+  color: var(--color-5);
+  background-color: var(--color-4);
 }
 
 .panel-body {
-  border-bottom: 1px solid whitesmoke;
+  border-bottom: 1px solid var(--color-5);
 }
 
 .text-muted {
@@ -48,25 +58,44 @@ body {
 }
 
 .scaffold-modulemenu {
-  background-color: #1f1f1f;
+  background-color: var(--color-7);
 }
 
 .scaffold-content-navigation-expanded .topbar-button-navigationcomponent,
 .scaffold-modulemenu-expanded .topbar-button.topbar-button-modulemenu {
-  background-color: #1f1f1f;
+  background-color: var(--color-7);
 }
 
 a:focus, a:hover {
-  color: whitesmoke;
+  color: var(--color-5);
+}
+
+.popover-title {
+  background: transparent;
+  border-bottom: 1px solid var(--color-5);
+}
+
+.popover {
+  background: var(--color-2);
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+.popover.top > .arrow:after {
+  border-top-color: var(--color-2);
 }
 
 .c3template-be-table table tr td {
-  border: 1px solid whitesmoke;
+  border: 1px solid var(--color-5);
 }
 
 .c3template-be-table table caption {
   caption-side: bottom;
-  color: whitesmoke;
+  color: var(--color-5);
+}
+
+.callout-danger {
+  background-color: #c83c3c;
+  border-color: #c83c3c;
+  color: var(--color-5);
 }
 
 ::-webkit-scrollbar {
@@ -103,34 +132,11 @@ a:focus, a:hover {
 
 body:hover ::-webkit-scrollbar-thumb {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background: #fdc300;
-}
-
-.dashboard-header {
-  background-color: #3c3f41;
-  color: whitesmoke;
-}
-
-.widget {
-  background: #292929;
-  color: whitesmoke;
-}
-
-.widget-content-title {
-  background: #292929;
-  color: whitesmoke;
-}
-
-.widget-table {
-  color: whitesmoke;
-}
-
-.widget-table tr:nth-child(even) {
-  background-color: #151515;
+  background: var(--color-8);
 }
 
 .cke_top {
-  background-color: #292929 !important;
+  background-color: var(--color-2) !important;
   border-bottom-color: #c8c8c8;
 }
 
@@ -146,7 +152,7 @@ body a.cke_dialog_ui_button {
   background: transparent;
 }
 body a.cke_dialog_ui_button:hover {
-  background: #fdc300;
+  background: var(--color-8);
 }
 body .cke_dialog .cke_dialog_tab,
 body .cke_dialog .cke_dialog_tab_selected {
@@ -154,31 +160,31 @@ body .cke_dialog .cke_dialog_tab_selected {
 }
 body .cke_dialog .cke_dialog_tab:hover,
 body .cke_dialog .cke_dialog_tab_selected:hover {
-  background: #fdc300;
+  background: var(--color-8);
 }
 body .cke_dialog .cke_dialog_footer {
-  background-color: #3c3f41;
+  background-color: var(--color-4);
 }
 body .cke_dialog .cke_dialog_contents {
-  background-color: #3c3f41;
+  background-color: var(--color-4);
 }
 body .cke_dialog .cke_dialog_body {
-  background-color: #3c3f41;
+  background-color: var(--color-4);
   border: none;
 }
 body .cke_dialog .cke_dialog_body .cke_dialog_title {
-  background-color: #3c3f41;
+  background-color: var(--color-4);
   border: none;
 }
 body .cke_combo_arrow {
-  border-top: 3px solid whitesmoke;
+  border-top: 3px solid var(--color-5);
 }
 body .cke_reset_all,
 body .cke_reset_all *,
 body .cke_reset_all a,
 body .cke_reset_all textarea,
 body .cke_button_label {
-  color: whitesmoke;
+  color: var(--color-5);
 }
 body .cke_button_icon,
 body .cke_ltr .cke_button__anchor_icon,
@@ -200,7 +206,7 @@ body .cke_button__softhyphen_icon {
   background-image: url(/typo3conf/ext/skins/Resources/Public/Backend/Style/Skin/Dark/Icons/hyphens.png) !important;
 }
 body .cke_combo_text {
-  color: whitesmoke;
+  color: var(--color-5);
 }
 body a.cke_button_off:hover,
 body a.cke_button_off:focus,
@@ -209,73 +215,67 @@ body a.cke_combo_button:hover,
 body a.cke_combo_button:focus,
 body a.cke_combo_button:focus,
 body .cke_combo_on a.cke_combo_button {
-  background-color: #3c3f41 !important;
+  background-color: var(--color-4) !important;
   border-color: transparent;
 }
 body .cke_button_on {
-  background-color: #fdc300 !important;
+  background-color: var(--color-8) !important;
   border-color: transparent;
 }
 body textarea.cke_source {
-  color: #292929;
+  color: var(--color-2);
 }
 
-.panel-default > .panel-heading {
-  background-color: #292929;
-  border-color: rgba(245, 245, 245, 0.3);
-  color: whitesmoke;
+.list-tree-control > .fa:before {
+  background: transparent;
 }
 
-.panel-hover .panel-default:hover > .panel-heading {
-  background-color: #292929;
+.dashboard-header {
+  background-color: var(--color-4);
+  color: var(--color-5);
 }
 
-.table > thead > tr {
-  background: #3c3f41;
-  color: whitesmoke;
+.widget {
+  background: var(--color-2);
+  color: var(--color-5);
 }
 
-.table-striped > tbody > tr:nth-of-type(odd) {
-  background: #3c3f41;
-  color: whitesmoke;
-}
-.table-striped > tbody > tr:nth-of-type(odd):hover {
-  background: #292929;
+.widget-content-title {
+  background: var(--color-2);
+  color: var(--color-5);
 }
 
-.table-striped > tbody > tr:nth-of-type(even) {
-  background: #3c3f41;
-  color: whitesmoke;
-}
-.table-striped > tbody > tr:nth-of-type(even):hover {
-  background: #292929;
+.widget-table {
+  color: var(--color-5);
 }
 
-.table-fit {
-  border: none;
+.widget-table tr:nth-child(even) {
+  background-color: var(--color-1);
 }
 
-.table {
-  background: #3c3f41;
+.extension-list .inactive {
+  background: var(--color-2) !important;
+  opacity: 0.5;
 }
 
-body .install-tool-modal .panel-flat.panel-default > .panel-heading,
-body .install-tool-modal .panel-rst.panel-default > .panel-heading,
-body .install-tool-modal .panel-version.panel-default > .panel-heading {
-  background: #3c3f41;
-  color: whitesmoke;
+.extension-list .installed td {
+  background-color: var(--color-2);
+}
+.extension-list .installed td .btn-default {
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .t3-form-x-component {
-  background: #292929;
+  background: var(--color-2);
 }
 
 #t3-form-inspector h4 {
-  background-color: #3c3f41;
+  background-color: var(--color-4);
 }
 
 .t3-form-collection-element {
-  background-color: #3c3f41;
+  background-color: var(--color-4);
 }
 
 .property-grid .table > tbody > tr {
@@ -291,7 +291,7 @@ body .install-tool-modal .panel-version.panel-default > .panel-heading {
 #t3-form-structure-panel #t3-form-navigation-component-tree-root-container.t3-form-root-element-selected:hover,
 #t3-form-structure-panel .tree li > .t3-form-form-element-selected,
 #t3-form-structure-panel .tree li > .t3-form-form-element-selected:hover {
-  background-color: #3c3f41;
+  background-color: var(--color-4);
   border-color: transparent;
 }
 
@@ -299,65 +299,132 @@ body .install-tool-modal .panel-version.panel-default > .panel-heading {
 #t3-form-structure-panel .t3-form-form-element-selected,
 #t3-form-structure-panel .t3-form-root-element-selected,
 #t3-form-structure-panel .tree li > div:hover {
-  background-color: rgba(245, 245, 245, 0.3);
+  background-color: var(--color-6);
   border-color: transparent;
 }
 
-.extension-list .inactive {
-  background: #292929 !important;
-  opacity: 0.5;
+body .install-tool-modal .panel-flat.panel-default > .panel-heading,
+body .install-tool-modal .panel-rst.panel-default > .panel-heading,
+body .install-tool-modal .panel-version.panel-default > .panel-heading {
+  background: var(--color-4);
+  color: var(--color-5);
 }
 
-.extension-list .installed td {
-  background-color: #292929;
-}
-.extension-list .installed td .btn-default {
-  background-color: transparent;
-  border-color: transparent;
+.panel-default > .panel-heading {
+  background-color: var(--color-2);
+  border-color: var(--color-6);
+  color: var(--color-5);
 }
 
-.list-tree-control > .fa:before {
-  background: transparent;
+.panel-hover .panel-default:hover > .panel-heading {
+  background-color: var(--color-2);
 }
 
-.module {
-  background-color: #3c3f41;
+.table > thead > tr {
+  background: var(--color-4);
+  color: var(--color-5);
 }
 
-.module-body {
-  background-color: #3c3f41;
-  color: whitesmoke;
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background: var(--color-4);
+  color: var(--color-5);
+}
+.table-striped > tbody > tr:nth-of-type(odd):hover {
+  background: var(--color-2);
 }
 
-.module-docheader {
-  background-color: #3c3f41;
-  color: whitesmoke;
-  border-bottom: 1px solid rgba(245, 245, 245, 0.3);
+.table-striped > tbody > tr:nth-of-type(even) {
+  background: var(--color-4);
+  color: var(--color-5);
+}
+.table-striped > tbody > tr:nth-of-type(even):hover {
+  background: var(--color-2);
+}
+
+.table-fit {
+  border: none;
+}
+
+.table {
+  background: var(--color-4);
+}
+
+.callout-info {
+  background: var(--color-2);
+  color: var(--color-5);
+}
+
+#ConfigurationView .list-tree li {
+  border-bottom: 1px solid #f5f5f517;
+}
+#ConfigurationView .list-tree li .list-tree-group {
+  display: flex;
+  align-items: flex-start;
+}
+#ConfigurationView .list-tree li .list-tree-group .list-tree-label {
+  flex: 1 1 25%;
+  display: inline-block;
+  padding-right: 10px;
+}
+#ConfigurationView .list-tree li .list-tree-group .list-tree-value {
+  display: block;
+  padding-left: 10px;
+  flex: 1 1 75%;
+  font-weight: normal;
+  white-space: pre;
+  overflow: auto;
+  max-height: 500px;
+  resize: vertical;
+}
+#ConfigurationView .list-tree li .list-tree-group .list-tree-value::-webkit-resizer {
+  background-image: linear-gradient(-45deg, white 20%, transparent 20%);
+}
+
+.context-menu .list-group {
+  background-color: var(--color-4);
+}
+
+.list-group-item {
+  background-color: var(--color-4);
+  color: var(--color-5);
+}
+
+a.list-group-item,
+button.list-group-item {
+  color: var(--color-5);
+}
+a.list-group-item:focus, a.list-group-item:hover, a.list-group-item:focus, a.list-group-item:hover,
+button.list-group-item:focus,
+button.list-group-item:hover,
+button.list-group-item:focus,
+button.list-group-item:hover {
+  color: var(--color-5);
+  background-color: var(--color-2);
 }
 
 .nav-tabs {
   background-color: transparent;
 }
 .nav-tabs > li.has-validation-error.active > a {
-  background-color: rgba(245, 245, 245, 0.3);
+  background-color: var(--color-6);
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:active,
 .nav-tabs > li.active > a:focus,
 .nav-tabs > li.active > a:hover {
-  border: 1px solid rgba(245, 245, 245, 0.3);
-  border-bottom-color: #3c3f41;
-  background-color: #3c3f41;
-  color: whitesmoke;
+  border: 1px solid var(--color-6);
+  border-bottom-color: var(--color-4);
+  background-color: var(--color-4);
+  color: var(--color-5);
 }
 .nav-tabs > li > a:hover {
-  background-color: #3c3f41;
+  background-color: var(--color-4);
   color: white;
 }
 
 .tab-content {
-  border-left: 1px solid rgba(245, 245, 245, 0.3);
-  border-right: 1px solid rgba(245, 245, 245, 0.3);
+  border-left: 1px solid var(--color-6);
+  border-right: 1px solid var(--color-6);
 }
 
 .help-teaser {
@@ -369,132 +436,32 @@ select.form-control:not([size]):not(.form-select-no-siblings),
 select.form-control[size="1"]:not(.form-select-no-siblings) {
   background-image: url("/typo3conf/ext/skins/Resources/Public/Backend/Style/Skin/Dark/Icons/actions-chevron-down.svg");
   width: 100%;
-  border: 1px solid rgba(245, 245, 245, 0.3);
+  border: 1px solid var(--color-6);
 }
 
 .help-block {
-  color: whitesmoke;
+  color: var(--color-5);
 }
 
 code {
   padding: 0;
   font-size: 100%;
-  color: #fdc300;
+  color: var(--color-8);
   background-color: rgba(0, 0, 0, 0);
   border-radius: 0;
 }
 
 .icon-list {
-  background: #3c3f41;
+  background: var(--color-4);
   margin-top: 9px;
   border: none;
 }
 .icon-list .active {
-  background-color: #fdc300;
+  background-color: var(--color-8);
 }
 .icon-list img {
   width: 16px;
   height: auto;
-}
-
-.t3-grid-cell {
-  background-color: #292929;
-  border-bottom: 1px solid #292929;
-  color: whitesmoke;
-}
-
-.t3-page-column-header {
-  background-color: #292929;
-  border-bottom: 1px solid #3c3f41;
-  color: whitesmoke;
-}
-
-.t3-page-ce .t3-page-ce-header {
-  background: #292929;
-  border: 1px solid #3c3f41;
-  color: whitesmoke;
-  border-bottom: none;
-}
-.t3-page-ce .t3-page-ce-body {
-  background: #292929;
-  border: 1px solid #3c3f41;
-  color: whitesmoke;
-}
-.t3-page-ce .t3-page-ce-footer {
-  background: #292929;
-  color: whitesmoke;
-}
-.t3-page-ce:hover .t3-page-ce-header {
-  background: initial;
-}
-.t3-page-ce:hover > div > .t3-page-ce-header,
-.t3-page-ce:hover > div > .t3-page-ce-body {
-  background: #3c3f41;
-}
-
-a {
-  color: whitesmoke;
-}
-a:hover {
-  color: whitesmoke;
-}
-
-.svg-tree-wrapper {
-  overflow-y: auto;
-}
-.svg-tree-wrapper .node-selected {
-  fill: #3c3f41;
-  stroke: #3c3f41;
-}
-.svg-tree-wrapper .nodes-wrapper--dragging .node-over {
-  fill: #3c3f41 !important;
-  stroke: #3c3f41;
-}
-.svg-tree-wrapper .node-over:not(.node-selected) {
-  fill: #3c3f41;
-  stroke: #3c3f41;
-}
-
-.btn-default.active,
-.btn-default:active,
-.open > .btn-default.dropdown-toggle,
-.btn-default:hover {
-  background-color: #3c3f41;
-  color: whitesmoke;
-}
-.btn-default.active:hover,
-.btn-default:active:hover,
-.open > .btn-default.dropdown-toggle:hover,
-.btn-default:hover:hover {
-  background-color: #3c3f41;
-  color: whitesmoke;
-}
-
-[id=ext-backend-Modules-FileSystemNavigationFrame-index-php],
-[id=ext-backend-Modules-FileSystemNavigationFrame-index-php] .module-body,
-[id=typo3-pagetree-treeContainer] {
-  background-color: #292929;
-  border-right: none;
-}
-
-text.node-name {
-  fill: whitesmoke;
-}
-
-path.chevron {
-  fill: whitesmoke !important;
-}
-path.chevron.expanded {
-  fill: whitesmoke !important;
-}
-
-.svg-toolbar {
-  background-color: #292929;
-  border-bottom: 1px solid #3c3f41;
-}
-
-.scaffold-topbar {
-  background-color: #151515;
 }
 
 input {
@@ -505,20 +472,20 @@ select {
   border: none;
 }
 select option {
-  color: whitesmoke;
+  color: var(--color-5);
 }
 select optgroup {
   font-weight: 700;
-  color: #fdc300;
+  color: var(--color-8);
 }
 select optgroup option {
-  color: whitesmoke;
+  color: var(--color-5);
 }
 
 .form-section {
   border: none;
-  border-bottom: 1px solid rgba(245, 245, 245, 0.3);
-  background-color: #3c3f41;
+  border-bottom: 1px solid var(--color-6);
+  background-color: var(--color-4);
   padding: 15px 12px 3px;
 }
 .form-section + .form-section {
@@ -526,31 +493,31 @@ select optgroup option {
 }
 
 .form-control {
-  background-color: #292929 !important;
-  color: whitesmoke;
-  border: 1px solid rgba(245, 245, 245, 0.3);
+  background-color: var(--color-2) !important;
+  color: var(--color-5);
+  border: 1px solid var(--color-6);
 }
 
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
-  background: #151515 !important;
+  background: var(--color-1) !important;
 }
 
 .has-change .input-group-addon,
 .input-group-btn {
-  background-color: #292929;
+  background-color: var(--color-2);
 }
 
 .input-group-addon {
-  background: #292929;
-  color: whitesmoke;
+  background: var(--color-2);
+  color: var(--color-5);
   border: none;
 }
 
 input[type=submit] {
   border: 1px solid;
-  color: whitesmoke;
+  color: var(--color-5);
 }
 
 .form-inline-spaced {
@@ -565,35 +532,73 @@ body .pagination > .disabled > a:hover,
 body .pagination > .disabled > span,
 body .pagination > .disabled > span:focus,
 body .pagination > .disabled > span:hover {
-  color: whitesmoke;
+  color: var(--color-5);
   cursor: not-allowed;
-  background-color: #292929;
+  background-color: var(--color-2);
   border-color: transparent;
 }
 body .pagination > li > span, body .pagination > li > a {
-  background-color: #3c3f41;
-  color: whitesmoke;
+  background-color: var(--color-4);
+  color: var(--color-5);
   border: transparent;
 }
 body .pagination > li.disabled {
-  background-color: #3c3f41;
+  background-color: var(--color-4);
 }
 
-.callout-info {
-  background: #292929;
-  color: whitesmoke;
+.t3-grid-cell {
+  background-color: var(--color-2);
+  border-bottom: 1px solid var(--color-2);
+  color: var(--color-5);
+}
+
+.t3-page-column-header {
+  background-color: var(--color-2);
+  border-bottom: 1px solid var(--color-4);
+  color: var(--color-5);
+}
+
+.t3-page-ce .t3-page-ce-header {
+  background: var(--color-2);
+  border: 1px solid var(--color-4);
+  color: var(--color-5);
+  border-bottom: none;
+  transition: none;
+}
+.t3-page-ce .t3-page-ce-body {
+  background: var(--color-2);
+  border: 1px solid var(--color-4);
+  color: var(--color-5);
+}
+.t3-page-ce .t3-page-ce-footer {
+  background: var(--color-2);
+  color: var(--color-5);
+}
+.t3-page-ce:hover .t3-page-ce-header {
+  background: initial;
+}
+.t3-page-ce:hover > div > .t3-page-ce-header,
+.t3-page-ce:hover > div > .t3-page-ce-body {
+  background: var(--color-4);
+}
+
+a {
+  color: var(--color-5);
+}
+a:hover {
+  color: var(--color-5);
 }
 
 body {
-  background-color: #3c3f41;
+  background-color: var(--color-4);
 }
 
 .element-browser-attributes {
-  background-color: #3c3f41;
+  background-color: var(--color-4);
 }
 
 .element-browser-body {
-  background-color: #292929;
+  background-color: var(--color-2);
 }
 
 .element-browser-main-sidebar .list-tree-control > .fa:before {
@@ -605,20 +610,20 @@ body {
 }
 
 .modal-severity-notice .modal-header {
-  background-color: #151515;
-  color: whitesmoke;
+  background-color: var(--color-1);
+  color: var(--color-5);
   border: none;
 }
 
 .modal-severity-warning .modal-header {
-  background-color: #292929;
-  color: whitesmoke;
-  border-bottom-color: #292929;
+  background-color: var(--color-2);
+  color: var(--color-5);
+  border-bottom-color: var(--color-2);
 }
 
 .modal-content {
-  background-color: #3c3f41;
-  color: whitesmoke;
+  background-color: var(--color-4);
+  color: var(--color-5);
 }
 
 .list-tree li:last-child:before {
@@ -626,37 +631,88 @@ body {
 }
 
 .panel {
-  background-color: #3c3f41;
+  background-color: var(--color-4);
 }
 
 .t3-new-content-element-wizard-window {
-  background-color: #3c3f41;
+  background-color: var(--color-4);
 }
 
-.context-menu .list-group {
-  background-color: #3c3f41;
+.module {
+  background-color: var(--color-4);
 }
 
-.list-group-item {
-  background-color: #3c3f41;
-  color: whitesmoke;
+.module-body {
+  background-color: var(--color-4);
+  color: var(--color-5);
 }
 
-a.list-group-item,
-button.list-group-item {
-  color: whitesmoke;
+.module-docheader {
+  background-color: var(--color-4);
+  color: var(--color-5);
+  border-bottom: 1px solid rgba(245, 245, 245, 0.3);
 }
-a.list-group-item:focus, a.list-group-item:hover, a.list-group-item:focus, a.list-group-item:hover,
-button.list-group-item:focus,
-button.list-group-item:hover,
-button.list-group-item:focus,
-button.list-group-item:hover {
-  color: whitesmoke;
-  background-color: #292929;
+
+.svg-tree-wrapper {
+  overflow-y: auto;
+}
+.svg-tree-wrapper .node-selected {
+  fill: var(--color-4);
+  stroke: var(--color-4);
+}
+.svg-tree-wrapper .nodes-wrapper--dragging .node-over {
+  fill: var(--color-4) !important;
+  stroke: var(--color-4);
+}
+.svg-tree-wrapper .node-over:not(.node-selected) {
+  fill: var(--color-4);
+  stroke: var(--color-4);
+}
+
+.btn-default.active,
+.btn-default:active,
+.open > .btn-default.dropdown-toggle,
+.btn-default:hover {
+  background-color: var(--color-4);
+  color: var(--color-5);
+}
+.btn-default.active:hover,
+.btn-default:active:hover,
+.open > .btn-default.dropdown-toggle:hover,
+.btn-default:hover:hover {
+  background-color: var(--color-4);
+  color: var(--color-5);
+}
+
+[id=ext-backend-Modules-FileSystemNavigationFrame-index-php],
+[id=ext-backend-Modules-FileSystemNavigationFrame-index-php] .module-body,
+[id=typo3-pagetree-treeContainer] {
+  background-color: var(--color-2);
+  border-right: none;
+}
+
+text.node-name {
+  fill: var(--color-5);
+}
+
+path.chevron {
+  fill: var(--color-5) !important;
+}
+path.chevron.expanded {
+  fill: var(--color-5) !important;
 }
 
 #typo3-dblist-search .panel {
-  background-color: #3c3f41;
+  background-color: var(--color-4);
+}
+
+.svg-toolbar {
+  background-color: var(--color-2);
+  border-bottom: 1px solid var(--color-4);
+}
+
+.scaffold-topbar {
+  background-color: #151515;
 }
 
 /*# sourceMappingURL=style.css.map */

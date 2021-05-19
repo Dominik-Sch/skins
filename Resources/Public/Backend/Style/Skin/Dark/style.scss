@@ -5,24 +5,26 @@
 
 @import "Extensions/c3template/index";
 
+@import "General/notifications";
 @import "General/scrollbar";
 
-@import "Module/dashboard";
-@import "Module/ckeditor";
-@import "Module/list";
-@import "Module/install-tool";
-@import "Module/forms";
-@import "Module/extensionlist";
 @import "Module/access";
+@import "Module/ckeditor";
 @import "Module/configuration";
+@import "Module/dashboard";
+@import "Module/extensionlist";
+@import "Module/forms";
+@import "Module/install-tool";
+@import "Module/list";
 
-@import "Views/module";
-@import "Views/edit";
-@import "Views/grid";
-@import "Views/pagetree";
-@import "Views/toolbar";
-@import "Views/forms";
 @import "Views/callout";
-@import "Views/modal-iframe";
+@import "Views/configuration";
 @import "Views/context-menu";
+@import "Views/edit";
+@import "Views/forms";
+@import "Views/grid";
+@import "Views/modal-iframe";
+@import "Views/module";
+@import "Views/pagetree";
 @import "Views/search";
+@import "Views/toolbar";

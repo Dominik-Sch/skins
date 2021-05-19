@@ -1,18 +1,18 @@
 .dashboard-header {
-  background-color: $color-4;
-  color: $color-5;
+  background-color: var(--color-4);
+  color: var(--color-5);
 }
 .widget {
-  background: $color-2;
-  color: $color-5;
+  background: var(--color-2);
+  color: var(--color-5);
 }
 .widget-content-title {
-  background: $color-2;
-  color: $color-5;
+  background: var(--color-2);
+  color: var(--color-5);
 }
 .widget-table {
-  color: $color-5;
+  color: var(--color-5);
 }
 .widget-table tr:nth-child(even) {
-  background-color: $color-1;
+  background-color: var(--color-1);
 }

@@ -1,9 +1,9 @@
 .extension-list .inactive {
-  background: $color-2!important;
+  background: var(--color-2)!important;
   opacity: 0.5;
 }
 .extension-list .installed td {
-  background-color: $color-2;
+  background-color: var(--color-2);
 
   .btn-default {
     background-color: transparent;

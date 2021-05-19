@@ -5,48 +5,48 @@ input {
 select {
   border: none;
   option {
-    color: $color-5;
+    color: var(--color-5);
   }
   optgroup {
     font-weight: 700;
-    color: $color-8;
+    color: var(--color-8);
     option {
-      color: $color-5;
+      color: var(--color-5);
     }
   }
 }
 
 .form-section {
   border: none;
-  border-bottom: 1px solid $color-6;
-  background-color: $color-4;
+  border-bottom: 1px solid var(--color-6);
+  background-color: var(--color-4);
   padding: 15px 12px 3px;
   &+.form-section {
     margin-top: 0;
   }
 }
 .form-control {
-  background-color: $color-2 !important;
-  color: $color-5;
-  border: 1px solid $color-6;
+  background-color: var(--color-2) !important;
+  color: var(--color-5);
+  border: 1px solid var(--color-6);
 }
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
-  background: $color-1 !important;
+  background: var(--color-1) !important;
 }
 .has-change .input-group-addon,
 .input-group-btn {
-  background-color: $color-2;
+  background-color: var(--color-2);
 }
 .input-group-addon {
-  background: $color-2;
-  color: $color-5;
+  background: var(--color-2);
+  color: var(--color-5);
   border: none;
 }
 input[type=submit] {
   border: 1px solid;
-  color: $color-5;
+  color: var(--color-5);
 }
 .form-inline-spaced {
   display: flex;
@@ -64,20 +64,20 @@ body {
       >span,
       >span:focus,
       >span:hover {
-        color: $color-5;
+        color: var(--color-5);
         cursor: not-allowed;
-        background-color: $color-2;
+        background-color: var(--color-2);
         border-color: transparent;
       }
     }
     >li {
       >span,>a {
-        background-color: $color-4;
-        color: $color-5;
+        background-color: var(--color-4);
+        color: var(--color-5);
         border: transparent;
       }
       &.disabled {
-        background-color: $color-4;
+        background-color: var(--color-4);
       }
     }
   }
