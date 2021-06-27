@@ -3,6 +3,7 @@ TYPO3 Backend Skins
 
 ### Available Skins
 - Dark
+- Custom / you can choose your own colors for your backend
 
 
 ### Usage
