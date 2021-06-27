@@ -10,3 +10,4 @@ TYPO3 Backend Skins
 1. Click on your account (in the backend, top right)
 2. Click on "User Settings"
 3. In the "Skins" tab activate the skin
+4. Reload your browser window
