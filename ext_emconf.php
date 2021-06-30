@@ -2,7 +2,7 @@
 
 $EM_CONF[$_EXTKEY] = array(
     'title' => 'Typo3 Skins',
-    'description' => 'This extension add a dark skin to the Typo3 backend.',
+    'description' => 'This extension add a dark skin / dark mode to the TYPO3 backend.',
     'category' => 'be',
     'author' => 'Dominik Schüßler',
     'author_company' => '',
@@ -10,7 +10,7 @@ $EM_CONF[$_EXTKEY] = array(
     'dependencies' => '',
     'state' => 'stable',
     'clearCacheOnLoad' => '1',
-    'version' => '10.4.22',
+    'version' => '10.4.23',
     'constraints' => array(
         'depends' => array(
             'typo3' => '10.4.0-10.4.99',

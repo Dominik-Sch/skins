@@ -235,6 +235,17 @@ body textarea.cke_source {
   color: var(--color-5);
 }
 
+.dashboard-modal-item-block {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.dashboard-modal-tabpanel .tab-content {
+  border-left: none;
+  border-right: none;
+}
+
 .widget {
   background: var(--color-2);
   color: var(--color-5);
