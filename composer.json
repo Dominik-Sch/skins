@@ -1,7 +1,7 @@
 {
     "name": "rubb1/skins",
     "type": "typo3-cms-extension",
-    "description": "TYPO3 backend skins",
+    "description": "This extension add a dark skin / dark mode to the TYPO3 backend.",
     "version": "10.4.23",
     "license": "MIT",
     "autoload": {
