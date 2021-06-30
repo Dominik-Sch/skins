@@ -414,6 +414,10 @@ body .install-tool-modal .panel-version.panel-default > .panel-heading {
   color: var(--color-1) !important;
 }
 
+.table-hover > tbody > tr:hover {
+  background: var(--color-2);
+}
+
 .callout-info {
   background: var(--color-2);
   color: var(--color-5);

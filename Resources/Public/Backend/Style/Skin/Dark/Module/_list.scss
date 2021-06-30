@@ -67,3 +67,6 @@
     color: var(--color-1) !important;
   }
 }
+.table-hover > tbody > tr:hover {
+  background: var(--color-2);
+}
