@@ -852,6 +852,12 @@ path.chevron.expanded {
   background-color: var(--color-2);
   border-bottom: 1px solid var(--color-4);
 }
+.svg-toolbar .svg-toolbar__drag-node {
+  border: 1px solid transparent;
+}
+.svg-toolbar .svg-toolbar__drag-node:hover {
+  border: 1px solid var(--color-5);
+}
 
 .scaffold-topbar {
   background-color: #151515;

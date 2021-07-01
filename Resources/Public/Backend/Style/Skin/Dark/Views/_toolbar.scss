@@ -1,6 +1,12 @@
 .svg-toolbar {
   background-color: var(--color-2);
   border-bottom: 1px solid var(--color-4);
+  .svg-toolbar__drag-node {
+    border: 1px solid transparent;
+    &:hover {
+      border: 1px solid var(--color-5);
+    }
+  }
 }
 
 .scaffold-topbar {
