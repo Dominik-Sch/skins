@@ -9,7 +9,7 @@
 }
 
 .btn-default {
-  color: white;
+  color: var(--color-5);
   border-color: var(--color-6);
   background: transparent;
 }
@@ -36,6 +36,16 @@
   color: var(--color-5);
 }
 .btn-link:focus, .btn-link:hover {
+  color: var(--color-5);
+}
+
+.btn:hover, .btn:focus, .btn.focus,
+.btn:hover,
+.btn:focus,
+.btn.focus,
+.btn:hover,
+.btn:focus,
+.btn.focus {
   color: var(--color-5);
 }
 
@@ -95,6 +105,62 @@ h1 {
 .c3template-be-table table caption {
   caption-side: bottom;
   color: var(--color-5);
+}
+
+.powermail_listbe_details_container:hover .powermail_listbe_details_dl {
+  background-color: transparent;
+}
+
+.lux .btn-primary {
+  background-color: var(--color-2);
+  border-color: var(--color-6);
+  color: var(--color-5);
+}
+.lux .btn-primary:hover {
+  background-color: var(--color-8);
+  border-color: var(--color-5);
+  color: var(--color-1);
+}
+.lux .input-group-addon {
+  background: transparent;
+}
+.lux .panel-body {
+  border-bottom: none;
+}
+.lux .form-control {
+  background-color: var(--color-2) !important;
+  color: var(--color-5);
+  border: 1px solid var(--color-6);
+}
+.lux input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 25px;
+  background: var(--color-5);
+  outline: none;
+  opacity: 1;
+}
+.lux input[type=range]:hover {
+  opacity: 1;
+}
+.lux input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: var(--color-5);
+  cursor: pointer;
+}
+.lux input[type=range]::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: var(--color-5);
+  cursor: pointer;
+}
+.lux #scoring_label {
+  width: 3ch;
+  display: inline-block;
 }
 
 .callout-danger {
@@ -412,6 +478,13 @@ body .install-tool-modal .panel-version.panel-default > .panel-heading {
 .table .info {
   background: var(--color-8) !important;
   color: var(--color-1) !important;
+}
+.table .btn-default.focus, .table .btn-default:focus,
+.table .btn-default.focus,
+.table .btn-default:focus {
+  color: var(--color-5);
+  background: transparent;
+  border-color: transparent;
 }
 
 .table-hover > tbody > tr:hover {

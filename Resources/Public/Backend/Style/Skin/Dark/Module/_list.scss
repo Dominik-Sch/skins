@@ -66,6 +66,15 @@
     background: var(--color-8) !important;
     color: var(--color-1) !important;
   }
+  .btn-default,
+  .btn-default {
+    &.focus,
+    &:focus {
+      color: var(--color-5);
+      background: transparent;
+      border-color: transparent;
+    }
+  }
 }
 .table-hover > tbody > tr:hover {
   background: var(--color-2);

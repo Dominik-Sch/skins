@@ -1,0 +1,60 @@
+.lux {
+  .btn-primary {
+    background-color: var(--color-2);
+    border-color: var(--color-6);
+    color: var(--color-5);
+
+    &:hover {
+      background-color: var(--color-8);
+      border-color: var(--color-5);
+      color: var(--color-1);
+    }
+  }
+  .input-group-addon {
+    background: transparent;
+  }
+  .panel-body {
+    border-bottom: none;
+  }
+  .form-control {
+    background-color: var(--color-2) !important;
+    color: var(--color-5);
+    border: 1px solid var(--color-6);
+  }
+
+  // slider height
+  $height: 25px;
+
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: $height;
+    background: var(--color-5);
+    outline: none;
+    opacity: 1;
+
+    &:hover {
+      opacity: 1;
+    }
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 25px;
+      height: $height;
+      background: var(--color-5);
+      cursor: pointer;
+    }
+    &::-moz-range-thumb {
+      width: 25px;
+      height: $height;
+      background: var(--color-5);
+      cursor: pointer;
+    }
+  }
+
+  #scoring_label {
+    width: 3ch;
+    display: inline-block;
+  }
+}
