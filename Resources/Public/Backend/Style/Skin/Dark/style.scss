@@ -1,15 +1,27 @@
+/**
+default
+ */
 @import "colors";
 @import "button";
 @import "icons";
 @import "general";
 
+/**
+extensions
+ */
 @import "Extensions/c3template/index";
 @import "Extensions/powermail/index";
 @import "Extensions/lux/index";
-
+ 
+/**
+general
+ */
 @import "General/notifications";
 @import "General/scrollbar";
 
+/**
+modules
+ */
 @import "Module/access";
 @import "Module/backend-users";
 @import "Module/ckeditor";
@@ -21,6 +33,9 @@
 @import "Module/install-tool";
 @import "Module/list";
 
+/**
+views
+ */
 @import "Views/callout";
 @import "Views/configuration";
 @import "Views/context-menu";
