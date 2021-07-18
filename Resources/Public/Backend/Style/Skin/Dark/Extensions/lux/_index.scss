@@ -57,4 +57,22 @@
     width: 3ch;
     display: inline-block;
   }
+  &-pageoverview-box {
+    background: var(--color-2) !important;
+  }
+  &-textarea {
+    background: transparent !important;
+  }
+  .img-small,
+  .img-circle {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.timeline {
+  background: transparent !important;
+}
+.lux .table-hover>tbody>tr:hover,
+.lux .table-hover>tbody>tr.lux-action-detail {
+  background: var(--color-2);
 }

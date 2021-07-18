@@ -163,6 +163,26 @@ extensions
   width: 3ch;
   display: inline-block;
 }
+.lux-pageoverview-box {
+  background: var(--color-2) !important;
+}
+.lux-textarea {
+  background: transparent !important;
+}
+.lux .img-small,
+.lux .img-circle {
+  max-width: 100%;
+  height: auto;
+}
+
+.timeline {
+  background: transparent !important;
+}
+
+.lux .table-hover > tbody > tr:hover,
+.lux .table-hover > tbody > tr.lux-action-detail {
+  background: var(--color-2);
+}
 
 /**
 general
