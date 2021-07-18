@@ -1,13 +1,30 @@
-.btn-default {
-  color: var(--color-5);
-  border-color: var(--color-6);
-  background: transparent;
-  &.focus,
+.btn {
+  &:hover,
   &:focus,
-  &:hover {
-    border-color: var(--color-5);
-    background-color: var(--color-2);
+  &.focus {
     color: var(--color-5);
+  }
+  &-default {
+    color: var(--color-5);
+    border-color: var(--color-6);
+    background: transparent;
+    &.focus,
+    &:focus,
+    &:hover {
+      border-color: var(--color-5);
+      background-color: var(--color-2);
+      color: var(--color-5);
+    }
+  }
+  &-notice {
+    background: var(--color-2);
+  }
+  &-link {
+    color: var(--color-5);
+    &:focus,
+    &:hover {
+      color: var(--color-5);
+    }
   }
 }
 .table .btn-default {
@@ -20,20 +37,4 @@
 .open > .btn-default.dropdown-toggle:hover,
 .btn-default:hover:hover {
   color: var(--color-5);
-}
-.btn-link {
-  color: var(--color-5);
-  &:focus,
-  &:hover {
-    color: var(--color-5);
-  }
-}
-.btn,
-.btn,
-.btn {
-  &:hover,
-  &:focus,
-  &.focus {
-    color: var(--color-5);
-  }
 }

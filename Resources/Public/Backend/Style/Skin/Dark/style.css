@@ -11,6 +11,9 @@ default
   --color-8: rgb(253, 195, 0);
 }
 
+.btn:hover, .btn:focus, .btn.focus {
+  color: var(--color-5);
+}
 .btn-default {
   color: var(--color-5);
   border-color: var(--color-6);
@@ -19,6 +22,15 @@ default
 .btn-default.focus, .btn-default:focus, .btn-default:hover {
   border-color: var(--color-5);
   background-color: var(--color-2);
+  color: var(--color-5);
+}
+.btn-notice {
+  background: var(--color-2);
+}
+.btn-link {
+  color: var(--color-5);
+}
+.btn-link:focus, .btn-link:hover {
   color: var(--color-5);
 }
 
@@ -32,23 +44,6 @@ default
 .btn-default:active:hover,
 .open > .btn-default.dropdown-toggle:hover,
 .btn-default:hover:hover {
-  color: var(--color-5);
-}
-
-.btn-link {
-  color: var(--color-5);
-}
-.btn-link:focus, .btn-link:hover {
-  color: var(--color-5);
-}
-
-.btn:hover, .btn:focus, .btn.focus,
-.btn:hover,
-.btn:focus,
-.btn.focus,
-.btn:hover,
-.btn:focus,
-.btn.focus {
   color: var(--color-5);
 }
 
