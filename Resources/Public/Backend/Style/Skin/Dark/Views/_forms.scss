@@ -6,6 +6,10 @@ select {
   border: none;
   option {
     color: var(--color-5);
+    &:hover {
+      background: var(--color-8);
+      color: var(--color-2);
+    }
   }
   optgroup {
     font-weight: 700;

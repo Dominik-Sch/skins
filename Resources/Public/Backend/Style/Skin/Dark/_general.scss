@@ -30,6 +30,11 @@ a:focus, a:hover {
     border-top-color: var(--color-2);
   }
 }
+.callout-notice {
+  background-color: var(--color-2);
+  border-color: var(--color-5);;
+  color: var(--color-5);
+}
 h1 {
   display: block;
   width: 100%;

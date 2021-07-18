@@ -91,6 +91,12 @@ a:focus, a:hover {
   border-top-color: var(--color-2);
 }
 
+.callout-notice {
+  background-color: var(--color-2);
+  border-color: var(--color-5);
+  color: var(--color-5);
+}
+
 h1 {
   display: block;
   width: 100%;
@@ -438,6 +444,13 @@ body textarea.cke_source {
   border-color: transparent;
 }
 
+form[name=statistic] select {
+  border: 1px solid var(--color-6);
+  background: var(--color-2);
+  color: var(--color-5);
+  padding: 5px;
+}
+
 body .install-tool-modal .panel-flat.panel-default > .panel-heading,
 body .install-tool-modal .panel-rst.panel-default > .panel-heading,
 body .install-tool-modal .panel-version.panel-default > .panel-heading {
@@ -650,6 +663,10 @@ select {
 }
 select option {
   color: var(--color-5);
+}
+select option:hover {
+  background: var(--color-8);
+  color: var(--color-2);
 }
 select optgroup {
   font-weight: 700;
