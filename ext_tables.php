@@ -7,6 +7,8 @@ defined('TYPO3_MODE') || die();
  */
 if (TYPO3_MODE == 'BE') {
 
+    $GLOBALS['TBE_STYLES']['skins'][$_EXTKEY]['stylesheetDirectories'][] = 'EXT:skins/Resources/Public/Backend/ToolbarMenu';
+
     $GLOBALS['TYPO3_USER_SETTINGS']['columns']['tx_skins_darkmode'] = [
         'label' => 'Darkmode',
         'type' => 'check',

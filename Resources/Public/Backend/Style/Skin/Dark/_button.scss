@@ -38,3 +38,8 @@
 .btn-default:hover:hover {
   color: var(--color-5);
 }
+.icon-spinner-circle-dark {
+  svg {
+    filter: invert(1);
+  }
+}

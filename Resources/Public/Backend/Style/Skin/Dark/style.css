@@ -47,6 +47,10 @@ default
   color: var(--color-5);
 }
 
+.icon-spinner-circle-dark svg {
+  filter: invert(1);
+}
+
 .icon-color {
   fill: var(--color-5);
 }
@@ -188,6 +192,10 @@ extensions
 .lux .table-hover > tbody > tr:hover,
 .lux .table-hover > tbody > tr.lux-action-detail {
   background: var(--color-2);
+}
+
+#dceConfigurationWizard select {
+  background-color: var(--color-2);
 }
 
 /**
@@ -734,6 +742,11 @@ body .pagination > .disabled > span:hover {
 body .pagination > li > span, body .pagination > li > a {
   background-color: var(--color-4);
   color: var(--color-5);
+  border: transparent;
+}
+body .pagination > li > span:focus, body .pagination > li > span:hover, body .pagination > li > span:focus, body .pagination > li > span:hover, body .pagination > li > a:focus, body .pagination > li > a:hover, body .pagination > li > a:focus, body .pagination > li > a:hover {
+  color: var(--color-5);
+  background-color: var(--color-2);
   border: transparent;
 }
 body .pagination > li.disabled {

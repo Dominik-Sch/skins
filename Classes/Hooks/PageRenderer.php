@@ -13,6 +13,20 @@ class PageRenderer implements SingletonInterface {
      */
     public function darkmode($params, &$pageRenderer)
     {
+
+        /**
+         * add jquery color picker files to pageRenderer
+         */
+        $pageRenderer->addCssFile('EXT:skins/Resources/Public/Libs/Color-Picker/jquery.minicolors.css');
+        $pageRenderer->addRequireJsConfiguration([
+            'paths' => [
+                'colorpicker-lib' => '/typo3conf/ext/skins/Resources/Public/Libs/Color-Picker/jquery.minicolors.min.js',
+            ],
+            'shim' => [
+                'colorpicker-lib' => ['jquery'],
+            ],
+        ]);
+
         if ($GLOBALS['BE_USER']->uc['tx_skins_darkmode'] === 1) {
 
             /**
