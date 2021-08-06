@@ -58,7 +58,7 @@ class Darkmode implements ToolbarItemInterface {
                     </span>
                 </span>
             </span>
-            <span class="toolbar-item-title">Bookmarks</span>
+            <span class="toolbar-item-title">Custom Skin Settings</span>
         </span>';
     }
 
