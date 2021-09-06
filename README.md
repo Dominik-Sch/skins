@@ -7,7 +7,7 @@ TYPO3 Backend Skins
 
 
 ### Usage
-1. Click on your account (in the backend, top right)
-2. Click on "User Settings"
-3. In the "Skins" tab activate the skin
-4. Reload your browser window
+1. Click on the paint brush in the top bar
+2. Enable the custom skin toggle
+
+![](Documentation/Resources/skins-be-dropdown.jpg)
