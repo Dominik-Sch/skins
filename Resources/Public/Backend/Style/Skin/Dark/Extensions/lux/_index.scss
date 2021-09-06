@@ -76,3 +76,11 @@
 .lux .table-hover>tbody>tr.lux-action-detail {
   background: var(--color-2);
 }
+
+.module-body {
+  div[data-lux-toggle-target] {
+    > .row {
+      background-color: transparent !important;
+    }
+  }
+}

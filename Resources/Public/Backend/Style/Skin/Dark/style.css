@@ -194,6 +194,10 @@ extensions
   background: var(--color-2);
 }
 
+.module-body div[data-lux-toggle-target] > .row {
+  background-color: transparent !important;
+}
+
 #dceConfigurationWizard select {
   background-color: var(--color-2);
 }
