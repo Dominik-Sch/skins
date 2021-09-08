@@ -38,6 +38,7 @@ default
   color: var(--color-5);
   background-color: var(--color-4);
   border-color: var(--color-4);
+  box-shadow: none;
 }
 
 .btn-default.active:hover,
@@ -384,6 +385,10 @@ body textarea.cke_source {
   background-color: var(--color-1);
 }
 
+.module.module[data-module-name=dashboard] {
+  background-color: transparent;
+}
+
 .extension-list .inactive {
   background: var(--color-2) !important;
   opacity: 0.5;
@@ -488,6 +493,7 @@ body .install-tool-modal .panel-version.panel-default > .panel-heading {
 .table-striped > tbody > tr:nth-of-type(odd) {
   background: var(--color-4);
   color: var(--color-5);
+  --bs-table-accent-bg: rgb(0 0 0 / 0%);
 }
 .table-striped > tbody > tr:nth-of-type(odd):hover {
   background: var(--color-2);
@@ -512,6 +518,13 @@ body .install-tool-modal .panel-version.panel-default > .panel-heading {
 }
 
 .table {
+  background: var(--color-4);
+}
+.table > :not(:last-child) > :last-child > * {
+  background: var(--color-4);
+  color: var(--color-5);
+}
+.table > :not(caption) > * > * {
   background: var(--color-4);
 }
 .table tbody > tr.success > td, .table tbody > tr.success th, .table tfoot > tr.success > td, .table tfoot > tr.success th, .table thead > tr.success > td, .table thead > tr.success th {
@@ -546,6 +559,27 @@ body .install-tool-modal .panel-version.panel-default > .panel-heading {
 
 .table-hover > tbody > tr:hover {
   background: var(--color-2);
+}
+
+.recordlist .recordlist-heading {
+  background-color: var(--color-2);
+}
+
+.nav-tabs > li > a.nav-link.active,
+.nav.nav-tabs > li:not(.nav-item) > a.active:not(.nav-link) {
+  border: 1px solid var(--color-6);
+  border-bottom-color: var(--color-4);
+  background-color: var(--color-4);
+  color: var(--color-5);
+}
+
+.nav-tabs > li > a.nav-link, .nav.nav-tabs > li:not(.nav-item) > a:not(.nav-link) {
+  color: var(--color-5);
+}
+
+.nav-tabs > li > a.nav-link:focus, .nav-tabs > li > a.nav-link:hover, .nav.nav-tabs > li:not(.nav-item) > a:focus:not(.nav-link), .nav.nav-tabs > li:not(.nav-item) > a:hover:not(.nav-link) {
+  background: var(--color-4);
+  color: white;
 }
 
 /**
@@ -698,10 +732,21 @@ select optgroup option {
   margin-top: 0;
 }
 
-.form-control {
+.form-control, .form-select {
   background-color: var(--color-2) !important;
   color: var(--color-5);
   border: 1px solid var(--color-6);
+}
+.form-control:focus, .form-select:focus {
+  color: var(--color-5);
+  background-color: var(--color-2) !important;
+  border-color: var(--color-6);
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-select {
+  background-image: url("/typo3conf/ext/skins/Resources/Public/Backend/Style/Skin/Dark/Icons/actions-chevron-down.svg");
 }
 
 .form-control[disabled],
@@ -895,6 +940,7 @@ body {
   color: var(--color-5);
 }
 
+.scaffold-content-navigation-component .navigation-tree-container,
 [id=ext-backend-Modules-FileSystemNavigationFrame-index-php],
 [id=ext-backend-Modules-FileSystemNavigationFrame-index-php] .module-body,
 [id=typo3-pagetree-treeContainer] {

@@ -18,7 +18,7 @@ extensions
 general
  */
 @import "General/notifications";
-@import "General/scrollbar";
+@import "General/scrollbar"; 
 
 /**
 modules
@@ -35,6 +35,7 @@ modules
 @import "Module/install-tool";
 @import "Module/list";
 @import "Module/recycler";
+@import "Module/tabs";
 
 /**
 views

@@ -2,7 +2,26 @@
     "name": "rubb1/skins",
     "type": "typo3-cms-extension",
     "description": "This extension add a dark skin / dark mode to the TYPO3 backend. You can also change the colors to your favourite ones.",
-    "version": "10.4.27",
+    "version": "10.4.28",
+    "keywords": [
+        "TYPO3",
+        "extension",
+        "backend",
+        "skin",
+        "dark",
+        "mode",
+        "darkmode",
+        "custom",
+        "save-and-close"
+    ],
+    "homepage": "https://www.myc3.com/",
+    "authors": [
+        {
+            "name": "Dominik Schüßler",
+            "role": "Developer",
+            "homepage": "https://www.myc3.com/"
+        }
+    ],
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -10,10 +29,13 @@
         }
     },
     "require": {
-        "typo3/cms-core": ">=10.4 <11"
+        "typo3/cms-core": ">=10.4 <=11.5"
     },
     "extra": {
+        "tags": "Stable, PHP 7.2, PHP 7.3, PHP 7.4, PHP 8.0, TYPO3 9.5, TYPO3 10.4, TYPO3 11.5, English, OpenSource, Free, TER",
         "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": ".Build/Web",
             "extension-key": "skins"
         }
     }

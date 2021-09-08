@@ -27,3 +27,6 @@
 .widget-table tr:nth-child(even) {
   background-color: var(--color-1);
 }
+.module.module[data-module-name="dashboard"] {
+  background-color: transparent;
+}

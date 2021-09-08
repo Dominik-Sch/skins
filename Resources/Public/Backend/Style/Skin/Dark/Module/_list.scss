@@ -13,6 +13,7 @@
 .table-striped>tbody>tr:nth-of-type(odd) {
   background: var(--color-4);
   color: var(--color-5);
+  --bs-table-accent-bg: rgb(0 0 0 / 0%);
   &:hover {
     background: var(--color-2);
     td, th {
@@ -35,7 +36,13 @@
 }
 .table {
   background: var(--color-4);
-
+  > :not(:last-child) > :last-child > * {
+    background: var(--color-4);
+    color: var(--color-5);
+  }
+  >:not(caption)>*>* {
+    background: var(--color-4);
+  }
   tbody, tfoot, thead {
     > tr {
       &.success {
@@ -78,4 +85,8 @@
 }
 .table-hover > tbody > tr:hover {
   background: var(--color-2);
+}
+
+.recordlist .recordlist-heading {
+  background-color: var(--color-2);
 }
