@@ -29,7 +29,7 @@
         }
     },
     "require": {
-        "typo3/cms-core": ">=10.4 <=11.5"
+        "typo3/cms-core": "^10.4"
     },
     "extra": {
         "tags": "Stable, PHP 7.2, PHP 7.3, PHP 7.4, PHP 8.0, TYPO3 9.5, TYPO3 10.4, TYPO3 11.5, English, OpenSource, Free, TER",
