@@ -32,7 +32,7 @@ class PageRenderer implements SingletonInterface {
             /**
              * add skin file to pageRenderer
              */
-            $pageRenderer->addCssFile('EXT:skins/Resources/Public/Backend/Style/Skin/Dark/style.css');
+            $pageRenderer->addCssFile('EXT:skins/Resources/Public/Backend/Style/Skin/Dark/style.min.css');
 
             /**
              * generate css block with be user css variables
