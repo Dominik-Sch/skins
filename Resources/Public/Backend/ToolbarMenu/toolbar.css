@@ -105,6 +105,7 @@
 }
 .toolbar-list #rubb1-skins-toolbar-darkmode .color-picker-wrap label {
   font-weight: normal;
+  width: 100%;
 }
 .toolbar-list #rubb1-skins-toolbar-darkmode .checkbox, .toolbar-list #rubb1-skins-toolbar-darkmode .radio {
   position: relative;

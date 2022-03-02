@@ -4,6 +4,11 @@
 .list-group-item {
   background-color: var(--color-4);
   color: var(--color-5);
+  &:hover,
+  &:focus {
+    background-color: var(--color-2) !important;
+    color: var(--color-5) !important;
+  }
 }
 a.list-group-item,
 button.list-group-item {

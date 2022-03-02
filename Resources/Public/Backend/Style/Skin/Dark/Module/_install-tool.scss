@@ -7,3 +7,22 @@ body {
   }
 }
 
+//iframe#typo3-contentIframe.scaffold-content-module-iframe {
+//  background-color: var(--color-4);
+//}
+
+/*tools settings Configure Installation-Wide Options*/
+.install-tool-modal .item .item-heading {
+  background-color: var(--color-2);
+}
+/*tools settings Feature Toggles*/
+.card {
+  background-color: transparent;
+}
+/*install-tool-modal phpinfo*/
+.install-tool-modal #phpinfo table {
+  width: 100%;
+  table-layout: fixed;
+  word-wrap: break-word;
+  background: transparent;
+}
