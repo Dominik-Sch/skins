@@ -13,6 +13,7 @@ extensions
 @import "Extensions/powermail/index";
 @import "Extensions/lux/index";
 @import "Extensions/dce/index";
+@import "Extensions/mask/index";
 
 /**
 general
@@ -31,11 +32,13 @@ modules
 @import "Module/extensionlist";
 @import "Module/filelist";
 @import "Module/forms";
+@import "Module/help";
 @import "Module/indexedsearch";
 @import "Module/install-tool";
 @import "Module/list";
 @import "Module/recycler";
 @import "Module/tabs";
+@import "Module/site";
 
 /**
 views
@@ -46,6 +49,7 @@ views
 @import "Views/edit";
 @import "Views/forms";
 @import "Views/grid";
+@import "Views/login";
 @import "Views/modal-iframe";
 @import "Views/module";
 @import "Views/pagetree";

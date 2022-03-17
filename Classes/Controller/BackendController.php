@@ -64,13 +64,13 @@ class BackendController
     {
         $skinsDataArray = [];
         $skinsDataArray['tx_skins_darkmode'] = $GLOBALS['BE_USER']->uc['tx_skins_darkmode'];
-        $skinsDataArray['tx_skins_custom_color_1'] = $GLOBALS['BE_USER']->uc['tx_skins_custom_color_1'];
-        $skinsDataArray['tx_skins_custom_color_2'] = $GLOBALS['BE_USER']->uc['tx_skins_custom_color_2'];
-        $skinsDataArray['tx_skins_custom_color_4'] = $GLOBALS['BE_USER']->uc['tx_skins_custom_color_4'];
-        $skinsDataArray['tx_skins_custom_color_5'] = $GLOBALS['BE_USER']->uc['tx_skins_custom_color_5'];
-        $skinsDataArray['tx_skins_custom_color_6'] = $GLOBALS['BE_USER']->uc['tx_skins_custom_color_6'];
-        $skinsDataArray['tx_skins_custom_color_7'] = $GLOBALS['BE_USER']->uc['tx_skins_custom_color_7'];
-        $skinsDataArray['tx_skins_custom_color_8'] = $GLOBALS['BE_USER']->uc['tx_skins_custom_color_8'];
+        $skinsDataArray['tx_skins_custom_color_1'] = $GLOBALS['BE_USER']->uc['tx_skins_custom_color_1'] != null ? $GLOBALS['BE_USER']->uc['tx_skins_custom_color_1'] : "rgba(21, 21, 21, 1)";
+        $skinsDataArray['tx_skins_custom_color_2'] = $GLOBALS['BE_USER']->uc['tx_skins_custom_color_2'] != null ? $GLOBALS['BE_USER']->uc['tx_skins_custom_color_2'] : "rgba(41, 41, 41, 1)";
+        $skinsDataArray['tx_skins_custom_color_4'] = $GLOBALS['BE_USER']->uc['tx_skins_custom_color_4'] != null ? $GLOBALS['BE_USER']->uc['tx_skins_custom_color_4'] : "rgba(60, 63, 65, 1)";
+        $skinsDataArray['tx_skins_custom_color_5'] = $GLOBALS['BE_USER']->uc['tx_skins_custom_color_5'] != null ? $GLOBALS['BE_USER']->uc['tx_skins_custom_color_5'] : "rgba(245, 245, 245, 1)";
+        $skinsDataArray['tx_skins_custom_color_6'] = $GLOBALS['BE_USER']->uc['tx_skins_custom_color_6'] != null ? $GLOBALS['BE_USER']->uc['tx_skins_custom_color_6'] : "rgba(245, 245, 245, 0.3)";
+        $skinsDataArray['tx_skins_custom_color_7'] = $GLOBALS['BE_USER']->uc['tx_skins_custom_color_7'] != null ? $GLOBALS['BE_USER']->uc['tx_skins_custom_color_7'] : "rgba(31, 31, 31, 1)";
+        $skinsDataArray['tx_skins_custom_color_8'] = $GLOBALS['BE_USER']->uc['tx_skins_custom_color_8'] != null ? $GLOBALS['BE_USER']->uc['tx_skins_custom_color_8'] : "rgba(253, 195, 0, 1)";
 
         $data = ['result' => $skinsDataArray];
 

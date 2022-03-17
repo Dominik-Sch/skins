@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="EXT:skins/Resources/Private/Language/locallang.xlf" date="2022-03-01T20:00:00Z" product-name="skins">
+        <header/>
+        <body>
+            <!-- item -->
+            <trans-unit id="tx_skins.toolbar.item.title">
+                <source>TYPO3 skin settings</source>
+            </trans-unit>
+
+            <!-- dropdown -->
+            <trans-unit id="tx_skins.toolbar.dropdown.headline">
+                <source>TYPO3 skin settings</source>
+            </trans-unit>
+            <trans-unit id="tx_skins.toolbar.dropdown.save">
+                <source>Save</source>
+            </trans-unit>
+            <trans-unit id="tx_skins.toolbar.dropdown.toggle_custom_skin">
+                <source>Toggle custom skin</source>
+            </trans-unit>
+            <trans-unit id="tx_skins.toolbar.dropdown.color_background_special">
+                <source>Special background color</source>
+            </trans-unit>
+            <trans-unit id="tx_skins.toolbar.dropdown.color_select">
+                <source>Selection color</source>
+            </trans-unit>
+            <trans-unit id="tx_skins.toolbar.dropdown.color_content_background">
+                <source>Content background color</source>
+            </trans-unit>
+            <trans-unit id="tx_skins.toolbar.dropdown.color_text">
+                <source>Text color</source>
+            </trans-unit>
+            <trans-unit id="tx_skins.toolbar.dropdown.color_border">
+                <source>Border color</source>
+            </trans-unit>
+            <trans-unit id="tx_skins.toolbar.dropdown.color_background_scaffold_modulemenu">
+                <source>Module menu background color</source>
+            </trans-unit>
+            <trans-unit id="tx_skins.toolbar.dropdown.color_special">
+                <source>Special color</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

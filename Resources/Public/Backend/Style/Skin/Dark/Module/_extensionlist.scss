@@ -16,3 +16,12 @@
     width: 24px;
   }
 }
+/*Extension manager table and Template table and Info table...*/
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+  --bs-table-accent-bg: var(--bs-table-striped-bg);
+  color: var(--color-5);
+}
+.table-hover>tbody>tr:hover>* {
+  --bs-table-accent-bg: var(--bs-table-hover-bg);
+  color: var(--color-5);
+}

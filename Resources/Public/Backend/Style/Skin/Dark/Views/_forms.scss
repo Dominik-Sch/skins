@@ -105,3 +105,11 @@ body {
     }
   }
 }
+
+/*multi select in Manage System Maintainers (Settings)*/
+.form-group .chosen-container .chosen-choices {
+  background-color: var(--color-2);
+  +.chosen-drop .chosen-results {
+    background-color: var(--color-2);
+  }
+}
