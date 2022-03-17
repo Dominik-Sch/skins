@@ -24,3 +24,10 @@ All notable changes to this project will be documented in the [Changelog](CHANGE
 2. Choose your skin and enabled it by clicking on the toggle button
 
     <br><img src="Documentation/Resources/skins-be-dropdown.jpg" height="500px">
+
+## Features planned 
+- load default color settings
+- create and save configurations in different slots
+- export / import color configurations
+- create new color configurations
+- create new skin option => clean backend interface
