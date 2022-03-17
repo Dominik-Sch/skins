@@ -203,6 +203,11 @@ extensions
   background-color: var(--color-2);
 }
 
+/*MASK BACKEND*/
+.mask-footer {
+  background-color: transparent;
+}
+
 /**
 general
  */
@@ -407,6 +412,17 @@ body textarea.cke_source {
   width: 24px;
 }
 
+/*Extension manager table and Template table and Info table...*/
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-accent-bg: var(--bs-table-striped-bg);
+  color: var(--color-5);
+}
+
+.table-hover > tbody > tr:hover > * {
+  --bs-table-accent-bg: var(--bs-table-hover-bg);
+  color: var(--color-5);
+}
+
 [id=ext-backend-Modules-FileSystemNavigationFrame-index-php] .list-tree li:last-child:before, [id=ext-backend-Modules-FileSystemNavigationFrame-index-php] .list-tree-control > .fa:before {
   background: transparent;
 }
@@ -461,6 +477,10 @@ body textarea.cke_source {
   border-color: transparent;
 }
 
+table.table.panel-table td {
+  color: var(--color-5);
+}
+
 form[name=statistic] select {
   border: 1px solid var(--color-6);
   background: var(--color-2);
@@ -473,6 +493,24 @@ body .install-tool-modal .panel-rst.panel-default > .panel-heading,
 body .install-tool-modal .panel-version.panel-default > .panel-heading {
   background: var(--color-4);
   color: var(--color-5);
+}
+
+/*tools settings Configure Installation-Wide Options*/
+.install-tool-modal .item .item-heading {
+  background-color: var(--color-2);
+}
+
+/*tools settings Feature Toggles*/
+.card {
+  background-color: transparent;
+}
+
+/*install-tool-modal phpinfo*/
+.install-tool-modal #phpinfo table {
+  width: 100%;
+  table-layout: fixed;
+  word-wrap: break-word;
+  background: transparent;
 }
 
 .panel-default > .panel-heading {
@@ -582,6 +620,10 @@ body .install-tool-modal .panel-version.panel-default > .panel-heading {
   color: white;
 }
 
+button.form-irre-header-cell.form-irre-header-button {
+  color: var(--color-5);
+}
+
 /**
 views
  */
@@ -623,6 +665,10 @@ views
 .list-group-item {
   background-color: var(--color-4);
   color: var(--color-5);
+}
+.list-group-item:hover, .list-group-item:focus {
+  background-color: var(--color-2) !important;
+  color: var(--color-5) !important;
 }
 
 a.list-group-item,
@@ -698,6 +744,11 @@ code {
 .icon-list img {
   width: 16px;
   height: auto;
+}
+
+/*Categories*/
+.tree-toolbar.btn-toolbar {
+  background-color: var(--color-2);
 }
 
 input {
@@ -802,6 +853,14 @@ body .pagination > li.disabled {
   background-color: var(--color-4);
 }
 
+/*multi select in Manage System Maintainers (Settings)*/
+.form-group .chosen-container .chosen-choices {
+  background-color: var(--color-2);
+}
+.form-group .chosen-container .chosen-choices + .chosen-drop .chosen-results {
+  background-color: var(--color-2);
+}
+
 .t3-grid-cell {
   background-color: var(--color-2);
   border-bottom: 1px solid var(--color-2);
@@ -843,6 +902,11 @@ a {
 }
 a:hover {
   color: var(--color-5);
+}
+
+/*MFA > LOGIN PAGE*/
+.card.card-login.card-mfa {
+  background-color: var(--color-4);
 }
 
 body {
@@ -957,6 +1021,10 @@ path.chevron {
 }
 path.chevron.expanded {
   fill: var(--color-5) !important;
+}
+
+.scaffold-content-navigation-switcher {
+  background-color: var(--color-1) !important;
 }
 
 #typo3-dblist-search .panel {
