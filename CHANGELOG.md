@@ -6,7 +6,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-[//]: # (## [10.5.0] - 2022-03-02)
+## [10.5.2] - 2022-05-26
+### Changed
+- Update styles for the mask extension module
+- Verify access to the user configuration to prevent possible errors
+- Change the flush cache icon styling
+
+## [10.5.1] - 2022-03-18
+### Changed
+- Update README.md
+
+### Fixed
+- Fix version number
+- Fix css styles
+
+## [10.5.0] - 2022-03-18
 ### Added
 - Create .gitignore
 - Add localization support
@@ -23,7 +37,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [10.4.28] - 2021-10-07
 
-[Unreleased]: https://github.com/Dominik-Sch/skins/compare/v10.4.28...HEAD
-
-[//]: # ([10.5.0]: https://github.com/Dominik-Sch/skins/compare/v10.4.28...10.5.0)
+[Unreleased]: https://github.com/Dominik-Sch/skins/compare/v10.5.2...HEAD
+[10.5.2]: https://github.com/Dominik-Sch/skins/compare/v10.5.1...10.5.2
+[10.5.1]: https://github.com/Dominik-Sch/skins/compare/v10.5.0...10.5.1
+[10.5.0]: https://github.com/Dominik-Sch/skins/compare/v10.4.28...10.5.0
 [10.4.28]: https://github.com/Dominik-Sch/skins/releases/tag/v10.4.28

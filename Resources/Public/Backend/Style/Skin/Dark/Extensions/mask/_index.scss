@@ -28,6 +28,11 @@
 .mask-elements__column, .mask-fields, .mask-field-form {
     background-color: var(--color-4);
 }
+.mask-field-form {
+    .text-muted {
+        color: var(--color-5) !important;
+    }
+}
 .mask-elements__table tr {
     color: var(--color-5);
 }
