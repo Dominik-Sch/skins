@@ -1,3 +1,8 @@
 .icon-color {
   fill: var(--color-5);
 }
+.toolbar-cache-flush-action {
+  .icon-color {
+    fill: currentColor;
+  }
+}
