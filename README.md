@@ -1,7 +1,7 @@
 <div align="center" >
     <img src="Resources/Public/Icon/Extension.svg" width="120px" height="120px" alt="Skins" title="TYPO3 extension skins" style="margin: 0 auto;">
 
-# TYPO3 extension *skins*
+# TYPO3 extension `skins`
 
 [![release](https://img.shields.io/github/v/release/Dominik-Sch/skins?sort=semver)](https://github.com/Dominik-Sch/skins/releases/latest)
 [![TYPO3](https://img.shields.io/badge/TYPO3-v11-ff8700)](https://typo3.org/)
