@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [10.5.3] - 2022-10-19
+### Fixed
+- Fix access to possibly undefined array key (fixes #5)
+
 ## [10.5.2] - 2022-05-26
 ### Changed
 - Update styles for the mask extension module
@@ -37,7 +41,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [10.4.28] - 2021-10-07
 
-[Unreleased]: https://github.com/Dominik-Sch/skins/compare/v10.5.2...HEAD
+[Unreleased]: https://github.com/Dominik-Sch/skins/compare/v10.5.3...HEAD
+[10.5.3]: https://github.com/Dominik-Sch/skins/compare/v10.5.2...10.5.3
 [10.5.2]: https://github.com/Dominik-Sch/skins/compare/v10.5.1...10.5.2
 [10.5.1]: https://github.com/Dominik-Sch/skins/compare/v10.5.0...10.5.1
 [10.5.0]: https://github.com/Dominik-Sch/skins/compare/v10.4.28...10.5.0
