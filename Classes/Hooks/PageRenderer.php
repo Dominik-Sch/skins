@@ -28,7 +28,7 @@ class PageRenderer implements SingletonInterface {
         ]);
 
         // Verify access to the user configuration
-        if ($GLOBALS['BE_USER']->uc != null && $GLOBALS['BE_USER']->uc['tx_skins_darkmode'] === 1) {
+        if ($GLOBALS['BE_USER']->uc != null && array_key_exists('tx_skins_darkmode', $GLOBALS['BE_USER']->uc) && $GLOBALS['BE_USER']->uc['tx_skins_darkmode'] === 1) {
 
             /**
              * add skin file to pageRenderer
