@@ -1,0 +1,14 @@
+services:
+  # general settings
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Rubb1\Skins\:
+    resource: '../Classes/*'
+
+  Rubb1\Skins\EventListener\ModifyButtonBarEventListener:
+    tags:
+      - name: event.listener
+        identifier: 'skins/modifyButtonBar'

@@ -96,70 +96,41 @@ define([
             .get()
             .then(async function (response) {
                 const resolved = await response.resolve();
+                const settingsObject = JSON.parse(resolved.result.tx_skins_dark_mode_settings);
 
-                // set variables
-                let color1 = resolved.result['tx_skins_custom_color_1'],
-                    color2 = resolved.result['tx_skins_custom_color_2'],
-                    color4 = resolved.result['tx_skins_custom_color_4'],
-                    color5 = resolved.result['tx_skins_custom_color_5'],
-                    color6 = resolved.result['tx_skins_custom_color_6'],
-                    color7 = resolved.result['tx_skins_custom_color_7'],
-                    color8 = resolved.result['tx_skins_custom_color_8'],
-                    customSkinStatus = resolved.result['tx_skins_darkmode'];
+                let skinsToolbar = $(extension);
 
-                let skinsToolbar = $('#rubb1-skins-toolbar-darkmode');
-
-                // custom skin checkbox
-                if (customSkinStatus) {
-                    skinsToolbar.find('#custom-skin').trigger('click');
-                    skinsToolbar.find('#custom-skin').val(1);
-                } else {
-                    skinsToolbar.find('#custom-skin').val(0);
+                for (const key in settingsObject) {
+                    // set color
+                    skinsToolbar.find('.'+key+' input').val(settingsObject[key]);
+                    skinsToolbar.find('.'+key+' .minicolors-swatch-color').css('background-color',settingsObject[key]);
                 }
 
-                // color 1
-                skinsToolbar.find('.color-1 input').val(color1);
-                skinsToolbar.find('.color-1 .minicolors-swatch-color').css('background-color',color1);
-
-                // color 2
-                skinsToolbar.find('.color-2 input').val(color2);
-                skinsToolbar.find('.color-2 .minicolors-swatch-color').css('background-color',color2);
-
-                // color 4
-                skinsToolbar.find('.color-4 input').val(color4);
-                skinsToolbar.find('.color-4 .minicolors-swatch-color').css('background-color',color4);
-
-                // color 5
-                skinsToolbar.find('.color-5 input').val(color5);
-                skinsToolbar.find('.color-5 .minicolors-swatch-color').css('background-color',color5);
-
-                // color 6
-                skinsToolbar.find('.color-6 input').val(color6);
-                skinsToolbar.find('.color-6 .minicolors-swatch-color').css('background-color',color6);
-
-                // color 7
-                skinsToolbar.find('.color-7 input').val(color7);
-                skinsToolbar.find('.color-7 .minicolors-swatch-color').css('background-color',color7);
-
-                // color 8
-                skinsToolbar.find('.color-8 input').val(color8);
-                skinsToolbar.find('.color-8 .minicolors-swatch-color').css('background-color',color8);
+                skinsToolbar.find('#tx_skins_active').val(0);
+                // custom skin checkbox
+                if (resolved.result.tx_skins_active > 0) {
+                    skinsToolbar.find('#tx_skins_active').trigger('click');
+                    skinsToolbar.find('#tx_skins_active').val(1);
+                }
             });
     });
 
     // save color settings to be user
     $('.save-skin-settings').click(function () {
         require(['TYPO3/CMS/Core/Ajax/AjaxRequest'], function (AjaxRequest) {
-            let settingsArray = [];
-            $('#rubb1-skins-toolbar-darkmode input').each(function(){
+            let settingsArray = {};
+            $('#rubb1-skins-toolbar-darkmode .colorpicker-input').each(function(){
                 settingsArray[$(this).attr('id')] = $(this).val();
             })
+            let requestArray = [];
+            requestArray['tx_skins_active'] = $('#rubb1-skins-toolbar-darkmode #tx_skins_active').val();
+            requestArray['tx_skins_dark_mode_settings'] = JSON.stringify(settingsArray);
             new AjaxRequest(TYPO3.settings.ajaxUrls.save_settings)
-                .withQueryArguments({input: settingsArray})
+                .withQueryArguments({input: requestArray})
                 .get()
                 .then(async function (response) {
                     const resolved = await response.resolve();
-                    if (resolved['result']) {
+                    if (resolved.result) {
                         location.reload();
                     }
                 });

@@ -1,17 +1,21 @@
 <?php
+
 namespace Rubb1\Skins\Toolbar;
 
 use TYPO3\CMS\Backend\Toolbar\ToolbarItemInterface;
 use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Extbase\Mvc\Exception\InvalidExtensionNameException;
 use TYPO3\CMS\Fluid\View\StandaloneView;
 
-class Darkmode implements ToolbarItemInterface {
+class Darkmode implements ToolbarItemInterface
+{
 
     /**
      * Constructs the Clock toolbar item
      */
-    public function __construct() {
+    public function __construct()
+    {
         $pageRenderer = GeneralUtility::makeInstance(PageRenderer::class);
         $pageRenderer->loadRequireJsModule('TYPO3/CMS/Skins/Darkmode');
     }
@@ -21,7 +25,8 @@ class Darkmode implements ToolbarItemInterface {
      *
      * @return bool
      */
-    public function checkAccess(): bool {
+    public function checkAccess(): bool
+    {
         return TRUE;
     }
 
@@ -29,8 +34,10 @@ class Darkmode implements ToolbarItemInterface {
      * Get the DOM for the ToolbarItem
      *
      * @return string
+     * @throws InvalidExtensionNameException
      */
-    public function getItem(): string {
+    public function getItem(): string
+    {
         return $this->getFluidTemplateObject('Item.html')->render();
     }
 
@@ -39,7 +46,8 @@ class Darkmode implements ToolbarItemInterface {
      *
      * @return bool
      */
-    public function hasDropDown(): bool {
+    public function hasDropDown(): bool
+    {
         return true;
     }
 
@@ -47,8 +55,10 @@ class Darkmode implements ToolbarItemInterface {
      * Get the DOM for the dropdown
      *
      * @return string
+     * @throws InvalidExtensionNameException
      */
-    public function getDropDown(): string {
+    public function getDropDown(): string
+    {
         return $this->getFluidTemplateObject('DropDown.html')->render();
     }
 
@@ -66,8 +76,6 @@ class Darkmode implements ToolbarItemInterface {
         $view = GeneralUtility::makeInstance(StandaloneView::class);
         $view->setTemplateRootPaths(['EXT:skins/Resources/Private/Templates/Backend']);
         $view->setTemplate($templateFilename);
-        $view->getRequest()->setControllerExtensionName('Skins');
-
         return $view;
     }
 
@@ -76,7 +84,8 @@ class Darkmode implements ToolbarItemInterface {
      *
      * @return array
      */
-    public function getAdditionalAttributes(): array {
+    public function getAdditionalAttributes(): array
+    {
         return [];
     }
 
@@ -86,7 +95,8 @@ class Darkmode implements ToolbarItemInterface {
      *
      * @return int
      */
-    public function getIndex(): int {
+    public function getIndex(): int
+    {
         return 0;
     }
 }
