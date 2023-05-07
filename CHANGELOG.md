@@ -6,6 +6,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [11.0.0] - 2023-05-07
+### Changed
+first release for version 12
+
+Breaking changes:
+Changed to a more dynamic generation and save action.
+The old values will not work in the new version, you have to set the desired colors again.
+
+It's not final version yet.
+I have to do some more compatibility checks and tests.
+
 ## [10.5.3] - 2022-10-19
 ### Fixed
 - Fix access to possibly undefined array key (fixes #5)
