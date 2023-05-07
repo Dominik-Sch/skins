@@ -9,7 +9,7 @@
 [![TYPO3](https://img.shields.io/badge/TYPO3-v10-ff8700)](https://typo3.org/)
 [![License](https://img.shields.io/github/license/Dominik-Sch/skins)](LICENSE)
 </div>
-
+ 
 ## Skins
 This extension adds a dark skin (dark theme) to the TYPO3 backend. The colors are customizable and can be changed to your favorite colors.
 
