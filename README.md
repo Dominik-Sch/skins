@@ -1,4 +1,4 @@
-<div align="center" >
+<div style="text-align: center" >
     <img src="Resources/Public/Icon/Extension.svg" width="120px" height="120px" alt="Skins" title="TYPO3 extension skins" style="margin: 0 auto;">
 
 # TYPO3 extension `skins`
@@ -25,6 +25,11 @@ All notable changes to this project will be documented in the [Changelog](CHANGE
 2. Choose your skin and enabled it by clicking on the toggle button
 
     <br><img src="Documentation/Resources/skins-be-dropdown.jpg" height="500px">
+
+## save-and-close
+- You can enable the save-and-close button in the "Extension Configuration (Global Configuration)"
+  - Admin Tools -> Settings -> Configure extensions -> skins -> basic.saveAndCloseEnabled
+  - default value is 0
 
 ## Features planned 
 - load default color settings
