@@ -6,7 +6,6 @@ namespace Rubb1\Skins\Hooks;
 use Rubb1\Skins\Utility\FlexFormUtility;
 use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Core\DataHandling\DataHandler;
-use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 /**
  * hook for fixing flexforms for elements with `saveAndClose` set to `1`
