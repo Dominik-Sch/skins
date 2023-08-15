@@ -10,12 +10,15 @@
       color: var(--color-1);
     }
   }
+
   .input-group-addon {
     background: transparent;
   }
+
   .panel-body {
     border-bottom: none;
   }
+
   .form-control {
     background-color: var(--color-2) !important;
     color: var(--color-5);
@@ -37,6 +40,7 @@
     &:hover {
       opacity: 1;
     }
+
     &::-webkit-slider-thumb {
       -webkit-appearance: none;
       appearance: none;
@@ -45,6 +49,7 @@
       background: var(--color-5);
       cursor: pointer;
     }
+
     &::-moz-range-thumb {
       width: 25px;
       height: $height;
@@ -57,23 +62,28 @@
     width: 3ch;
     display: inline-block;
   }
+
   &-pageoverview-box {
     background: var(--color-2) !important;
   }
+
   &-textarea {
     background: transparent !important;
   }
+
   .img-small,
   .img-circle {
     max-width: 100%;
     height: auto;
   }
 }
+
 .timeline {
   background: transparent !important;
 }
-.lux .table-hover>tbody>tr:hover,
-.lux .table-hover>tbody>tr.lux-action-detail {
+
+.lux .table-hover > tbody > tr:hover,
+.lux .table-hover > tbody > tr.lux-action-detail {
   background: var(--color-2);
 }
 

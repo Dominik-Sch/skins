@@ -1,61 +1,77 @@
-.panel-default>.panel-heading {
+.panel-default > .panel-heading {
   background-color: var(--color-2);
   border-color: var(--color-6);
   color: var(--color-5);
 }
-.panel-hover .panel-default:hover>.panel-heading {
+
+.panel-hover .panel-default:hover > .panel-heading {
   background-color: var(--color-2);
 }
-.table>thead>tr {
+
+.table > thead > tr {
   background: var(--color-4);
   color: var(--color-5);
 }
-.table-striped>tbody>tr:nth-of-type(odd) {
+
+.table-striped > tbody > tr:nth-of-type(odd) {
   background: var(--color-4);
   color: var(--color-5);
   --bs-table-accent-bg: rgb(0 0 0 / 0%);
+
   &:hover {
     background: var(--color-2);
+
     td, th {
       background: var(--color-2);
     }
   }
 }
-.table-striped>tbody>tr:nth-of-type(even) {
+
+.table-striped > tbody > tr:nth-of-type(even) {
   background: var(--color-4);
   color: var(--color-5);
+
   &:hover {
     background: var(--color-2);
+
     td, th {
       background: var(--color-2);
     }
   }
 }
+
 .table-fit {
   border: none;
 }
+
 .table {
   background: var(--color-4);
+
   > :not(:last-child) > :last-child > * {
     background: var(--color-4);
     color: var(--color-5);
   }
-  >:not(caption)>*>* {
+
+  > :not(caption) > * > * {
     background: var(--color-4);
   }
+
   tbody, tfoot, thead {
     > tr {
       &.success {
         > td, th {
           background: transparent;
+
           &:hover {
             background: var(--color-2);
           }
         }
       }
+
       > td, th {
         &.success {
           background: transparent;
+
           &:hover {
             background: var(--color-2);
           }
@@ -63,16 +79,20 @@
       }
     }
   }
+
   .warning {
-    background: rgb(193,125,0) !important;
+    background: rgb(193, 125, 0) !important;
   }
+
   .danger {
-    background: rgb(156,0,0) !important;
+    background: rgb(156, 0, 0) !important;
   }
+
   .info {
     background: var(--color-8) !important;
     color: var(--color-1) !important;
   }
+
   .btn-default,
   .btn-default {
     &.focus,
@@ -83,6 +103,7 @@
     }
   }
 }
+
 .table-hover > tbody > tr:hover {
   background: var(--color-2);
 }

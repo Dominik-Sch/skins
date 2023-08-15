@@ -2,7 +2,7 @@
 default
  */
 :root {
-  --color-1: rgb(21, 21,21);
+  --color-1: rgb(21, 21, 21);
   --color-2: rgb(41, 41, 41);
   --color-4: rgb(60, 63, 65);
   --color-5: rgb(245, 245, 245);
@@ -744,6 +744,10 @@ button.form-irre-header-cell.form-irre-header-button {
   padding: 0;
 }
 
+.svg-tree-wrapper path.link {
+  opacity: 0.5;
+}
+
 /**
 views
  */
@@ -1100,16 +1104,16 @@ body {
   overflow-y: auto;
 }
 .svg-tree-wrapper .node-selected {
-  fill: var(--color-4);
-  stroke: var(--color-4);
+  fill: transparent;
+  stroke: var(--color-6);
 }
 .svg-tree-wrapper .nodes-wrapper--dragging .node-over {
-  fill: var(--color-4) !important;
-  stroke: var(--color-4);
+  fill: transparent !important;
+  stroke: var(--color-6);
 }
 .svg-tree-wrapper .node-over:not(.node-selected) {
-  fill: var(--color-4);
-  stroke: var(--color-4);
+  fill: transparent;
+  stroke: var(--color-6);
 }
 
 .btn-default.active,

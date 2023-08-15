@@ -2,6 +2,7 @@
   background-color: var(--color-2) !important;
   border-bottom-color: rgb(200, 200, 200);
 }
+
 body {
   a.cke_dialog_close_button,
   .cke_ltr .cke_dialog_close_button {
@@ -11,38 +12,48 @@ body {
     top: 0;
     right: 0;
   }
+
   a.cke_dialog_ui_button {
     background: transparent;
+
     &:hover {
       background: var(--color-8);
     }
   }
+
   .cke_dialog {
     .cke_dialog_tab,
     .cke_dialog_tab_selected {
       background: transparent;
+
       &:hover {
         background: var(--color-8);
       }
     }
+
     .cke_dialog_footer {
       background-color: var(--color-4);
     }
+
     .cke_dialog_contents {
       background-color: var(--color-4);
     }
+
     .cke_dialog_body {
       background-color: var(--color-4);
-      border:none;
+      border: none;
+
       .cke_dialog_title {
         background-color: var(--color-4);
-        border:none;
+        border: none;
       }
     }
   }
+
   .cke_combo_arrow {
     border-top: 3px solid var(--color-5);
   }
+
   .cke_reset_all,
   .cke_reset_all *,
   .cke_reset_all a,
@@ -50,6 +61,7 @@ body {
   .cke_button_label {
     color: var(--color-5);
   }
+
   .cke_button_icon,
   .cke_ltr .cke_button__anchor_icon,
   .cke_ltr .cke_button__cut_icon,
@@ -66,9 +78,11 @@ body {
   .cke_ltr .cke_button__source_icon {
     background-image: url(/typo3conf/ext/skins/Resources/Public/Backend/Style/Skin/Dark/Icons/ckeditor-icons.png) !important;
   }
+
   .cke_button__softhyphen_icon {
     background-image: url(/typo3conf/ext/skins/Resources/Public/Backend/Style/Skin/Dark/Icons/hyphens.png) !important;
   }
+
   .cke_combo_text {
     color: var(--color-5);
   }
@@ -83,6 +97,7 @@ body {
     background-color: var(--color-4) !important;
     border-color: transparent;
   }
+
   .cke_button_on {
     background-color: var(--color-8) !important;
     border-color: transparent;

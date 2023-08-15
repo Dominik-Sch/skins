@@ -2,18 +2,23 @@
 input {
   border: none;
 }
+
 select {
   border: none;
+
   option {
     color: var(--color-5);
+
     &:hover {
       background: var(--color-8);
       color: var(--color-2);
     }
   }
+
   optgroup {
     font-weight: 700;
     color: var(--color-8);
+
     option {
       color: var(--color-5);
     }
@@ -25,17 +30,21 @@ select {
   border-bottom: 1px solid var(--color-6);
   background-color: var(--color-4);
   padding: 15px 12px 3px;
-  &+.form-section {
+
+  & + .form-section {
     margin-top: 0;
   }
 }
-.form-control,.form-select {
+
+.form-control, .form-select {
   background-color: var(--color-2) !important;
   color: var(--color-5);
   border: 1px solid var(--color-6);
+
   &::placeholder, &:placeholder-shown {
     color: var(--color-5);
   }
+
   &:focus {
     color: var(--color-5);
     background-color: var(--color-2) !important;
@@ -44,27 +53,33 @@ select {
     box-shadow: none;
   }
 }
+
 .form-select {
   background-image: url("/typo3conf/ext/skins/Resources/Public/Backend/Style/Skin/Dark/Icons/actions-chevron-down.svg");
 }
+
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
   background: var(--color-1) !important;
 }
+
 .has-change .input-group-addon,
 .input-group-btn {
   background-color: var(--color-2);
 }
+
 .input-group-addon {
   background: var(--color-2);
   color: var(--color-5);
   border: none;
 }
+
 input[type=submit] {
   border: 1px solid;
   color: var(--color-5);
 }
+
 .form-inline-spaced {
   display: flex;
   align-items: flex-end;
@@ -74,21 +89,22 @@ input[type=submit] {
 // list pagination
 body {
   .pagination {
-    >.disabled {
-      >a,
-      >a:focus,
-      >a:hover,
-      >span,
-      >span:focus,
-      >span:hover {
+    > .disabled {
+      > a,
+      > a:focus,
+      > a:hover,
+      > span,
+      > span:focus,
+      > span:hover {
         color: var(--color-5);
         cursor: not-allowed;
         background-color: var(--color-2);
         border-color: transparent;
       }
     }
-    >li {
-      >span,>a {
+
+    > li {
+      > span, > a {
         background-color: var(--color-4);
         color: var(--color-5);
         border: transparent;
@@ -102,6 +118,7 @@ body {
           border: transparent;
         }
       }
+
       &.disabled {
         background-color: var(--color-4);
       }
@@ -112,7 +129,8 @@ body {
 /*multi select in Manage System Maintainers (Settings)*/
 .form-group .chosen-container .chosen-choices {
   background-color: var(--color-2);
-  +.chosen-drop .chosen-results {
+
+  + .chosen-drop .chosen-results {
     background-color: var(--color-2);
   }
 }

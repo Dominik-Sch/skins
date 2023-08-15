@@ -1,8 +1,9 @@
 <?php
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace Rubb1\Skins\EventListener;
 
+use Exception;
 use TYPO3\CMS\Backend\Template\Components\ButtonBar;
 use TYPO3\CMS\Backend\Template\Components\Buttons\ButtonInterface;
 use TYPO3\CMS\Backend\Template\Components\Buttons\InputButton;
@@ -16,10 +17,14 @@ use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
 /**
  * re-add save and close button
  */
-final class ModifyButtonBarEventListener {
-    public function __construct(private IconFactory $iconFactory) {}
+final class ModifyButtonBarEventListener
+{
+    public function __construct(private IconFactory $iconFactory)
+    {
+    }
 
-    public function __invoke(ModifyButtonBarEvent $event): void {
+    public function __invoke(ModifyButtonBarEvent $event): void
+    {
         $buttonBar = $event->getButtonBar();
         $buttons = $event->getButtons();
 
@@ -38,7 +43,7 @@ final class ModifyButtonBarEventListener {
         $extConf = [];
         try {
             $extConf = GeneralUtility::makeInstance(ExtensionConfiguration::class)->get('skins');
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             // config failed to load
         }
 

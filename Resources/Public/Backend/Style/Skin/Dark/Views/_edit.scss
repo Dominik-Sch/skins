@@ -1,21 +1,24 @@
 .nav-tabs {
   background-color: transparent;
-  >li {
-    &.has-validation-error.active>a {
+
+  > li {
+    &.has-validation-error.active > a {
       background-color: var(--color-6);
     }
+
     &.active {
-      >a,
-      >a:active,
-      >a:focus,
-      >a:hover {
+      > a,
+      > a:active,
+      > a:focus,
+      > a:hover {
         border: 1px solid var(--color-6);
         border-bottom-color: var(--color-4);
         background-color: var(--color-4);
         color: var(--color-5);
       }
     }
-    >a:hover {
+
+    > a:hover {
       background-color: var(--color-4);
       color: white;
     }
@@ -26,9 +29,11 @@
   border-left: 1px solid var(--color-6);
   border-right: 1px solid var(--color-6);
 }
+
 .help-teaser {
   margin-right: 5px;
 }
+
 select.form-control:not([multiple][size]):not(.form-select-no-siblings),
 select.form-control:not([size]):not(.form-select-no-siblings),
 select.form-control[size="1"]:not(.form-select-no-siblings) {
@@ -36,9 +41,11 @@ select.form-control[size="1"]:not(.form-select-no-siblings) {
   width: 100%;
   border: 1px solid var(--color-6);
 }
+
 .help-block {
   color: var(--color-5);
 }
+
 code {
   padding: 0;
   font-size: 100%;
@@ -46,13 +53,16 @@ code {
   background-color: rgb(0 0 0 / 0%);
   border-radius: 0;
 }
+
 .icon-list {
   background: var(--color-4);
   margin-top: 9px;
   border: none;
+
   .active {
     background-color: var(--color-8);
   }
+
   img {
     width: 16px;
     height: auto;

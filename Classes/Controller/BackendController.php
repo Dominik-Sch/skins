@@ -3,12 +3,12 @@
 namespace Rubb1\Skins\Controller;
 
 use Doctrine\DBAL\Exception;
+use InvalidArgumentException;
 use Psr\Http\Message\ServerRequestInterface;
 use TYPO3\CMS\Core\Database\ConnectionPool;
 use TYPO3\CMS\Core\Http\Response;
 use TYPO3\CMS\Core\Http\ResponseFactory;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 class BackendController
 {
@@ -19,7 +19,7 @@ class BackendController
     {
         $input = $request->getQueryParams()['input'] ?? null;
         if ($input === null) {
-            throw new \InvalidArgumentException('Please provide a number', 1580585107);
+            throw new InvalidArgumentException('Please provide a number', 1580585107);
         }
         $beUserUcData = '';
         $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('be_users');
@@ -66,8 +66,7 @@ class BackendController
         $skinsDataArray = [];
         if (
             isset($GLOBALS['BE_USER']->uc['tx_skins_active']) &&
-            isset($GLOBALS['BE_USER']->uc['tx_skins_dark_mode_settings']))
-        {
+            isset($GLOBALS['BE_USER']->uc['tx_skins_dark_mode_settings'])) {
             $skinsDataArray['tx_skins_active'] = $GLOBALS['BE_USER']->uc['tx_skins_active'];
             $skinsDataArray['tx_skins_dark_mode_settings'] = $GLOBALS['BE_USER']->uc['tx_skins_dark_mode_settings'];
         }

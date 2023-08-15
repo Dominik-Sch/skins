@@ -1,7 +1,7 @@
 body {
-  .install-tool-modal .panel-flat.panel-default>.panel-heading,
-  .install-tool-modal .panel-rst.panel-default>.panel-heading,
-  .install-tool-modal .panel-version.panel-default>.panel-heading {
+  .install-tool-modal .panel-flat.panel-default > .panel-heading,
+  .install-tool-modal .panel-rst.panel-default > .panel-heading,
+  .install-tool-modal .panel-version.panel-default > .panel-heading {
     background: var(--color-4);
     color: var(--color-5);
   }
@@ -15,10 +15,12 @@ body {
 .install-tool-modal .item .item-heading {
   background-color: var(--color-2);
 }
+
 /*tools settings Feature Toggles*/
 .card {
   background-color: transparent;
 }
+
 /*install-tool-modal phpinfo*/
 .install-tool-modal #phpinfo table {
   width: 100%;

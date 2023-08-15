@@ -1,38 +1,48 @@
 body {
   background-color: var(--color-4);
 }
+
 .element-browser-attributes {
   background-color: var(--color-4);
 }
+
 .element-browser-body {
   background-color: var(--color-2);
 }
-.element-browser-main-sidebar .list-tree-control>.fa:before {
+
+.element-browser-main-sidebar .list-tree-control > .fa:before {
   background-color: rgb(0 0 0 / 0%);
 }
+
 .element-browser-main-sidebar .list-tree li:last-child:before {
   background-color: rgb(0 0 0 / 0%);
 }
+
 .modal-severity-notice .modal-header {
   background-color: var(--color-1);
   color: var(--color-5);
   border: none;
 }
+
 .modal-severity-warning .modal-header {
   background-color: var(--color-2);
   color: var(--color-5);
   border-bottom-color: var(--color-2);
 }
+
 .modal-content {
   background-color: var(--color-4);
   color: var(--color-5);
 }
+
 .list-tree li:last-child:before {
   background: rgb(0 0 0 / 0%);
 }
+
 .panel {
   background-color: var(--color-4);
 }
+
 .t3-new-content-element-wizard-window {
   background-color: var(--color-4);
 }

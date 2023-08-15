@@ -1,15 +1,18 @@
 #ConfigurationView {
   .list-tree {
     li {
-      border-bottom: 1px solid #f5f5f517;
+      border-bottom: 1px solid #F5F5F517;
+
       .list-tree-group {
         display: flex;
         align-items: flex-start;
+
         .list-tree-label {
           flex: 1 1 25%;
           display: inline-block;
           padding-right: 10px;
         }
+
         .list-tree-value {
           display: block;
           padding-left: 10px;
@@ -19,8 +22,9 @@
           overflow: auto;
           max-height: 500px;
           resize: vertical;
+
           &::-webkit-resizer {
-            background-image: linear-gradient( -45deg, white 20%, transparent 20%);
+            background-image: linear-gradient(-45deg, white 20%, transparent 20%);
           }
         }
       }

@@ -1,5 +1,5 @@
 <?php
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace Rubb1\Skins\Utility;
 
@@ -11,7 +11,8 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 /**
  * Utility for handling and processing flexforms
  */
-final class FlexFormUtility {
+final class FlexFormUtility
+{
 
     /**
      * adds a flexform to a type `flex` field. Works the same as {@see ExtensionManagementUtility::addPiFlexFormValue()}
@@ -27,7 +28,8 @@ final class FlexFormUtility {
         string $flexFormContent,
         string $flexFormField = 'pi_flexform',
         string $table = 'tt_content'
-    ): void {
+    ): void
+    {
         if (is_array($GLOBALS['TCA'][$table]['columns'])
             && is_array($GLOBALS['TCA'][$table]['columns'][$flexFormField]['config']['ds'])) {
             $GLOBALS['TCA'][$table]['columns'][$flexFormField]['config']['ds'][$dsFields] = $flexFormContent;
@@ -44,10 +46,11 @@ final class FlexFormUtility {
      * @return array processed default flexform
      */
     public static function populateNewFlexForm(
-        int $incomingPid,
+        int    $incomingPid,
         string $incomingCType,
         string $flexFormField = 'pi_flexform'
-    ): array {
+    ): array
+    {
         $formDataGroup = GeneralUtility::makeInstance(TcaDatabaseRecord::class);
         $formDataCompiler = GeneralUtility::makeInstance(FormDataCompiler::class, $formDataGroup);
         $formDataCompilerInput = [

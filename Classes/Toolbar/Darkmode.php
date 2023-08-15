@@ -2,6 +2,7 @@
 
 namespace Rubb1\Skins\Toolbar;
 
+use InvalidArgumentException;
 use TYPO3\CMS\Backend\Toolbar\ToolbarItemInterface;
 use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
@@ -42,6 +43,23 @@ class Darkmode implements ToolbarItemInterface
     }
 
     /**
+     * returns a new standalone view, shorthand function
+     *
+     * @param string $templateFilename
+     * @return StandaloneView
+     * @throws InvalidExtensionNameException
+     * @throws InvalidArgumentException
+     * @internal param string $templateFile
+     */
+    protected function getFluidTemplateObject(string $templateFilename): StandaloneView
+    {
+        $view = GeneralUtility::makeInstance(StandaloneView::class);
+        $view->setTemplateRootPaths(['EXT:skins/Resources/Private/Templates/Backend']);
+        $view->setTemplate($templateFilename);
+        return $view;
+    }
+
+    /**
      * Checks if the ToolbarItem has a dropdown
      *
      * @return bool
@@ -60,23 +78,6 @@ class Darkmode implements ToolbarItemInterface
     public function getDropDown(): string
     {
         return $this->getFluidTemplateObject('DropDown.html')->render();
-    }
-
-    /**
-     * returns a new standalone view, shorthand function
-     *
-     * @param string $templateFilename
-     * @return StandaloneView
-     * @throws \TYPO3\CMS\Extbase\Mvc\Exception\InvalidExtensionNameException
-     * @throws \InvalidArgumentException
-     * @internal param string $templateFile
-     */
-    protected function getFluidTemplateObject(string $templateFilename): StandaloneView
-    {
-        $view = GeneralUtility::makeInstance(StandaloneView::class);
-        $view->setTemplateRootPaths(['EXT:skins/Resources/Private/Templates/Backend']);
-        $view->setTemplate($templateFilename);
-        return $view;
     }
 
     /**

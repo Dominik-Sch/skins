@@ -1,14 +1,16 @@
-.nav-tabs>li>a.nav-link.active,
-.nav.nav-tabs>li:not(.nav-item)>a.active:not(.nav-link) {
+.nav-tabs > li > a.nav-link.active,
+.nav.nav-tabs > li:not(.nav-item) > a.active:not(.nav-link) {
   border: 1px solid var(--color-6);
   border-bottom-color: var(--color-4);
   background-color: var(--color-4);
   color: var(--color-5);
 }
-.nav-tabs>li>a.nav-link, .nav.nav-tabs>li:not(.nav-item)>a:not(.nav-link) {
+
+.nav-tabs > li > a.nav-link, .nav.nav-tabs > li:not(.nav-item) > a:not(.nav-link) {
   color: var(--color-5);
 }
-.nav-tabs>li>a.nav-link:focus, .nav-tabs>li>a.nav-link:hover, .nav.nav-tabs>li:not(.nav-item)>a:focus:not(.nav-link), .nav.nav-tabs>li:not(.nav-item)>a:hover:not(.nav-link) {
+
+.nav-tabs > li > a.nav-link:focus, .nav-tabs > li > a.nav-link:hover, .nav.nav-tabs > li:not(.nav-item) > a:focus:not(.nav-link), .nav.nav-tabs > li:not(.nav-item) > a:hover:not(.nav-link) {
   background: var(--color-4);
   color: rgb(255 255 255);
 }

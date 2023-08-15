@@ -1,7 +1,8 @@
 .extension-list .inactive {
-  background: var(--color-2)!important;
+  background: var(--color-2) !important;
   opacity: 0.5;
 }
+
 .extension-list .installed td {
   background-color: var(--color-2);
 
@@ -10,18 +11,21 @@
     border-color: transparent;
   }
 }
+
 #typo3-extension-list {
   .extension-icon {
     height: 24px;
     width: 24px;
   }
 }
+
 /*Extension manager table and Template table and Info table...*/
-.table-striped>tbody>tr:nth-of-type(odd)>* {
+.table-striped > tbody > tr:nth-of-type(odd) > * {
   --bs-table-accent-bg: var(--bs-table-striped-bg);
   color: var(--color-5);
 }
-.table-hover>tbody>tr:hover>* {
+
+.table-hover > tbody > tr:hover > * {
   --bs-table-accent-bg: var(--bs-table-hover-bg);
   color: var(--color-5);
 }

@@ -1,9 +1,9 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
-use Rubb1\Skins\Toolbar\Darkmode;
 use Rubb1\Skins\Hooks\DataHandlerSaveAndCloseHook;
+use Rubb1\Skins\Toolbar\Darkmode;
 use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 

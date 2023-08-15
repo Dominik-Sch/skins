@@ -3,7 +3,6 @@
 namespace Rubb1\Skins\Hooks;
 
 use TYPO3\CMS\Core\SingletonInterface;
-use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 class PageRenderer implements SingletonInterface
 {
@@ -28,15 +27,15 @@ class PageRenderer implements SingletonInterface
             $settingsArray = json_decode($GLOBALS['BE_USER']->uc['tx_skins_dark_mode_settings']);
             $cssString = "";
 
-            foreach($settingsArray as $key => $value) {
-                $cssString .= '--'.$key.': '.$value.'; ';
+            foreach ($settingsArray as $key => $value) {
+                $cssString .= '--' . $key . ': ' . $value . '; ';
             }
             /**
              * generate css block with be user css variables
              */
             $customCssBlock = "
             :root {
-            ".$cssString."
+            " . $cssString . "
             }
             ";
 
