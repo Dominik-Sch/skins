@@ -2,9 +2,15 @@
 default
  */
 @import "colors";
-@import "button";
-@import "icons";
 @import "general";
+
+/**
+elements
+ */
+@import "Elements/input";
+@import "Elements/button";
+@import "Elements/icons";
+@import "Elements/element-preview";
 
 /**
 extensions
@@ -36,10 +42,12 @@ modules
 @import "Module/indexedsearch";
 @import "Module/install-tool";
 @import "Module/list";
+@import "Module/page";
 @import "Module/recycler";
-@import "Module/tabs";
 @import "Module/site";
 @import "Module/svg-tree";
+@import "Module/tabs";
+@import "Module/panel";
 
 /**
 views
@@ -50,9 +58,11 @@ views
 @import "Views/edit";
 @import "Views/forms";
 @import "Views/grid";
+@import "Views/link-browser";
 @import "Views/login";
-@import "Views/modal-iframe";
+@import "Views/modal";
 @import "Views/module";
 @import "Views/pagetree";
 @import "Views/search";
 @import "Views/toolbar";
+@import "Views/table";

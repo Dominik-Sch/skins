@@ -15,15 +15,9 @@ if (TYPO3 == 'BE') {
         'label' => 'Dark mode',
         'type' => 'check',
     ];
-    $GLOBALS['TYPO3_USER_SETTINGS']['columns']['tx_skins_dark_mode_settings'] = [
-        'label' => 'Settings JSON',
-        'type' => 'text',
-        'default' => '',
-    ];
     $GLOBALS['TYPO3_USER_SETTINGS']['showitem'] .= ',
     --div--;Skins Settings,
         tx_skins_active,
-        tx_skins_dark_mode_settings,
     ';
 
     // add backend css

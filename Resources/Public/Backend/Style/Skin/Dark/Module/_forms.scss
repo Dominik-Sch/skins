@@ -1,15 +1,3 @@
-.t3-form-x-component {
-  background: var(--color-2);
-}
-
-#t3-form-inspector h4 {
-  background-color: var(--color-4);
-}
-
-.t3-form-collection-element {
-  background-color: var(--color-4);
-}
-
 .property-grid .table > tbody > tr {
   background-color: transparent;
 }
@@ -23,7 +11,6 @@
 #t3-form-structure-panel #t3-form-navigation-component-tree-root-container.t3-form-root-element-selected:hover,
 #t3-form-structure-panel .tree li > .t3-form-form-element-selected,
 #t3-form-structure-panel .tree li > .t3-form-form-element-selected:hover {
-  background-color: var(--color-4);
   border-color: transparent;
 }
 
@@ -31,6 +18,9 @@
 #t3-form-structure-panel .t3-form-form-element-selected,
 #t3-form-structure-panel .t3-form-root-element-selected,
 #t3-form-structure-panel .tree li > div:hover {
-  background-color: var(--color-6);
   border-color: transparent;
+}
+
+.form-section {
+  background-color: transparent;
 }

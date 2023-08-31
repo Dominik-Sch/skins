@@ -1,21 +1,3 @@
-body {
-  .install-tool-modal .panel-flat.panel-default > .panel-heading,
-  .install-tool-modal .panel-rst.panel-default > .panel-heading,
-  .install-tool-modal .panel-version.panel-default > .panel-heading {
-    background: var(--color-4);
-    color: var(--color-5);
-  }
-}
-
-//iframe#typo3-contentIframe.scaffold-content-module-iframe {
-//  background-color: var(--color-4);
-//}
-
-/*tools settings Configure Installation-Wide Options*/
-.install-tool-modal .item .item-heading {
-  background-color: var(--color-2);
-}
-
 /*tools settings Feature Toggles*/
 .card {
   background-color: transparent;

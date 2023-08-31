@@ -3,14 +3,5 @@
 }
 
 .list-tree li.active > .list-tree-group:before {
-  background: var(--color-4);
   border: transparent;
-}
-
-.dropzone {
-  color: var(--color-5);
-}
-
-.dropzone-hint-icon {
-  background: var(--color-2);
 }

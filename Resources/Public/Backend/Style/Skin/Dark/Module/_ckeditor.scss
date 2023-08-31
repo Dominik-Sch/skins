@@ -1,12 +1,11 @@
 .cke_top {
-  background-color: var(--color-2) !important;
   border-bottom-color: rgb(200, 200, 200);
 }
 
 body {
   a.cke_dialog_close_button,
   .cke_ltr .cke_dialog_close_button {
-    background-image: url("/typo3conf/ext/skins/Resources/Public/Backend/Style/Skin/Dark/Icons/close.svg");
+    //background-image: url("/typo3conf/ext/skins/Resources/Public/Backend/Style/Skin/Dark/Icons/close.svg");
     height: 30px;
     width: 30px;
     top: 0;
@@ -15,51 +14,25 @@ body {
 
   a.cke_dialog_ui_button {
     background: transparent;
-
-    &:hover {
-      background: var(--color-8);
-    }
   }
 
   .cke_dialog {
     .cke_dialog_tab,
     .cke_dialog_tab_selected {
       background: transparent;
-
-      &:hover {
-        background: var(--color-8);
-      }
-    }
-
-    .cke_dialog_footer {
-      background-color: var(--color-4);
-    }
-
-    .cke_dialog_contents {
-      background-color: var(--color-4);
     }
 
     .cke_dialog_body {
-      background-color: var(--color-4);
       border: none;
 
       .cke_dialog_title {
-        background-color: var(--color-4);
         border: none;
       }
     }
   }
 
   .cke_combo_arrow {
-    border-top: 3px solid var(--color-5);
-  }
-
-  .cke_reset_all,
-  .cke_reset_all *,
-  .cke_reset_all a,
-  .cke_reset_all textarea,
-  .cke_button_label {
-    color: var(--color-5);
+    border-top: 3px solid;
   }
 
   .cke_button_icon,
@@ -76,15 +49,11 @@ body {
   .cke_ltr .cke_button__indent_icon,
   .cke_ltr .cke_button__find_icon,
   .cke_ltr .cke_button__source_icon {
-    background-image: url(/typo3conf/ext/skins/Resources/Public/Backend/Style/Skin/Dark/Icons/ckeditor-icons.png) !important;
+    //background-image: url(/typo3conf/ext/skins/Resources/Public/Backend/Style/Skin/Dark/Icons/ckeditor-icons.png) !important;
   }
 
   .cke_button__softhyphen_icon {
-    background-image: url(/typo3conf/ext/skins/Resources/Public/Backend/Style/Skin/Dark/Icons/hyphens.png) !important;
-  }
-
-  .cke_combo_text {
-    color: var(--color-5);
+    //background-image: url(/typo3conf/ext/skins/Resources/Public/Backend/Style/Skin/Dark/Icons/hyphens.png) !important;
   }
 
   a.cke_button_off:hover,
@@ -94,16 +63,10 @@ body {
   a.cke_combo_button:focus,
   a.cke_combo_button:focus,
   .cke_combo_on a.cke_combo_button {
-    background-color: var(--color-4) !important;
     border-color: transparent;
   }
 
   .cke_button_on {
-    background-color: var(--color-8) !important;
     border-color: transparent;
-  }
-
-  textarea.cke_source {
-    color: var(--color-2);
   }
 }

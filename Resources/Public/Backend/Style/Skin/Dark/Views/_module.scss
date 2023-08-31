@@ -1,15 +1,25 @@
-// module
-.module {
-  background-color: var(--color-4);
+.scaffold-modulemenu {
+  background-color: var(--color-7);
 }
 
-.module-body {
-  background-color: var(--color-4);
-  color: var(--color-5);
+.topbar-button.topbar-button-modulemenu,
+.scaffold-modulemenu-expanded .topbar-button.topbar-button-modulemenu {
+  background-color: var(--color-7);
 }
 
 .module-docheader {
-  background-color: var(--color-4);
-  color: var(--color-5);
   border-bottom: 1px solid rgb(245 245 245 / 30%);
+}
+
+.module-body {
+  //--module-body-padding: 0.5rem;
+}
+
+.dashboard-header {
+  background: transparent;
+}
+
+.nav-tabs > li > a.nav-link.active, .nav.nav-tabs > li:not(.nav-item) > a.active:not(.nav-link) {
+  background-color: transparent;
+  border-bottom: var(--module-bg);
 }

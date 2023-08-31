@@ -1,48 +1,10 @@
-body {
-  color: var(--color-5);
-  background-color: var(--color-4);
-}
-
-.panel-body {
-  border-bottom: 1px solid var(--color-5);
-}
-
 .text-muted {
   color: rgb(245, 245, 245);
   font-size: 95%;
 }
 
-.scaffold-modulemenu {
-  background-color: var(--color-7);
-}
-
-.scaffold-content-navigation-expanded .topbar-button-navigationcomponent,
-.scaffold-modulemenu-expanded .topbar-button.topbar-button-modulemenu {
-  background-color: var(--color-7);
-}
-
-a:focus, a:hover {
-  color: var(--color-5);
-}
-
 .popover-title {
   background: transparent;
-  border-bottom: 1px solid var(--color-5);
-}
-
-.popover {
-  background: var(--color-2);
-  box-shadow: 0 0 10px 2px rgb(0 0 0 / 20%);
-
-  &.top > .arrow:after {
-    border-top-color: var(--color-2);
-  }
-}
-
-.callout-notice {
-  background-color: var(--color-2);
-  border-color: var(--color-5);;
-  color: var(--color-5);
 }
 
 h1 {

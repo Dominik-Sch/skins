@@ -1,34 +1,46 @@
-define([
-    'jquery',
-], function (
-    $,
-    ColorPicker
-) {
+define([], function () {
 
-    let extension = '#rubb1-skins-toolbar-darkmode';
+    const extension = document.getElementById('rubb1-skins-toolbar-darkmode');
 
     // prevent dropdown from closing
-    $(extension + ' .dropdown-menu').click(function (e) {
-        e.stopPropagation()
-    })
+    extension.querySelectorAll('.dropdown-menu')[0].addEventListener("click", function (e) {
+        e.stopPropagation();
+    });
 
     // custom checkbox - change value of input
-    $('.custom-skin-change-trigger label').click(function () {
-        if ($(this).siblings('input').val() === "0") {
-            $(this).siblings('input').val(1)
-        } else {
-            $(this).siblings('input').val(0)
-        }
+    extension.querySelectorAll('.custom-skin-change-trigger label').forEach((element) => {
+        element.addEventListener("click", function () {
+            if (this.previousElementSibling.value === "0") {
+                this.previousElementSibling.value = 1;
+            } else {
+                this.previousElementSibling.value = 0;
+            }
+        })
     })
 
-    $('.colorpicker-input').change(function () {
-        // change css variables instantly to receive a preview in the live backend
-        let colorId = $(this).data('color-id');
-        let colorVal = $(this).val();
-        document.documentElement.style.setProperty('--color-' + colorId, colorVal);
-        let iframe = $("#typo3-contentIframe").contents().find("head");
-        iframe.find('#color-' + colorId).remove();
-        iframe.append('<style id="color-' + colorId + '">:root {--color-' + colorId + ': ' + colorVal + '; }</style>');
+    extension.querySelectorAll('.colorpicker-input').forEach((element) => {
+        element.addEventListener("input", function () {
+            // change css variables instantly to receive a preview in the live backend
+            let colorId = this.dataset.colorId;
+            let colorVal = this.value;
+            document.documentElement.style.setProperty('--color-' + colorId, colorVal);
+            let iframe = document.getElementById("typo3-contentIframe");
+            let iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+            if (iframeDocument) {
+                let iframeHead = iframeDocument.querySelectorAll("head")[0];
+
+                if (iframeHead.querySelectorAll('#color-' + colorId).length) {
+                    iframeHead.querySelectorAll('#color-' + colorId)[0].remove();
+                }
+
+                // create style tag
+                let style = document.createElement("style");
+                let styleContent = document.createTextNode(":root {--color-" + colorId + ": " + colorVal + "; }");
+                style.appendChild(styleContent);
+                style.setAttribute("id", "color-" + colorId);
+                iframeHead.appendChild(style);
+            }
+        })
     })
 
     // load user settings for color picker
@@ -39,32 +51,29 @@ define([
                 const resolved = await response.resolve();
                 const settingsObject = JSON.parse(resolved.result.tx_skins_dark_mode_settings);
 
-                let skinsToolbar = $(extension);
-
                 for (const key in settingsObject) {
                     // set color
-                    skinsToolbar.find('.' + key + ' input').val(settingsObject[key]);
-                    skinsToolbar.find('.' + key + ' .minicolors-swatch-color').css('background-color', settingsObject[key]);
+                    extension.querySelectorAll('.' + key + ' input')[0].value = settingsObject[key];
                 }
 
-                skinsToolbar.find('#tx_skins_active').val(0);
+                extension.querySelectorAll('#tx_skins_active').value = 0;
                 // custom skin checkbox
                 if (resolved.result.tx_skins_active > 0) {
-                    skinsToolbar.find('#tx_skins_active').trigger('click');
-                    skinsToolbar.find('#tx_skins_active').val(1);
+                    extension.querySelectorAll('#tx_skins_active')[0].click();
+                    extension.querySelectorAll('#tx_skins_active')[0].value = 1;
                 }
             });
     });
 
     // save color settings to be user
-    $('.save-skin-settings').click(function () {
+    extension.querySelectorAll('.save-skin-settings')[0].addEventListener("click", function () {
         require(['TYPO3/CMS/Core/Ajax/AjaxRequest'], function (AjaxRequest) {
             let settingsArray = {};
-            $('#rubb1-skins-toolbar-darkmode .colorpicker-input').each(function () {
-                settingsArray[$(this).attr('id')] = $(this).val();
+            extension.querySelectorAll('.colorpicker-input').forEach((element) => {
+                settingsArray[element.getAttribute("id")] = element.value;
             })
             let requestArray = [];
-            requestArray['tx_skins_active'] = $('#rubb1-skins-toolbar-darkmode #tx_skins_active').val();
+            requestArray['tx_skins_active'] = extension.querySelectorAll('#rubb1-skins-toolbar-darkmode #tx_skins_active')[0].value;
             requestArray['tx_skins_dark_mode_settings'] = JSON.stringify(settingsArray);
             new AjaxRequest(TYPO3.settings.ajaxUrls.save_settings)
                 .withQueryArguments({input: requestArray})
@@ -76,8 +85,7 @@ define([
                     }
                 });
         });
-    })
-
+    });
 
     return true;
 });

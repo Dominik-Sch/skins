@@ -1,8 +1,12 @@
 .svg-tree-element typo3-backend-form-selecttree-toolbar {
   background-color: transparent;
   padding: 0;
+  border-bottom-color: var(--color-5);
 }
 
 .svg-tree-wrapper path.link {
   opacity: 0.5;
+}
+.svg-tree-element {
+  border-color: var(--color-5);
 }

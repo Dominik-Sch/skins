@@ -1,54 +1,11 @@
-// t3 body grids
-.t3-grid-cell {
-  background-color: var(--color-2);
-  border-bottom: 1px solid var(--color-2);
-  color: var(--color-5);
-}
-
-.t3-page-column-header {
-  background-color: var(--color-2);
-  border-bottom: 1px solid var(--color-4);
-  color: var(--color-5);
-}
-
 .t3-page-ce {
   .t3-page-ce-header {
-    background: var(--color-2);
-    border: 1px solid var(--color-4);
-    color: var(--color-5);
     border-bottom: none;
     transition: none;
   }
-
-  .t3-page-ce-body {
-    background: var(--color-2);
-    border: 1px solid var(--color-4);
-    color: var(--color-5);
-  }
-
-  .t3-page-ce-footer {
-    background: var(--color-2);
-    color: var(--color-5);
-  }
-
   &:hover {
     .t3-page-ce-header {
       background: initial;
     }
-
-    > div {
-      > .t3-page-ce-header,
-      > .t3-page-ce-body {
-        background: var(--color-4);
-      }
-    }
-  }
-}
-
-a {
-  color: var(--color-5);
-
-  &:hover {
-    color: var(--color-5);
   }
 }

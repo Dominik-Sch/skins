@@ -1,8 +1,3 @@
-.dashboard-header {
-  background-color: var(--color-4);
-  color: var(--color-5);
-}
-
 .dashboard-modal-item-block {
   background: transparent;
   border: none;
@@ -16,24 +11,13 @@
   }
 }
 
-.widget {
-  background: var(--color-2);
-  color: var(--color-5);
-}
-
-.widget-content-title {
-  background: var(--color-2);
-  color: var(--color-5);
-}
-
-.widget-table {
-  color: var(--color-5);
-}
-
-.widget-table tr:nth-child(even) {
-  background-color: var(--color-1);
-}
-
 .module.module[data-module-name="dashboard"] {
   background-color: transparent;
+}
+.widget {
+  color: var(--color-5);
+  background-color: var(--color-4);
+  .widget-t3information-logo {
+    filter: contrast(0);
+  }
 }

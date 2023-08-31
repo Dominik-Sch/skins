@@ -1,0 +1,6 @@
+.panel {
+  background-color: transparent;
+  &-default {
+    --panel-border-color: rgba(var(--rgb-color-5),0.25);
+  }
+}

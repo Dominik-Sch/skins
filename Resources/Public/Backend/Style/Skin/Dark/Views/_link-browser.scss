@@ -1,0 +1,19 @@
+.element-browser-attributes {
+  background-color: transparent;
+}
+.nav-link {
+  border: 1px solid rgba(var(--rgb-color-5),0.5);
+  a {
+    border: none;
+    box-shadow: none !important;
+  }
+  &.active {
+    --bs-nav-pills-link-active-bg: transparent;
+    --bs-nav-pills-link-active-color: var(--color-5);
+    border: 1px solid rgba(var(--rgb-color-5),1);
+  }
+  &:hover {
+    color: var(--color-5);
+    border: 1px solid rgba(var(--rgb-color-5),1);
+  }
+}

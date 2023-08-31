@@ -1,0 +1,41 @@
+.btn {
+  transition: 0.15s all;
+  scale: 1;
+  &-default {
+    background: transparent;
+    --bs-btn-border-color: rgba(var(--rgb-color-5),0.25);
+    &:hover {
+      background: transparent;
+      --bs-btn-border-color: rgba(var(--rgb-color-5),1);
+    }
+  }
+  &-primary {
+    background: var(--color-8);
+    border: 1px solid var(--color-8);
+    color: var(--color-1);
+    &:hover, &:active, &:focus {
+      background: var(--color-8);
+      border: 1px solid var(--color-8);
+      color: var(--color-1);
+    }
+  }
+  &:hover {
+    --bs-btn-border-color: rgba(var(--rgb-color-5),1);
+  }
+  &:focus-visible {
+    box-shadow: 0 0 0 3px rgba(var(--rgb-color-5),0.25);
+  }
+}
+
+.table .btn-default {
+  box-shadow: none;
+}
+
+.icon-spinner-circle-dark {
+  svg {
+    filter: invert(1);
+  }
+}
+button {
+  color: var(--color-5);
+}

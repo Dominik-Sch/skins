@@ -5,12 +5,12 @@
         <body>
             <!-- item -->
             <trans-unit id="tx_skins.toolbar.item.title">
-                <source>TYPO3 skin settings</source>
+                <source>Skin settings</source>
             </trans-unit>
 
             <!-- dropdown -->
             <trans-unit id="tx_skins.toolbar.dropdown.headline">
-                <source>TYPO3 skin settings</source>
+                <source>Skin settings</source>
             </trans-unit>
             <trans-unit id="tx_skins.toolbar.dropdown.save">
                 <source>Save</source>

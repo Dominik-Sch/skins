@@ -1,13 +1,3 @@
-:root {
-  --color-1: rgb(21, 21, 21);
-  --color-2: rgb(41, 41, 41);
-  --color-4: rgb(60, 63, 65);
-  --color-5: rgb(245, 245, 245);
-  --color-6: rgba(245, 245, 245, 0.3);
-  --color-7: rgb(31, 31, 31);
-  --color-8: rgb(253, 195, 0);
-}
-
 .dropdown-menu hr {
   border-top: 1px solid var(--color-5);
   opacity: 0.3;
@@ -23,6 +13,9 @@
   padding: 8px 8px 12px;
 }
 .toolbar-list #rubb1-skins-toolbar-darkmode h3 {
+  padding: 0;
+}
+.toolbar-list #rubb1-skins-toolbar-darkmode .colorpicker-input {
   padding: 0;
 }
 .toolbar-list #rubb1-skins-toolbar-darkmode .header {
@@ -68,38 +61,6 @@
 .toolbar-list #rubb1-skins-toolbar-darkmode svg .darkmode-background {
   fill: transparent;
 }
-.toolbar-list #rubb1-skins-toolbar-darkmode .minicolors-theme-default.minicolors {
-  width: 60%;
-  display: block;
-  height: 20px;
-}
-.toolbar-list #rubb1-skins-toolbar-darkmode .minicolors-theme-default.minicolors-position-bottom .minicolors-panel {
-  top: 100%;
-}
-.toolbar-list #rubb1-skins-toolbar-darkmode .minicolors-theme-default .minicolors-input {
-  height: 100%;
-  width: 100%;
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding: 0 0 0 30px;
-  background: transparent;
-  border: none;
-  color: white;
-}
-.toolbar-list #rubb1-skins-toolbar-darkmode .minicolors-theme-default .minicolors-swatch {
-  transform: none;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 100%;
-  border-radius: 50%;
-  border: 1px solid rgb(255, 255, 255);
-}
-.toolbar-list #rubb1-skins-toolbar-darkmode .minicolors-theme-default .minicolors-swatch:after {
-  display: none;
-}
 .toolbar-list #rubb1-skins-toolbar-darkmode .color-picker-wrap {
   width: 100%;
   display: flex;
@@ -116,15 +77,15 @@
   position: relative;
   display: block;
 }
-.toolbar-list #rubb1-skins-toolbar-darkmode .checkbox input[type=checkbox], .toolbar-list #rubb1-skins-toolbar-darkmode .checkbox-inline input[type=checkbox], .toolbar-list #rubb1-skins-toolbar-darkmode .radio input[type=radio], .toolbar-list #rubb1-skins-toolbar-darkmode .radio-inline input[type=radio] {
+.toolbar-list #rubb1-skins-toolbar-darkmode .radio input[type=radio], .toolbar-list #rubb1-skins-toolbar-darkmode .radio-inline input[type=radio] {
   position: absolute;
   margin-left: -20px;
 }
-.toolbar-list #rubb1-skins-toolbar-darkmode .checkbox-type-toggle .checkbox-label {
-  overflow: visible;
-  padding-left: 36px;
+.toolbar-list #rubb1-skins-toolbar-darkmode .checkbox input[type=checkbox], .toolbar-list #rubb1-skins-toolbar-darkmode .checkbox-inline input[type=checkbox] {
+  position: absolute;
+  margin-left: -20px;
 }
-.toolbar-list #rubb1-skins-toolbar-darkmode .checkbox .checkbox-label {
+.toolbar-list #rubb1-skins-toolbar-darkmode .checkbox-label {
   position: relative;
   display: inline-flex;
   align-items: baseline;
@@ -132,6 +93,10 @@
   min-height: 0;
   transition: all 0.3s ease-in-out;
   max-width: 100%;
+}
+.toolbar-list #rubb1-skins-toolbar-darkmode .checkbox-type-toggle .checkbox-label {
+  overflow: visible;
+  padding-left: 36px;
 }
 .toolbar-list #rubb1-skins-toolbar-darkmode .checkbox-type-toggle .checkbox-label:before {
   content: "";
