@@ -1,9 +1,14 @@
-.extension-list .inactive {
-  opacity: 0.5;
+.extension-list {
+  .inactive {
+    opacity: 0.5;
+  }
+
+  .installed {
+
+  }
 }
 
 .extension-list .installed td {
-
   .btn-default {
     background-color: transparent;
     border-color: transparent;
@@ -17,11 +22,21 @@
   }
 }
 
-/*Extension manager table and Template table and Info table...*/
-.table-striped > tbody > tr:nth-of-type(odd) > * {
-  --bs-table-accent-bg: var(--bs-table-striped-bg);
-}
+.table > tbody > tr {
+  &:nth-of-type(odd) {
+    background: rgba(var(--rgb-color-2),0.1);
+  }
 
-.table-hover > tbody > tr:hover > * {
-  --bs-table-accent-bg: var(--bs-table-hover-bg);
+  &:hover {
+    background: rgba(var(--rgb-color-2),0.5);
+  }
+  &.installed {
+    background: rgba(var(--rgb-color-2),0.75);
+    td {
+      background-color: transparent;
+    }
+    &:hover {
+      background: rgba(var(--rgb-color-2),1);
+    }
+  }
 }

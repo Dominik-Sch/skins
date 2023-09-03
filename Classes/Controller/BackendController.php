@@ -15,7 +15,7 @@ class BackendController
     /**
      * @throws Exception
      */
-    public function saveAction(ServerRequestInterface $request): Response
+    public function saveAction(ServerRequestInterface $request): \Psr\Http\Message\MessageInterface|\Psr\Http\Message\ResponseInterface
     {
         $input = $request->getQueryParams()['input'] ?? null;
         if ($input === null) {

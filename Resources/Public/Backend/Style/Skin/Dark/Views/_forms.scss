@@ -16,6 +16,7 @@ select {
 
 .form-section {
   border: none;
+  border-bottom: 1px solid rgba(var(--rgb-color-5),0.25);
   padding: 15px 12px 3px;
 
   & + .form-section {
@@ -32,6 +33,11 @@ select {
   &:focus {
     outline: 0;
     box-shadow: none;
+    background: rgba(var(--rgb-color-2),0.25);
+    color: var(--color-5);
+  }
+  &:disabled {
+    opacity: 0.25;
   }
 }
 

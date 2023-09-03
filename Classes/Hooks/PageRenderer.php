@@ -35,14 +35,16 @@ class PageRenderer implements SingletonInterface
             }
 
             $cssString .= "--module-docheader-bg:var(--color-2);";
-            $cssString .= "--bs-body-bg:var(--color-2);";
-            $cssString .= "--pagemodule-grid-cell-bg:var(--color-2);";
-            $cssString .= "--panel-default-heading-bg:var(--color-2);";
-            $cssString .= "--panel-default-border-color:var(--color-2);";
+            $cssString .= "--pagemodule-grid-cell-bg:rgba(var(--rgb-color-2),0.5);";
+            $cssString .= "--panel-default-heading-bg:rgba(var(--rgb-color-2),0.5);";
+            $cssString .= "--panel-default-border-color:rgba(var(--rgb-color-2),0.5);";
+            $cssString .= "--bs-info-bg-subtle:var(--color-2);";
 
             $cssString .= "--module-docheader-border:var(--color-4);";
             $cssString .= "--module-bg:var(--color-4);";
             $cssString .= "--pagemodule-element-bg:var(--color-4);";
+            $cssString .= "--bs-info-border-subtle:var(--color-4);";
+            $cssString .= "--bs-body-bg:var(--color-4);";
 
             //// color 5
             // button
@@ -64,8 +66,10 @@ class PageRenderer implements SingletonInterface
             $cssString .= "--bs-heading-color:var(--color-5);";
             $cssString .= "--bs-body-color:var(--color-5);";
             $cssString .= "--bs-secondary-color:var(--color-5);";
+            $cssString .= "--bs-link-color:var(--color-5);";
             $cssString .= "--bs-link-color-rgb:var(--color-5);";
             $cssString .= "--bs-link-hover-color-rgb:var(--color-5);";
+            $cssString .= "--bs-info-text-emphasis:var(--color-5);";
             $cssString .= "--treelist-color:var(--color-5);";
             $cssString .= "--panel-default-heading-color:var(--color-5);";
 
@@ -82,7 +86,9 @@ class PageRenderer implements SingletonInterface
             $cssString .= "--svgtree-node-color:var(--color-5);";
 
             // code
+            $cssString .= "--bs-pagination-hover-color:var(--color-8);";
             $cssString .= "--bs-code-color:var(--color-8);";
+            $cssString .= "--bs-alert-link-color:var(--color-8);";
             /**
              * generate css block with be user css variables
              */

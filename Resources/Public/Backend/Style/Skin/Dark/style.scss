@@ -11,6 +11,7 @@ elements
 @import "Elements/button";
 @import "Elements/icons";
 @import "Elements/element-preview";
+@import "Elements/table";
 
 /**
 extensions
@@ -25,6 +26,7 @@ extensions
 general
  */
 @import "General/notifications";
+@import "General/pagination";
 @import "General/scrollbar";
 
 /**
@@ -63,6 +65,7 @@ views
 @import "Views/modal";
 @import "Views/module";
 @import "Views/pagetree";
+@import "Views/reports";
 @import "Views/search";
 @import "Views/toolbar";
 @import "Views/table";

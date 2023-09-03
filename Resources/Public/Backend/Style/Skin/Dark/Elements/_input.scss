@@ -6,3 +6,7 @@
     border-color: unset;
   }
 }
+.form-check-input:checked {
+  background-color: rgba(var(--rgb-color-8),0.5);
+  border-color: rgba(var(--rgb-color-8),0.5);
+}
