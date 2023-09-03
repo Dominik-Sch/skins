@@ -27,6 +27,11 @@ elements
   border-color: unset;
 }
 
+.form-check-input:checked {
+  background-color: rgba(var(--rgb-color-8), 0.5);
+  border-color: rgba(var(--rgb-color-8), 0.5);
+}
+
 .btn {
   transition: 0.15s all;
   scale: 1;
@@ -48,6 +53,15 @@ elements
   background: var(--color-8);
   border: 1px solid var(--color-8);
   color: var(--color-1);
+}
+.btn-link:hover {
+  color: var(--color-5);
+}
+.btn-check:checked + .btn {
+  background-color: rgba(var(--color-2), 0.25);
+}
+.btn-check + .btn:hover {
+  background-color: rgba(var(--color-2), 0.5);
 }
 .btn:hover {
   --bs-btn-border-color: rgba(var(--rgb-color-5),1);
@@ -74,11 +88,88 @@ button {
   background: transparent;
 }
 
+tr.active {
+  --bs-table-active-bg: rgba(var(--rgb-color-2),0.75);
+  --bs-table-bg: tranparent;
+}
+tr.active:hover {
+  --bs-table-active-bg: rgba(var(--rgb-color-2),1);
+  --bs-table-bg: tranparent;
+}
+
+.table-hover > tbody > tr:hover > * {
+  --bs-table-bg-state: rgba(var(--rgb-color-2),1);
+  --bs-table-active-bg: rgba(var(--rgb-color-2),1);
+  --bs-table-bg: tranparent;
+  color: var(--color-5);
+}
+
 /**
 extensions
  */
 .powermail_listbe_details_container:hover .powermail_listbe_details_dl {
   background-color: transparent;
+}
+
+.mask-elements__header {
+  background: transparent;
+}
+
+.mask-elements__column {
+  background: transparent;
+}
+
+.mask-sidebar__background {
+  background: transparent;
+  border: 1px solid rgba(var(--rgb-color-5), 0.25);
+}
+
+.mask-field-group__list {
+  background-color: transparent;
+}
+
+.mask-sidebar__toggle {
+  background-color: rgba(var(--rgb-color-2), 1);
+}
+.mask-sidebar__toggle:hover {
+  background-color: rgba(var(--rgb-color-2), 0.5);
+}
+.mask-sidebar__toggle.active {
+  background-color: rgba(var(--rgb-color-2), 0);
+}
+
+.mask-field-group:hover .mask-field-group__label {
+  color: rgba(var(--rgb-color-5), 0.25);
+}
+
+.mask-fields {
+  background: transparent;
+  border: 1px solid rgba(var(--rgb-color-5), 0.25);
+}
+.mask-fields .mask-field-list {
+  background: transparent;
+  border: 1px solid rgba(var(--rgb-color-5), 0.25);
+}
+.mask-fields .mask-field__body {
+  background: transparent;
+  border: 1px solid rgba(var(--rgb-color-5), 0.25);
+}
+
+.mask-field-form {
+  background: transparent;
+  border: 1px solid rgba(var(--rgb-color-5), 0.25);
+}
+
+.mask-field.active > .mask-field__row .mask-field__body, .mask-field:hover > .mask-field__row .mask-field__body {
+  background: rgba(var(--rgb-color-2), 0.25);
+}
+
+.mask-footer {
+  background: transparent;
+}
+
+.mask-footer a:not(.btn):hover, .mask-footer a:not(.btn):focus {
+  color: var(--color-8);
 }
 
 /**
@@ -87,6 +178,21 @@ general
 .callout-danger {
   background-color: rgb(200, 60, 60);
   border-color: rgb(200, 60, 60);
+}
+
+.callout-info {
+  --callout-color: var(--typo3-component-color);
+  --callout-bg: var(--typo3-component-bg);
+  --callout-border-color: var(--typo3-component-border-color);
+}
+
+.tooltip-inner {
+  color: var(--color-5);
+}
+
+.pagination {
+  --bs-pagination-hover-color: var(--color-8);
+  --bs-pagination-hover-bg: transparent;
 }
 
 ::-webkit-scrollbar {
@@ -197,7 +303,6 @@ body .cke_button_on {
 .extension-list .inactive {
   opacity: 0.5;
 }
-
 .extension-list .installed td .btn-default {
   background-color: transparent;
   border-color: transparent;
@@ -208,13 +313,20 @@ body .cke_button_on {
   width: 24px;
 }
 
-/*Extension manager table and Template table and Info table...*/
-.table-striped > tbody > tr:nth-of-type(odd) > * {
-  --bs-table-accent-bg: var(--bs-table-striped-bg);
+.table > tbody > tr:nth-of-type(odd) {
+  background: rgba(var(--rgb-color-2), 0.1);
 }
-
-.table-hover > tbody > tr:hover > * {
-  --bs-table-accent-bg: var(--bs-table-hover-bg);
+.table > tbody > tr:hover {
+  background: rgba(var(--rgb-color-2), 0.5);
+}
+.table > tbody > tr.installed {
+  background: rgba(var(--rgb-color-2), 0.75);
+}
+.table > tbody > tr.installed td {
+  background-color: transparent;
+}
+.table > tbody > tr.installed:hover {
+  background: rgba(var(--rgb-color-2), 1);
 }
 
 [id=ext-backend-Modules-FileSystemNavigationFrame-index-php] .list-tree li:last-child:before, [id=ext-backend-Modules-FileSystemNavigationFrame-index-php] .list-tree-control > .fa:before {
@@ -438,6 +550,7 @@ select optgroup {
 
 .form-section {
   border: none;
+  border-bottom: 1px solid rgba(var(--rgb-color-5), 0.25);
   padding: 15px 12px 3px;
 }
 .form-section + .form-section {
@@ -455,6 +568,11 @@ select optgroup {
 .form-control:focus, .form-select:focus {
   outline: 0;
   box-shadow: none;
+  background: rgba(var(--rgb-color-2), 0.25);
+  color: var(--color-5);
+}
+.form-control:disabled, .form-select:disabled {
+  opacity: 0.25;
 }
 
 .form-select {
@@ -605,6 +723,11 @@ body .pagination > li > span:focus, body .pagination > li > span:hover, body .pa
 
 .scaffold-content-navigation-available .scaffold-content-navigation-switcher {
   background: var(--module-docheader-bg);
+}
+
+.statusreport {
+  --statusreport-bg: var(--color-4);
+  --statusreport-color: var(--color-5);
 }
 
 .svg-toolbar .svg-toolbar__drag-node {
