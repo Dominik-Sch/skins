@@ -28,7 +28,7 @@ All notable changes to this project will be documented in the [Changelog](CHANGE
 1. Click on the paint brush in the top bar
 2. Choose your skin and enabled it by clicking on the toggle button
 
-   <br><img src="Documentation/Resources/skins-be-dropdown.jpg" height="500px">
+   <br><img src="Documentation/Resources/skins-be-dropdown.png" height="500px">
 
 ## save-and-close
 
