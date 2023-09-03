@@ -104,9 +104,10 @@ class PageRenderer implements SingletonInterface
             $pageRenderer->addCssInlineBlock('tx_skins_custom_color_block', $customCssBlock, false, false);
         }
     }
+
     private function convertHexToRgb($hex): string
     {
         list($r, $g, $b) = sscanf($hex, "#%02x%02x%02x");
-        return $r.','.$g.','.$b;
+        return $r . ',' . $g . ',' . $b;
     }
 }

@@ -49,18 +49,21 @@ define([], function () {
             .get()
             .then(async function (response) {
                 const resolved = await response.resolve();
-                const settingsObject = JSON.parse(resolved.result.tx_skins_dark_mode_settings);
+                console.log(resolved.result);
+                if (Object.keys(resolved.result).length > 0) {
+                    const settingsObject = JSON.parse(resolved.result.tx_skins_dark_mode_settings);
 
-                for (const key in settingsObject) {
-                    // set color
-                    extension.querySelectorAll('.' + key + ' input')[0].value = settingsObject[key];
-                }
+                    for (const key in settingsObject) {
+                        // set color
+                        extension.querySelectorAll('.' + key + ' input')[0].value = settingsObject[key];
+                    }
 
-                extension.querySelectorAll('#tx_skins_active').value = 0;
-                // custom skin checkbox
-                if (resolved.result.tx_skins_active > 0) {
-                    extension.querySelectorAll('#tx_skins_active')[0].click();
-                    extension.querySelectorAll('#tx_skins_active')[0].value = 1;
+                    extension.querySelectorAll('#tx_skins_active').value = 0;
+                    // custom skin checkbox
+                    if (resolved.result.tx_skins_active > 0) {
+                        extension.querySelectorAll('#tx_skins_active')[0].click();
+                        extension.querySelectorAll('#tx_skins_active')[0].value = 1;
+                    }
                 }
             });
     });
