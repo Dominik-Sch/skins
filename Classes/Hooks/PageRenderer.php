@@ -70,8 +70,12 @@ class PageRenderer implements SingletonInterface
             $cssString .= "--bs-link-color-rgb:var(--color-5);";
             $cssString .= "--bs-link-hover-color-rgb:var(--color-5);";
             $cssString .= "--bs-info-text-emphasis:var(--color-5);";
+            $cssString .= "--bs-card-title-color:var(--color-5);";
+            $cssString .= "--bs-card-color:var(--color-5);";
+            $cssString .= "--bs-card-subtitle-color:var(--color-5);";
             $cssString .= "--treelist-color:var(--color-5);";
             $cssString .= "--panel-default-heading-color:var(--color-5);";
+            $cssString .= "--treelist-comment-color:rgba(var(--rgb-color-5),0.75);";
 
             $cssString .= ".nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-item.show .nav.nav-tabs > li:not(.nav-item) > a:not(.nav-link), .nav-tabs .nav-link.active, .nav.nav-tabs > li.show:not(.nav-item) .nav-link, .nav.nav-tabs > li.show:not(.nav-item) .nav.nav-tabs > li:not(.nav-item) > a:not(.nav-link), .nav.nav-tabs > li:not(.nav-item) > a.active:not(.nav-link) {";
             $cssString .= "--bs-nav-tabs-link-active-color:var(--color-5);";

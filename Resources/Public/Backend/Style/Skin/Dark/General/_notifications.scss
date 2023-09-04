@@ -10,3 +10,9 @@
 .tooltip-inner {
   color: var(--color-5);
 }
+.alert-notice {
+  --bs-alert-color: var(--color-5);
+  --bs-alert-bg: rgba(var(--rgb-color-4),0.5);
+  --bs-alert-border-color: rgba(var(--rgb-color-7),0.5);
+  --bs-alert-link-color: var(--color-8);
+}

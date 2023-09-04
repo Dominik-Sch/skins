@@ -2,6 +2,9 @@ define([], function () {
 
     const extension = document.getElementById('rubb1-skins-toolbar-darkmode');
 
+    if (extension === null)
+        return;
+
     // prevent dropdown from closing
     extension.querySelectorAll('.dropdown-menu')[0].addEventListener("click", function (e) {
         e.stopPropagation();
@@ -49,7 +52,6 @@ define([], function () {
             .get()
             .then(async function (response) {
                 const resolved = await response.resolve();
-                console.log(resolved.result);
                 if (Object.keys(resolved.result).length > 0) {
                     const settingsObject = JSON.parse(resolved.result.tx_skins_dark_mode_settings);
 

@@ -2,8 +2,9 @@
 input {
   border: none;
 }
+
 .input-group-addon, .input-group-text {
-  color: rgba(var(--rgb-color-5),0.5);
+  color: rgba(var(--rgb-color-5), 0.5);
 }
 
 select {
@@ -13,16 +14,20 @@ select {
     font-weight: 700;
   }
 }
+select option:checked {
+  color: var(--color-8);
+}
 
 .form-section {
   border: none;
-  border-bottom: 1px solid rgba(var(--rgb-color-5),0.25);
+  border-bottom: 1px solid rgba(var(--rgb-color-5), 0.25);
   padding: 15px 12px 3px;
 
   & + .form-section {
     margin-top: 0;
   }
 }
+
 .input-group-addon, .input-group-text {
   background-color: transparent;
 }
@@ -30,12 +35,14 @@ select {
 .form-control, .form-select {
   background: transparent;
   color: var(--color-5);
+
   &:focus {
     outline: 0;
     box-shadow: none;
-    background: rgba(var(--rgb-color-2),0.25);
+    background: rgba(var(--rgb-color-2), 0.25);
     color: var(--color-5);
   }
+
   &:disabled {
     opacity: 0.25;
   }
@@ -47,6 +54,7 @@ select {
   color: var(--color-5);
   background-repeat: no-repeat;
   background-position: right;
+
   option {
     background-color: var(--color-2);
   }
@@ -95,6 +103,7 @@ body {
     }
   }
 }
+
 .recordlist {
   box-shadow: none;
   background: transparent;

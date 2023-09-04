@@ -24,3 +24,12 @@
 .form-section {
   background-color: transparent;
 }
+
+.t3-form-x-component {
+  background: transparent;
+}
+
+#t3-form-structure-panel #t3-form-navigation-component-tree-root-container.t3-form-root-element-selected, #t3-form-structure-panel #t3-form-navigation-component-tree-root-container.t3-form-root-element-selected:hover, #t3-form-structure-panel .tree li > .t3-form-form-element-selected, #t3-form-structure-panel .tree li > .t3-form-form-element-selected:hover,
+#t3-form-structure-panel #t3-form-navigation-component-tree-root-container:hover, #t3-form-structure-panel .t3-form-form-element-selected, #t3-form-structure-panel .t3-form-root-element-selected, #t3-form-structure-panel .tree li > div:hover {
+  background-color: rgba(var(--rgb-color-2), 0.5);
+}

@@ -102,9 +102,7 @@ tr.active:hover {
   --bs-table-active-bg: rgba(var(--rgb-color-2),1);
   --bs-table-bg: tranparent;
   color: var(--color-5);
-}
-
-/**
+} /**
 extensions
  */
 .powermail_listbe_details_container:hover .powermail_listbe_details_dl {
@@ -188,6 +186,13 @@ general
 
 .tooltip-inner {
   color: var(--color-5);
+}
+
+.alert-notice {
+  --bs-alert-color: var(--color-5);
+  --bs-alert-bg: rgba(var(--rgb-color-4),0.5);
+  --bs-alert-border-color: rgba(var(--rgb-color-7),0.5);
+  --bs-alert-link-color: var(--color-8);
 }
 
 .pagination {
@@ -337,6 +342,13 @@ body .cke_button_on {
   border: transparent;
 }
 
+.resource-tile {
+  color: var(--color-5);
+  background-color: var(--color-2);
+  border: 1px solid var(--color-2);
+  border-radius: var(--resource-tile-border-radius);
+}
+
 .property-grid .table > tbody > tr {
   background-color: transparent;
 }
@@ -362,6 +374,15 @@ body .cke_button_on {
 
 .form-section {
   background-color: transparent;
+}
+
+.t3-form-x-component {
+  background: transparent;
+}
+
+#t3-form-structure-panel #t3-form-navigation-component-tree-root-container.t3-form-root-element-selected, #t3-form-structure-panel #t3-form-navigation-component-tree-root-container.t3-form-root-element-selected:hover, #t3-form-structure-panel .tree li > .t3-form-form-element-selected, #t3-form-structure-panel .tree li > .t3-form-form-element-selected:hover,
+#t3-form-structure-panel #t3-form-navigation-component-tree-root-container:hover, #t3-form-structure-panel .t3-form-form-element-selected, #t3-form-structure-panel .t3-form-root-element-selected, #t3-form-structure-panel .tree li > div:hover {
+  background-color: rgba(var(--rgb-color-2), 0.5);
 }
 
 form[name=statistic] select {
@@ -458,6 +479,10 @@ form[name=statistic] select {
   --panel-border-color: rgba(var(--rgb-color-5),0.25);
 }
 
+.nav-tabs > li.has-validation-error > a.nav-link.active, .nav.nav-tabs > li.has-validation-error:not(.nav-item) > a.active:not(.nav-link) {
+  background-color: transparent;
+}
+
 /**
 views
  */
@@ -546,6 +571,10 @@ select {
 }
 select optgroup {
   font-weight: 700;
+}
+
+select option:checked {
+  color: var(--color-8);
 }
 
 .form-section {

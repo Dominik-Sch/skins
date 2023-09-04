@@ -5,3 +5,10 @@
 .list-tree li.active > .list-tree-group:before {
   border: transparent;
 }
+
+.resource-tile {
+  color: var(--color-5);
+  background-color: var(--color-2);
+  border: 1px solid var(--color-2);
+  border-radius: var(--resource-tile-border-radius);
+}
