@@ -3,6 +3,11 @@
 }
 .t3-page-ce {
   overflow: visible;
+  &-hidden {
+    .t3-page-ce-element {
+      background: transparent;
+    }
+  }
 }
 .t3-page-ce-dropzone {
   transition: 0.25s all;

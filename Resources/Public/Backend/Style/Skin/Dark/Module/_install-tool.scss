@@ -10,3 +10,10 @@
   word-wrap: break-word;
   background: transparent;
 }
+
+.table>:not(caption)>*>* {
+  --bs-table-color-type: var(--color-5);
+}
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+  --bs-table-color-type: var(--color-5);
+}

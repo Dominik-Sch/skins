@@ -60,6 +60,9 @@ final class ModifyButtonBarEventListener
                         )
                     )
                     ->setValue('1');
+                /*$button = $buttonBar->makeFullyRenderedButton()
+                    ->setHtmlSource('');
+                ;*/
                 $buttons[ButtonBar::BUTTON_POSITION_LEFT][2][] = $button;
                 $event->setButtons($buttons);
             }

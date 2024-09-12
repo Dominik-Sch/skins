@@ -41,3 +41,11 @@
     }
   }
 }
+.note-list .note {
+  --note-bg: var(--color-2);
+  --note-color: var(--color-5);
+  --note-header-color: var(--color-5);
+  --note-header-bg: var(--color-4);
+  --note-notice-header-bg: var(--color-4);
+  border: 1px solid rgba(var(--rgb-color-5), 0.75);
+}

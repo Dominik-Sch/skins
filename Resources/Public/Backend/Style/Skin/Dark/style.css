@@ -32,6 +32,15 @@ elements
   border-color: rgba(var(--rgb-color-8), 0.5);
 }
 
+.form-section .form-control:disabled,
+.form-section .form-select:disabled {
+  background-color: rgba(var(--rgb-color-2), 0.5);
+}
+
+.userTS .minicolors {
+  position: relative;
+}
+
 .btn {
   transition: 0.15s all;
   scale: 1;
@@ -102,7 +111,9 @@ tr.active:hover {
   --bs-table-active-bg: rgba(var(--rgb-color-2),1);
   --bs-table-bg: tranparent;
   color: var(--color-5);
-} /**
+}
+
+/**
 extensions
  */
 .powermail_listbe_details_container:hover .powermail_listbe_details_dl {
@@ -277,6 +288,12 @@ body .cke_combo_on a.cke_combo_button {
 body .cke_button_on {
   border-color: transparent;
 }
+body .ck-editor__main .h1, body .ck-editor__main .h2, body .ck-editor__main .h3, body .ck-editor__main .h4, body .ck-editor__main .h5, body .ck-editor__main .h6, body .ck-editor__main h1, body .ck-editor__main h2, body .ck-editor__main h3, body .ck-editor__main h4, body .ck-editor__main h5, body .ck-editor__main h6 {
+  color: initial;
+}
+body .ck-editor__main .table > :not(caption) > * > * {
+  --bs-table-color-type: inital;
+}
 
 .list-tree-control > .fa:before {
   background: transparent;
@@ -299,7 +316,9 @@ body .cke_button_on {
 
 .widget {
   color: var(--color-5);
-  background-color: rgba(var(--rgb-color-2), 1);
+  background-color: var(--color-4);
+  border: 1px solid rgba(var(--rgb-color-5), 0.25);
+  border-radius: 1rem;
 }
 .widget .widget-t3information-logo {
   filter: contrast(0);
@@ -402,6 +421,14 @@ form[name=statistic] select {
   background: transparent;
 }
 
+.table > :not(caption) > * > * {
+  --bs-table-color-type: var(--color-5);
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-color-type: var(--color-5);
+}
+
 .table-striped > tbody > tr:nth-of-type(odd) {
   --bs-table-accent-bg: rgb(0 0 0 / 0%);
 }
@@ -429,12 +456,24 @@ form[name=statistic] select {
   border-color: transparent;
 }
 
+.note-list .note {
+  --note-bg: var(--color-2);
+  --note-color: var(--color-5);
+  --note-header-color: var(--color-5);
+  --note-header-bg: var(--color-4);
+  --note-notice-header-bg: var(--color-4);
+  border: 1px solid rgba(var(--rgb-color-5), 0.75);
+}
+
 :root {
   --pagemodule-grid-spacing: 0.5rem;
 }
 
 .t3-page-ce {
   overflow: visible;
+}
+.t3-page-ce-hidden .t3-page-ce-element {
+  background: transparent;
 }
 
 .t3-page-ce-dropzone {
@@ -456,12 +495,17 @@ form[name=statistic] select {
   border-bottom-color: var(--color-5);
 }
 
-.svg-tree-wrapper path.link {
-  opacity: 0.5;
-}
-
 .svg-tree-element {
   border-color: var(--color-5);
+}
+
+.svg-tree-wrapper path.link {
+  stroke: var(--color-5);
+  opacity: 0.25;
+}
+
+.node-toggle-icon {
+  color: var(--color-5);
 }
 
 .nav-tabs > li > a.nav-link:focus,

@@ -9,7 +9,7 @@ defined('TYPO3') or die();
  */
 if (TYPO3 == 'BE') {
 
-    $GLOBALS['TBE_STYLES']['skins']['skins']['stylesheetDirectories'][] = 'EXT:skins/Resources/Public/Backend/ToolbarMenu';
+    $GLOBALS['TYPO3_CONF_VARS']['BE']['stylesheets']['skins'] = 'EXT:skins/Resources/Public/Backend/ToolbarMenuScss';
 
     // add backend css
     $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_pagerenderer.php']['render-preProcess'][] = PageRenderer::class . '->darkmode';

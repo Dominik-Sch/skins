@@ -16,7 +16,9 @@
 }
 .widget {
   color: var(--color-5);
-  background-color: rgba(var(--rgb-color-2),1);
+  background-color: var(--color-4);
+  border: 1px solid rgba(var(--rgb-color-5),0.25);
+  border-radius: 1rem;
   .widget-t3information-logo {
     filter: contrast(0);
   }

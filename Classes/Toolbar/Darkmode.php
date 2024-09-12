@@ -8,6 +8,7 @@ use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Exception\InvalidExtensionNameException;
 use TYPO3\CMS\Fluid\View\StandaloneView;
+use TYPO3\CMS\Core\Information\Typo3Version;
 
 class Darkmode implements ToolbarItemInterface
 {
@@ -18,7 +19,11 @@ class Darkmode implements ToolbarItemInterface
     public function __construct()
     {
         $pageRenderer = GeneralUtility::makeInstance(PageRenderer::class);
-        $pageRenderer->loadRequireJsModule('TYPO3/CMS/Skins/Darkmode');
+        if ((new Typo3Version())->getMajorVersion() >= 12) {
+            $pageRenderer->loadJavaScriptModule('@rubb1/skins/main.js');
+        } else {
+            $pageRenderer->loadRequireJsModule('TYPO3/CMS/Skins/PageLayout');
+        }
     }
 
     /**

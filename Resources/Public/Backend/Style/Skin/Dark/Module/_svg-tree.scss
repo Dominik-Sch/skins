@@ -3,10 +3,13 @@
   padding: 0;
   border-bottom-color: var(--color-5);
 }
-
-.svg-tree-wrapper path.link {
-  opacity: 0.5;
-}
 .svg-tree-element {
   border-color: var(--color-5);
+}
+.svg-tree-wrapper path.link {
+  stroke: var(--color-5);
+  opacity: 0.25;
+}
+.node-toggle-icon {
+  color: var(--color-5);
 }
