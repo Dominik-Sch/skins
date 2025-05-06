@@ -1,0 +1,37 @@
+<div class="skins-custom-contentelement skins-custom-textmedia imageorient-{record.imageorient}" id="element-tt_content-{identifier}">
+    <f:if condition="{record.imageorient} != 17 && {record.imageorient} != 18">
+        <div class="skins-column skins-column-text">
+            {record.bodytext -> f:format.raw()}
+        </div>
+    </f:if>
+    <div class="skins-column skins-column-media imagecols-{record.imagecols}">
+        <f:if condition="{media}">
+            <f:for each="{media}" as="item">
+                <f:if condition="!{item.properties.hidden}">
+                    <f:switch expression="{item.type}">
+                        <f:case value="4">
+                            <div class="video">
+                                <f:media file="{item}" width="500"/>
+                            </div>
+                        </f:case>
+                        <f:defaultCase>
+                            <div class="img-container">
+                                <picture>
+                                    <f:media file="{item}" width="500"/>
+                                    <f:if condition="{item.description}">
+                                        <figcaption><f:format.raw>{item.description}</f:format.raw></figcaption>
+                                    </f:if>
+                                </picture>
+                            </div>
+                        </f:defaultCase>
+                    </f:switch>
+                </f:if>
+            </f:for>
+        </f:if>
+    </div>
+    <f:if condition="{record.imageorient} == 17 || {record.imageorient} == 18">
+        <div class="skins-column skins-column-text">
+            {record.bodytext -> f:format.raw()}
+        </div>
+    </f:if>
+</div>
