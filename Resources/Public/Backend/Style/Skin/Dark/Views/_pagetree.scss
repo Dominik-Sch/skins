@@ -15,6 +15,12 @@
     fill: transparent;
   }
 }
+#typo3-pagetree {
+  .nodes-container {
+    --tree-bg: --color-2;
+    --tree-node-bg: --color-2;
+  }
+}
 
 .scaffold-content-navigation-component .navigation-tree-container,
 [id=ext-backend-Modules-FileSystemNavigationFrame-index-php],

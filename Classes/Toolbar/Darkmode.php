@@ -22,7 +22,7 @@ class Darkmode implements ToolbarItemInterface
         if ((new Typo3Version())->getMajorVersion() >= 12) {
             $pageRenderer->loadJavaScriptModule('@rubb1/skins/main.js');
         } else {
-            $pageRenderer->loadRequireJsModule('TYPO3/CMS/Skins/PageLayout');
+            $pageRenderer->loadRequireJsModule('TYPO3/CMS/Skins/Darkmode');
         }
     }
 

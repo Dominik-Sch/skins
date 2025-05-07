@@ -2,8 +2,9 @@
 
 namespace Rubb1\Skins\Hooks;
 
+use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
 use TYPO3\CMS\Core\SingletonInterface;
-use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 class PageRenderer implements SingletonInterface
 {
@@ -14,6 +15,19 @@ class PageRenderer implements SingletonInterface
      */
     public function darkmode($params, &$pageRenderer): void
     {
+
+        $extConf = [];
+        try {
+            $extConf = GeneralUtility::makeInstance(ExtensionConfiguration::class)->get('skins');
+        } catch (\Exception $e) {
+            // config failed to load
+        }
+
+        $pageRenderer->addCssFile('EXT:skins/Resources/Public/Backend/ToolbarMenuScss/toolbar.css');
+
+        if (isset($extConf['enableCustomPreviewRenderer']) && $extConf['enableCustomPreviewRenderer'] == '1') {
+            $pageRenderer->addCssFile('EXT:skins/Resources/Public/Backend/Style/Skin/ContentElements/elements.css');
+        }
         // Verify access to the user configuration
         if (
             $GLOBALS['BE_USER']->uc != null &&

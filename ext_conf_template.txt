@@ -1,2 +1,5 @@
 # cat=basic; type=boolean; label=Show save-and-close button in edit view
 saveAndCloseEnabled = 0
+
+# cat=basic; type=boolean; label=Enable custom preview renderer provided by skins extension
+enableCustomPreviewRenderer = 0
