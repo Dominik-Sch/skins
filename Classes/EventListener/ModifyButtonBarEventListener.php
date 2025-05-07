@@ -52,7 +52,7 @@ final class ModifyButtonBarEventListener
                 $button = $buttonBar->makeInputButton()
                     ->setForm('EditDocumentController')
                     ->setIcon($this->iconFactory->getIcon('actions-document-save-close', Icon::SIZE_SMALL))
-                    ->setName('_saveandclosedok')
+                    ->setName('_skins_saveandclosedok')
                     ->setShowLabelText(true)
                     ->setTitle(
                         LocalizationUtility::translate(

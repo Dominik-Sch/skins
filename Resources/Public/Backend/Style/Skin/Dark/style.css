@@ -649,7 +649,7 @@ select option:checked {
 }
 
 .form-select {
-  background-image: url("/typo3conf/ext/skins/Resources/Public/Backend/Style/Skin/Dark/Icons/actions-chevron-down.svg");
+  background-image: url("Icons/actions-chevron-down.svg");
   background-color: transparent;
   color: var(--color-5);
   background-repeat: no-repeat;
