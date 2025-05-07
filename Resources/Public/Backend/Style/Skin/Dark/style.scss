@@ -1,72 +1,12 @@
 /**
 default
  */
-@import "colors";
-@import "general";
-
-/**
-elements
- */
-@import "Elements/input";
-@import "Elements/button";
-@import "Elements/icons";
-@import "Elements/element-preview";
-@import "Elements/table";
-
-/**
-extensions
- */
-@import "Extensions/c3template/index";
-@import "Extensions/powermail/index";
-@import "Extensions/lux/index";
-@import "Extensions/dce/index";
-@import "Extensions/mask/index";
+@import "Colors/text";
+@import "Colors/icon";
+@import "Colors/background";
 
 /**
 general
  */
-@import "General/notifications";
-@import "General/pagination";
 @import "General/scrollbar";
 
-/**
-modules
- */
-@import "Module/access";
-@import "Module/backend-users";
-@import "Module/ckeditor";
-@import "Module/configuration";
-@import "Module/dashboard";
-@import "Module/extensionlist";
-@import "Module/filelist";
-@import "Module/forms";
-@import "Module/help";
-@import "Module/indexedsearch";
-@import "Module/install-tool";
-@import "Module/list";
-@import "Module/page";
-@import "Module/recycler";
-@import "Module/site";
-@import "Module/svg-tree";
-@import "Module/tabs";
-@import "Module/panel";
-@import "Module/redirects";
-
-/**
-views
- */
-@import "Views/callout";
-@import "Views/configuration";
-@import "Views/context-menu";
-@import "Views/edit";
-@import "Views/forms";
-@import "Views/grid";
-@import "Views/link-browser";
-@import "Views/login";
-@import "Views/modal";
-@import "Views/module";
-@import "Views/pagetree";
-@import "Views/reports";
-@import "Views/search";
-@import "Views/toolbar";
-@import "Views/table";

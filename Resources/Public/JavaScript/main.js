@@ -23,39 +23,41 @@ extension.querySelectorAll('.custom-skin-change-trigger label').forEach((element
 extension.querySelectorAll('.colorpicker-input').forEach((element) => {
     element.addEventListener("input", function () {
         // change css variables instantly to receive a preview in the live backend
-        let colorId = this.dataset.colorId;
+        let colorId = this.getAttribute("id");
         let colorVal = this.value;
-        document.documentElement.style.setProperty('--color-' + colorId, colorVal);
+        console.log(colorId, colorVal);
+        document.documentElement.style.setProperty('--' + colorId, colorVal);
         let iframe = document.getElementById("typo3-contentIframe");
         let iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
         if (iframeDocument) {
             let iframeHead = iframeDocument.querySelectorAll("head")[0];
 
-            if (iframeHead.querySelectorAll('#color-' + colorId).length) {
-                iframeHead.querySelectorAll('#color-' + colorId)[0].remove();
+            if (iframeHead.querySelectorAll('#' + colorId).length) {
+                iframeHead.querySelectorAll('#' + colorId)[0].remove();
             }
 
             // create style tag
             let style = document.createElement("style");
-            let styleContent = document.createTextNode(":root {--color-" + colorId + ": " + colorVal + "; }");
+            let styleContent = document.createTextNode(":root {--" + colorId + ": " + colorVal + "; }");
             style.appendChild(styleContent);
-            style.setAttribute("id", "color-" + colorId);
+            style.setAttribute("id", colorId);
             iframeHead.appendChild(style);
         }
     })
 })
 
-// load user settings for color picker
+// load be_user settings for color picker
 new AjaxRequest(TYPO3.settings.ajaxUrls.load_settings)
     .get()
     .then(async function (response) {
         const resolved = await response.resolve();
         if (Object.keys(resolved.result).length > 0) {
             const settingsObject = JSON.parse(resolved.result.tx_skins_dark_mode_settings);
+            console.log(settingsObject);
 
             for (const key in settingsObject) {
                 // set color
-                extension.querySelectorAll('.' + key + ' input')[0].value = settingsObject[key];
+                extension.querySelectorAll('#' + key)[0].value = settingsObject[key];
             }
 
             extension.querySelectorAll('#tx_skins_active').value = 0;
@@ -67,7 +69,7 @@ new AjaxRequest(TYPO3.settings.ajaxUrls.load_settings)
         }
     });
 
-// save color settings to be user
+// save color settings to be_user
 extension.querySelectorAll('.save-skin-settings')[0].addEventListener("click", function () {
     let settingsArray = {};
     extension.querySelectorAll('.colorpicker-input').forEach((element) => {

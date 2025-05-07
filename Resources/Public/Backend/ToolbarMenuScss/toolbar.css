@@ -1,21 +1,60 @@
-.dropdown-menu hr {
-  border-top: 1px solid var(--color-5);
-  opacity: 0.3;
-  margin: 0.75rem 0;
+.toolbar-list #rubb1-skins-toolbar-darkmode .dropdown-menu {
+  font-size: 0.75rem;
 }
-.dropdown-menu hr.content-width {
-  margin-left: 0;
-  margin-right: 0;
+.toolbar-list #rubb1-skins-toolbar-darkmode .color-picker-wrap {
+  width: 100%;
+}
+.toolbar-list #rubb1-skins-toolbar-darkmode .row-wrap {
+  margin-top: 0.5rem;
+}
+.toolbar-list #rubb1-skins-toolbar-darkmode .color-section-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.toolbar-list #rubb1-skins-toolbar-darkmode .color-section-header:after {
+  width: 100%;
+  height: 1px;
+  background: var(--typo3-text-color-base);
+  content: "";
+  display: block;
   opacity: 0.1;
 }
-
+.toolbar-list #rubb1-skins-toolbar-darkmode .color-section-header label {
+  font-weight: bold;
+  opacity: 0.75;
+  white-space: nowrap;
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+.toolbar-list #rubb1-skins-toolbar-darkmode .color-box {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 0.5rem;
+}
+.toolbar-list #rubb1-skins-toolbar-darkmode .color-box > div {
+  width: 100%;
+}
+.toolbar-list #rubb1-skins-toolbar-darkmode .color-box > div label {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8em;
+}
+.toolbar-list #rubb1-skins-toolbar-darkmode .color-box > div input {
+  display: block;
+  width: 100%;
+}
+.toolbar-list #rubb1-skins-toolbar-darkmode .colorpicker-input {
+  padding: 0;
+  height: 20px;
+  border-radius: var(--bs-border-radius);
+  border-width: 0;
+}
 .toolbar-list #rubb1-skins-toolbar-darkmode .dropdown-inner-wrap {
   padding: 8px 8px 12px;
 }
 .toolbar-list #rubb1-skins-toolbar-darkmode h3 {
-  padding: 0;
-}
-.toolbar-list #rubb1-skins-toolbar-darkmode .colorpicker-input {
   padding: 0;
 }
 .toolbar-list #rubb1-skins-toolbar-darkmode .header {
@@ -23,9 +62,6 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.5em;
-}
-.toolbar-list #rubb1-skins-toolbar-darkmode .header h3 {
-  margin-bottom: 0;
 }
 .toolbar-list #rubb1-skins-toolbar-darkmode .header .save-wrap .save-skin-settings {
   cursor: pointer;
@@ -37,23 +73,11 @@
   align-items: center;
   border-radius: 2px;
 }
-.toolbar-list #rubb1-skins-toolbar-darkmode .header .save-wrap .save-skin-settings:hover {
-  background-color: var(--color-1);
-}
 .toolbar-list #rubb1-skins-toolbar-darkmode .header .save-wrap .save-skin-settings svg {
   width: 16px;
   height: 16px;
   fill: white;
   margin-right: 5px;
-}
-.toolbar-list #rubb1-skins-toolbar-darkmode .checkbox-label {
-  display: block;
-  width: 100%;
-}
-.toolbar-list #rubb1-skins-toolbar-darkmode .checkbox-label span {
-  display: block;
-  text-align: right;
-  width: 100%;
 }
 .toolbar-list #rubb1-skins-toolbar-darkmode svg .darkmode-path {
   fill: rgb(245, 245, 245);
@@ -61,17 +85,15 @@
 .toolbar-list #rubb1-skins-toolbar-darkmode svg .darkmode-background {
   fill: transparent;
 }
-.toolbar-list #rubb1-skins-toolbar-darkmode .color-picker-wrap {
+.toolbar-list #rubb1-skins-toolbar-darkmode .checkbox-label {
+  display: block;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-  align-items: center;
+  height: 19px;
 }
-.toolbar-list #rubb1-skins-toolbar-darkmode .color-picker-wrap label {
-  font-weight: normal;
-  width: auto;
+.toolbar-list #rubb1-skins-toolbar-darkmode .checkbox-label span {
+  display: block;
   text-align: right;
+  width: 100%;
 }
 .toolbar-list #rubb1-skins-toolbar-darkmode .checkbox, .toolbar-list #rubb1-skins-toolbar-darkmode .radio {
   position: relative;
@@ -84,11 +106,11 @@
 .toolbar-list #rubb1-skins-toolbar-darkmode .checkbox input[type=checkbox], .toolbar-list #rubb1-skins-toolbar-darkmode .checkbox-inline input[type=checkbox] {
   position: absolute;
   margin-left: -20px;
+  display: none;
 }
 .toolbar-list #rubb1-skins-toolbar-darkmode .checkbox-label {
   position: relative;
   display: inline-flex;
-  align-items: baseline;
   padding: 0;
   min-height: 0;
   transition: all 0.3s ease-in-out;
@@ -135,6 +157,13 @@
 }
 .toolbar-list #rubb1-skins-toolbar-darkmode .checkbox .checkbox-input {
   opacity: 0;
+}
+
+html[data-color-scheme=light] .toolbar-list #rubb1-skins-toolbar-darkmode svg .darkmode-path {
+  fill: rgb(0, 0, 0);
+}
+html[data-color-scheme=light] .toolbar-list #rubb1-skins-toolbar-darkmode .header .save-wrap .save-skin-settings svg {
+  fill: rgb(0, 0, 0);
 }
 
 /*# sourceMappingURL=toolbar.css.map */

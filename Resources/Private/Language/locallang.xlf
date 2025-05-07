@@ -18,26 +18,35 @@
             <trans-unit id="tx_skins.toolbar.dropdown.toggle_custom_skin">
                 <source>Toggle custom skin</source>
             </trans-unit>
-            <trans-unit id="tx_skins.toolbar.dropdown.color_background_special">
-                <source>Special background color</source>
+            <trans-unit id="tx_skins.toolbar.dropdown.main_menue">
+                <source>Main menue</source>
             </trans-unit>
-            <trans-unit id="tx_skins.toolbar.dropdown.color_select">
-                <source>Selection color</source>
+            <trans-unit id="tx_skins.toolbar.dropdown.pagetree">
+                <source>Pagetree</source>
             </trans-unit>
-            <trans-unit id="tx_skins.toolbar.dropdown.color_content_background">
-                <source>Content background color</source>
+            <trans-unit id="tx_skins.toolbar.dropdown.color_module">
+                <source>Module</source>
             </trans-unit>
             <trans-unit id="tx_skins.toolbar.dropdown.color_text">
-                <source>Text color</source>
+                <source>Text</source>
             </trans-unit>
             <trans-unit id="tx_skins.toolbar.dropdown.color_border">
-                <source>Border color</source>
+                <source>Border</source>
             </trans-unit>
-            <trans-unit id="tx_skins.toolbar.dropdown.color_background_scaffold_modulemenu">
-                <source>Module menu background color</source>
+            <trans-unit id="tx_skins.toolbar.dropdown.color_background_menu">
+                <source>Menu background</source>
             </trans-unit>
-            <trans-unit id="tx_skins.toolbar.dropdown.color_special">
-                <source>Special color</source>
+            <trans-unit id="tx_skins.toolbar.dropdown.color_topbar">
+                <source>Topbar</source>
+            </trans-unit>
+            <trans-unit id="tx_skins.toolbar.dropdown.color_highlight">
+                <source>Highlight</source>
+            </trans-unit>
+            <trans-unit id="tx_skins.toolbar.dropdown.color_scrollbar">
+                <source>Scrollbar</source>
+            </trans-unit>
+            <trans-unit id="tx_skins.toolbar.dropdown.color_icon">
+                <source>Icon</source>
             </trans-unit>
         </body>
     </file>

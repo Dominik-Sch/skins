@@ -4,20 +4,37 @@ namespace Rubb1\Skins\Controller;
 
 use Doctrine\DBAL\Exception;
 use InvalidArgumentException;
+use Psr\Http\Message\MessageInterface;
+use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use TYPO3\CMS\Core\Database\ConnectionPool;
-use TYPO3\CMS\Core\Http\Response;
 use TYPO3\CMS\Core\Http\ResponseFactory;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 class BackendController
 {
-    protected string $defaultSettings = '{"color-1":"#151515","color-2":"#292929","color-4":"#3c3f41","color-5":"#f5f5f5","color-6":"#808080","color-7":"#1f1f1f","color-8":"#fdc300"}';
+    protected array $defaultSettings = [
+        "color-highlight" => "#ecf000",
+        "color-icon" => "#ffffff",
+        "color-main-menue-background" => "#000000",
+        "color-main-menue-border" => "#ffffff",
+        "color-main-menue-color" => "#ffffff",
+        "color-module-background" => "#000000",
+        "color-module-border" => "#ffffff",
+        "color-module-color" => "#ffffff",
+        "color-pagetree-background" => "#000000",
+        "color-pagetree-border" => "#ffffff",
+        "color-pagetree-color" => "#ffffff",
+        "color-scrollbar" => "#ecf000",
+        "color-topbar-background" => "#000000",
+        "color-topbar-border" => "#ffffff",
+        "color-topbar-color" => "#ffffff",
+    ];
+
     /**
      * @throws Exception
      */
-    public function saveAction(ServerRequestInterface $request): \Psr\Http\Message\MessageInterface|\Psr\Http\Message\ResponseInterface
+    public function saveAction(ServerRequestInterface $request): MessageInterface|ResponseInterface
     {
         $input = $request->getQueryParams()['input'] ?? null;
         if ($input === null) {
@@ -63,8 +80,12 @@ class BackendController
         return $response;
     }
 
-    public function loadAction(ServerRequestInterface $request): \Psr\Http\Message\MessageInterface|\Psr\Http\Message\ResponseInterface
+    public function loadAction(ServerRequestInterface $request): MessageInterface|ResponseInterface
     {
+        // reset settings - just for development
+        #unset($GLOBALS['BE_USER']->uc['tx_skins_active']);
+        #unset($GLOBALS['BE_USER']->uc['tx_skins_dark_mode_settings']);
+
         $skinsDataArray = [];
         if (
             isset($GLOBALS['BE_USER']->uc['tx_skins_active']) &&
@@ -74,7 +95,7 @@ class BackendController
             $skinsDataArray['tx_skins_dark_mode_settings'] = $GLOBALS['BE_USER']->uc['tx_skins_dark_mode_settings'];
         } else {
             $skinsDataArray['tx_skins_active'] = 0;
-            $skinsDataArray['tx_skins_dark_mode_settings'] = $this->defaultSettings;
+            $skinsDataArray['tx_skins_dark_mode_settings'] = json_encode($this->defaultSettings);
         }
 
         $data = ['result' => $skinsDataArray];
