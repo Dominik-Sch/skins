@@ -1,0 +1,30 @@
+/**
+menue
+ */
+.modulemenu-action.modulemenu-action-active:not(:has(~ul.collapse.show)) {
+  --typo3-state-default-focus-border-color: var(--color-main-menue-border);
+}
+.modulemenu-action:focus-visible, .modulemenu-action:hover {
+  --typo3-state-default-focus-border-color: var(--color-main-menue-border);
+  --typo3-state-default-hover-border-color: var(--color-main-menue-border);
+}
+.open .toolbar-item-link, .toolbar-item-link.show, .toolbar-item-link:focus, .toolbar-item-link:hover {
+  --typo3-state-default-focus-border-color: var(--color-main-menue-border);
+}
+
+/**
+element
+ */
+.t3-page-ce-element {
+  --pagemodule-element-border-color: rgba(var(--rgb-color-element-border),1);
+}
+
+/**
+button
+ */
+.btn-default {
+  --typo3-state-default-hover-border-color: var(--color-button-border);
+  --typo3-state-default-disabled-border-color: var(--color-button-border);
+  --typo3-state-default-focus-border-color: var(--color-button-border);
+  --typo3-state-default: var(--color-button-border);
+}

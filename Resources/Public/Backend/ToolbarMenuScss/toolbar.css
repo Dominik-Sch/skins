@@ -72,15 +72,17 @@
   display: flex;
   align-items: center;
   border-radius: 2px;
+  width: 76px;
+  height: 36px;
+  vertical-align: 0;
+  white-space: normal;
+  position: static;
+  line-height: 1;
 }
 .toolbar-list #rubb1-skins-toolbar-darkmode .header .save-wrap .save-skin-settings svg {
   width: 16px;
   height: 16px;
-  fill: white;
   margin-right: 5px;
-}
-.toolbar-list #rubb1-skins-toolbar-darkmode svg .darkmode-path {
-  fill: rgb(245, 245, 245);
 }
 .toolbar-list #rubb1-skins-toolbar-darkmode svg .darkmode-background {
   fill: transparent;
@@ -157,13 +159,6 @@
 }
 .toolbar-list #rubb1-skins-toolbar-darkmode .checkbox .checkbox-input {
   opacity: 0;
-}
-
-html[data-color-scheme=light] .toolbar-list #rubb1-skins-toolbar-darkmode svg .darkmode-path {
-  fill: rgb(0, 0, 0);
-}
-html[data-color-scheme=light] .toolbar-list #rubb1-skins-toolbar-darkmode .header .save-wrap .save-skin-settings svg {
-  fill: rgb(0, 0, 0);
 }
 
 /*# sourceMappingURL=toolbar.css.map */

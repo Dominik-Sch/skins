@@ -2,7 +2,7 @@
   "name": "rubb1/skins",
   "type": "typo3-cms-extension",
   "description": "This extension adds a dark skin (dark theme) to the TYPO3 backend. The colors are customizable and can be changed to your favorite colors.",
-  "version": "11.3.0",
+  "version": "11.3.1",
   "keywords": [
     "TYPO3",
     "extension",
@@ -29,11 +29,11 @@
     }
   },
   "require": {
-    "php": "^8.0 || ^8.1 || ^8.2 || ^8.3",
+    "php": "^8.0 || ^8.1 || ^8.2 || ^8.3 || ^8.4",
     "typo3/cms-core": "^13.4.0"
   },
   "extra": {
-    "tags": "Stable, PHP 8.0, PHP 8.1, PHP 8.2, PHP 8.3, TYPO3 12, TYPO3 13, English, OpenSource, Free, TER",
+    "tags": "Stable, PHP 8.0, PHP 8.1, PHP 8.2, PHP 8.3,PHP 8.4, TYPO3 13, English, OpenSource, Free, TER, Backend, Customize",
     "typo3/cms": {
       "cms-package-dir": "{$vendor-dir}/typo3/cms",
       "web-dir": ".Build/Web",
