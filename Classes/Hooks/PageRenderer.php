@@ -44,8 +44,13 @@ class PageRenderer implements SingletonInterface
             $cssString = "";
 
             foreach ($settingsArray as $key => $value) {
+                $rgb = $this->convertHexToRgb($value);
+                $hsl = $this->convertRgbToHsl($rgb['r'],$rgb['g'],$rgb['b']);
                 $cssString .= '--' . $key . ': ' . $value . '; ';
-                $cssString .= '--rgb-' . $key . ': ' . $this->convertHexToRgb($value) . '; ';
+                $cssString .= '--rgb-' . $key . ': ' . implode(',',$rgb) . '; ';
+                $cssString .= '--h-' . $key . ': ' . $hsl['h'] . '; ';
+                $cssString .= '--s-' . $key . ': ' . $hsl['s'] . '%; ';
+                $cssString .= '--l-' . $key . ': ' . $hsl['l'] . '%; ';
             }
 
             /**
@@ -64,9 +69,61 @@ class PageRenderer implements SingletonInterface
         }
     }
 
-    private function convertHexToRgb($hex): string
+    private function convertHexToRgb($hex): array
     {
         list($r, $g, $b) = sscanf($hex, "#%02x%02x%02x");
-        return $r . ',' . $g . ',' . $b;
+        return [
+            "r" => $r,
+            "g" => $g,
+            "b" => $b
+        ];
+    }
+
+    private function convertRgbToHsl( $r, $g, $b ): array
+    {
+        $oldR = $r;
+        $oldG = $g;
+        $oldB = $b;
+
+        $r /= 255;
+        $g /= 255;
+        $b /= 255;
+
+        $max = max( $r, $g, $b );
+        $min = min( $r, $g, $b );
+
+        $h;
+        $s;
+        $l = ( $max + $min ) / 2;
+        $d = $max - $min;
+
+        if( $d == 0 ){
+            $h = $s = 0; // achromatic
+        } else {
+            $s = $d / ( 1 - abs( 2 * $l - 1 ) );
+
+            switch( $max ){
+                case $r:
+                    $h = 60 * fmod( ( ( $g - $b ) / $d ), 6 );
+                    if ($b > $g) {
+                        $h += 360;
+                    }
+                    break;
+
+                case $g:
+                    $h = 60 * ( ( $b - $r ) / $d + 2 );
+                    break;
+
+                case $b:
+                    $h = 60 * ( ( $r - $g ) / $d + 4 );
+                    break;
+            }
+        }
+
+        return [
+            "h" => round( $h, 2 ),
+            "s" => round( $s, 2 ) * 100,
+            "l" => round( $l, 2 ) * 100
+        ];
     }
 }

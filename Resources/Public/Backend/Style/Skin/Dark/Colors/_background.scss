@@ -47,6 +47,13 @@ module
 .t3-grid-cell {
   --pagemodule-grid-cell-bg: transparent;
 }
+.t3-grid-container {
+  background-color: hsl(
+                  calc(var(--h-color-module-background) + 20)
+                  calc(var(--s-color-module-background) + 5%)
+                  calc(var(--l-color-module-background) + 5%)
+  );
+}
 
 /**
 element
