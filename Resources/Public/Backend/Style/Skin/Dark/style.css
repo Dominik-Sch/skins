@@ -2,6 +2,180 @@
 default
  */
 /**
+menue
+ */
+.scaffold-modulemenu {
+  --scaffold-modulemenu-color: var(--color-main-menue-color);
+}
+
+.scaffold-header {
+  --scaffold-header-color: var(--color-topbar-color);
+}
+
+.modulemenu-action.modulemenu-action-active:not(:has(~ ul.collapse.show)) {
+  --typo3-state-default-focus-color: var(--color-main-menue-color);
+}
+
+.modulemenu-action:focus-visible, .modulemenu-action:hover {
+  --typo3-state-default-focus-color: var(--color-main-menue-color);
+  --typo3-state-default-hover-color: var(--color-main-menue-color);
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+  --toolbar-item-link-color: var(--color-main-menue-color);
+}
+
+.open .toolbar-item-link, .toolbar-item-link.show, .toolbar-item-link:focus, .toolbar-item-link:hover {
+  --typo3-state-default-focus-color: var(--color-main-menue-color);
+  --toolbar-item-link-color-state: var(--color-main-menue-color);
+}
+
+/**
+page tree
+ */
+.nodes-container, .nodes-loader {
+  --tree-bg: var(--color-pagetree-color);
+}
+
+.node {
+  --tree-node-color: var(--color-pagetree-color);
+}
+
+/**
+module
+ */
+.module {
+  --module-color: var(--color-module-color);
+}
+
+/**
+button
+ */
+.btn-default {
+  --typo3-state-default-color: var(--color-button-color);
+  --typo3-state-default-hover-color: var(--color-button-color);
+  --typo3-state-default-focus-color: var(--color-button-color);
+  --typo3-state-default-disabled-color: var(--color-button-color);
+}
+
+.icon svg {
+  color: var(--color-icon);
+}
+
+/**
+menue
+ */
+.scaffold-modulemenu {
+  --scaffold-modulemenu-bg: var(--color-main-menue-background);
+}
+
+.scaffold-header {
+  --scaffold-header-bg: var(--color-topbar-background);
+}
+
+.modulemenu-action.modulemenu-action-active:not(:has(~ ul.collapse.show)) {
+  --typo3-state-default-focus-bg: var(--color-main-menue-background);
+}
+
+.modulemenu-action:focus-visible, .modulemenu-action:hover {
+  --typo3-state-default-focus-bg: var(--color-main-menue-background);
+  --typo3-state-default-hover-bg: var(--color-main-menue-background);
+}
+
+.open .toolbar-item-link, .toolbar-item-link.show, .toolbar-item-link:focus, .toolbar-item-link:hover {
+  --typo3-state-default-focus-bg: transparent;
+  --toolbar-item-link-bg-state: var(--typo3-state-default-focus-bg);
+}
+
+/**
+page tree
+ */
+.tree-toolbar {
+  --module-docheader-bg: var(--color-pagetree-background);
+}
+
+.scaffold-content {
+  --scaffold-bg: var(--color-pagetree-background);
+}
+
+.nodes-container, .nodes-loader {
+  --tree-bg: var(--color-pagetree-background);
+}
+
+.node {
+  --tree-node-bg: var(--color-pagetree-background);
+}
+
+/**
+module
+ */
+.module-docheader {
+  --module-docheader-bg: var(--color-module-background);
+}
+
+.module {
+  --module-bg: var(--color-module-background);
+}
+
+.t3-grid-cell {
+  --pagemodule-grid-cell-bg: transparent;
+}
+
+.t3-grid-container {
+  background-color: hsl(calc(var(--h-color-module-background) + 20), calc(var(--s-color-module-background) + 5%), calc(var(--l-color-module-background) + 5%));
+}
+
+/**
+element
+ */
+.t3-page-ce-element {
+  --pagemodule-element-bg: rgba(var(--rgb-color-element-background),1);
+}
+
+/**
+button
+ */
+.btn-default {
+  --typo3-state-default-disabled-bg: var(--color-button-background);
+  --typo3-state-default-focus-bg: var(--color-button-background);
+  --typo3-state-default-hover-bg: var(--color-button-background);
+  --typo3-state-default-bg: var(--color-button-background);
+}
+
+/**
+menue
+ */
+.modulemenu-action.modulemenu-action-active:not(:has(~ ul.collapse.show)) {
+  --typo3-state-default-focus-border-color: var(--color-main-menue-border);
+}
+
+.modulemenu-action:focus-visible, .modulemenu-action:hover {
+  --typo3-state-default-focus-border-color: var(--color-main-menue-border);
+  --typo3-state-default-hover-border-color: var(--color-main-menue-border);
+}
+
+.open .toolbar-item-link, .toolbar-item-link.show, .toolbar-item-link:focus, .toolbar-item-link:hover {
+  --typo3-state-default-focus-border-color: var(--color-main-menue-border);
+}
+
+/**
+element
+ */
+.t3-page-ce-element {
+  --pagemodule-element-border-color: rgba(var(--rgb-color-element-border),1);
+}
+
+/**
+button
+ */
+.btn-default {
+  --typo3-state-default-hover-border-color: var(--color-button-border);
+  --typo3-state-default-disabled-border-color: var(--color-button-border);
+  --typo3-state-default-focus-border-color: var(--color-button-border);
+  --typo3-state-default: var(--color-button-border);
+}
+
+/**
 general
  */
 ::-webkit-scrollbar {

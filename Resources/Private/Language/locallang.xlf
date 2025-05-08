@@ -48,6 +48,21 @@
             <trans-unit id="tx_skins.toolbar.dropdown.color_icon">
                 <source>Icon</source>
             </trans-unit>
+            <trans-unit id="tx_skins.toolbar.dropdown.color_button">
+                <source>Button</source>
+            </trans-unit>
+            <trans-unit id="tx_skins.toolbar.dropdown.color_element">
+                <source>Element</source>
+            </trans-unit>
+            <trans-unit id="tx_skins.toolbar.dropdown.color_background">
+                <source>Background</source>
+            </trans-unit>
+            <trans-unit id="tx_skins.toolbar.dropdown.color_border">
+                <source>Border</source>
+            </trans-unit>
+            <trans-unit id="tx_skins.toolbar.dropdown.color_text">
+                <source>Text</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

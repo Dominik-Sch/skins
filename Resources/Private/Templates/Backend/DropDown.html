@@ -6,9 +6,9 @@
         <h3 class="dropdown-headline">{f:translate(key:
             'LLL:EXT:skins/Resources/Private/Language/locallang.xlf:tx_skins.toolbar.dropdown.headline')}</h3>
         <div class="save-wrap">
-                    <span class="save-skin-settings">
+                    <span class="save-skin-settings icon">
                         <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.7 1H1.5c-.3 0-.5.2-.5.5v13c0 .3.2.5.5.5h13c.3 0 .5-.2.5-.5V5.4c0-.5-.2-1-.6-1.4L12 1.6c-.3-.4-.8-.6-1.3-.6zM7.3 2h1.5c.1 0 .2.1.2.3v2.5c0 .1-.1.2-.2.2H7.3c-.2 0-.3-.1-.3-.2V2.3c0-.2.1-.3.3-.3zM11 14H5v-3.8c0-.1.1-.2.3-.2h5.5c.1 0 .3.1.3.3V14H11zm3 0h-2V9.5c0-.3-.2-.5-.5-.5h-7c-.3 0-.5.2-.5.5V14H2V2h2v3.5c0 .3.2.5.5.5h5c.3 0 .5-.2.5-.5V2h.8c.3 0 .5.1.7.3l1.9 2c.4.4.6.9.6 1.4V14z"></path>
+                            <path fill="currentColor" d="M10.7 1H1.5c-.3 0-.5.2-.5.5v13c0 .3.2.5.5.5h13c.3 0 .5-.2.5-.5V5.4c0-.5-.2-1-.6-1.4L12 1.6c-.3-.4-.8-.6-1.3-.6zM7.3 2h1.5c.1 0 .2.1.2.3v2.5c0 .1-.1.2-.2.2H7.3c-.2 0-.3-.1-.3-.2V2.3c0-.2.1-.3.3-.3zM11 14H5v-3.8c0-.1.1-.2.3-.2h5.5c.1 0 .3.1.3.3V14H11zm3 0h-2V9.5c0-.3-.2-.5-.5-.5h-7c-.3 0-.5.2-.5.5V14H2V2h2v3.5c0 .3.2.5.5.5h5c.3 0 .5-.2.5-.5V2h.8c.3 0 .5.1.7.3l1.9 2c.4.4.6.9.6 1.4V14z"></path>
                         </svg>
                         <f:format.case mode="upper">{f:translate(key: 'LLL:EXT:skins/Resources/Private/Language/locallang.xlf:tx_skins.toolbar.dropdown.save')}</f:format.case></span>
         </div>
@@ -34,15 +34,15 @@
         </div>
         <div class="color-box">
             <div class="color-box-item">
-                <label for="color-main-menue-background">Background</label>
+                <label for="color-main-menue-background">{f:translate(key:'LLL:EXT:skins/Resources/Private/Language/locallang.xlf:tx_skins.toolbar.dropdown.color_background')}</label>
                 <input class="colorpicker-input" id="color-main-menue-background" type="color"/>
             </div>
             <div class="color-box-item">
-                <label for="color-main-menue-color">Text</label>
+                <label for="color-main-menue-color">{f:translate(key:'LLL:EXT:skins/Resources/Private/Language/locallang.xlf:tx_skins.toolbar.dropdown.color_text')}</label>
                 <input class="colorpicker-input" id="color-main-menue-color" type="color"/>
             </div>
             <div class="color-box-item">
-                <label for="color-main-menue-border">Border</label>
+                <label for="color-main-menue-border">{f:translate(key:'LLL:EXT:skins/Resources/Private/Language/locallang.xlf:tx_skins.toolbar.dropdown.color_border')}</label>
                 <input class="colorpicker-input" id="color-main-menue-border" type="color"/>
             </div>
         </div>
@@ -53,15 +53,15 @@
         </div>
         <div class="color-box">
             <div class="color-box-item">
-                <label for="color-pagetree-background">Background</label>
+                <label for="color-pagetree-background">{f:translate(key:'LLL:EXT:skins/Resources/Private/Language/locallang.xlf:tx_skins.toolbar.dropdown.color_background')}</label>
                 <input class="colorpicker-input" id="color-pagetree-background" type="color"/>
             </div>
             <div class="color-box-item">
-                <label for="color-pagetree-color">Text</label>
+                <label for="color-pagetree-color">{f:translate(key:'LLL:EXT:skins/Resources/Private/Language/locallang.xlf:tx_skins.toolbar.dropdown.color_text')}</label>
                 <input class="colorpicker-input" id="color-pagetree-color" type="color"/>
             </div>
             <div class="color-box-item">
-                <label for="color-pagetree-border">Border</label>
+                <label for="color-pagetree-border">{f:translate(key:'LLL:EXT:skins/Resources/Private/Language/locallang.xlf:tx_skins.toolbar.dropdown.color_border')}</label>
                 <input class="colorpicker-input" id="color-pagetree-border" type="color"/>
             </div>
         </div>
@@ -72,16 +72,35 @@
         </div>
         <div class="color-box">
             <div class="color-box-item">
-                <label for="color-module-background">Background</label>
+                <label for="color-module-background">{f:translate(key:'LLL:EXT:skins/Resources/Private/Language/locallang.xlf:tx_skins.toolbar.dropdown.color_background')}</label>
                 <input class="colorpicker-input" id="color-module-background" type="color"/>
             </div>
             <div class="color-box-item">
-                <label for="color-module-color">Text</label>
+                <label for="color-module-color">{f:translate(key:'LLL:EXT:skins/Resources/Private/Language/locallang.xlf:tx_skins.toolbar.dropdown.color_text')}</label>
                 <input class="colorpicker-input" id="color-module-color" type="color"/>
             </div>
             <div class="color-box-item">
-                <label for="color-module-border">Border</label>
+                <label for="color-module-border">{f:translate(key:'LLL:EXT:skins/Resources/Private/Language/locallang.xlf:tx_skins.toolbar.dropdown.color_border')}</label>
                 <input class="colorpicker-input" id="color-module-border" type="color"/>
+            </div>
+        </div>
+    </div>
+    <div class="row-wrap color-picker-wrap">
+        <div class="color-section-header">
+            <label>{f:translate(key:'LLL:EXT:skins/Resources/Private/Language/locallang.xlf:tx_skins.toolbar.dropdown.color_element')}</label>
+        </div>
+        <div class="color-box">
+            <div class="color-box-item">
+                <label for="color-element-background">{f:translate(key:'LLL:EXT:skins/Resources/Private/Language/locallang.xlf:tx_skins.toolbar.dropdown.color_background')}</label>
+                <input class="colorpicker-input" id="color-element-background" type="color"/>
+            </div>
+            <div class="color-box-item">
+                <label for="color-element-color">{f:translate(key:'LLL:EXT:skins/Resources/Private/Language/locallang.xlf:tx_skins.toolbar.dropdown.color_text')}</label>
+                <input class="colorpicker-input" id="color-element-color" type="color"/>
+            </div>
+            <div class="color-box-item">
+                <label for="color-element-border">{f:translate(key:'LLL:EXT:skins/Resources/Private/Language/locallang.xlf:tx_skins.toolbar.dropdown.color_border')}</label>
+                <input class="colorpicker-input" id="color-element-border" type="color"/>
             </div>
         </div>
     </div>
@@ -91,16 +110,35 @@
         </div>
         <div class="color-box">
             <div class="color-box-item">
-                <label for="color-topbar-background">Background</label>
+                <label for="color-topbar-background">{f:translate(key:'LLL:EXT:skins/Resources/Private/Language/locallang.xlf:tx_skins.toolbar.dropdown.color_background')}</label>
                 <input class="colorpicker-input" id="color-topbar-background" type="color"/>
             </div>
             <div class="color-box-item">
-                <label for="color-topbar-color">Text</label>
+                <label for="color-topbar-color">{f:translate(key:'LLL:EXT:skins/Resources/Private/Language/locallang.xlf:tx_skins.toolbar.dropdown.color_text')}</label>
                 <input class="colorpicker-input" id="color-topbar-color" type="color"/>
             </div>
             <div class="color-box-item">
-                <label for="color-topbar-border">Border</label>
+                <label for="color-topbar-border">{f:translate(key:'LLL:EXT:skins/Resources/Private/Language/locallang.xlf:tx_skins.toolbar.dropdown.color_border')}</label>
                 <input class="colorpicker-input" id="color-topbar-border" type="color"/>
+            </div>
+        </div>
+    </div>
+    <div class="row-wrap color-picker-wrap">
+        <div class="color-section-header">
+            <label>{f:translate(key:'LLL:EXT:skins/Resources/Private/Language/locallang.xlf:tx_skins.toolbar.dropdown.color_button')}</label>
+        </div>
+        <div class="color-box">
+            <div class="color-box-item">
+                <label for="color-button-background">{f:translate(key:'LLL:EXT:skins/Resources/Private/Language/locallang.xlf:tx_skins.toolbar.dropdown.color_background')}</label>
+                <input class="colorpicker-input" id="color-button-background" type="color"/>
+            </div>
+            <div class="color-box-item">
+                <label for="color-button-color">{f:translate(key:'LLL:EXT:skins/Resources/Private/Language/locallang.xlf:tx_skins.toolbar.dropdown.color_text')}</label>
+                <input class="colorpicker-input" id="color-button-color" type="color"/>
+            </div>
+            <div class="color-box-item">
+                <label for="color-button-border">{f:translate(key:'LLL:EXT:skins/Resources/Private/Language/locallang.xlf:tx_skins.toolbar.dropdown.color_border')}</label>
+                <input class="colorpicker-input" id="color-button-border" type="color"/>
             </div>
         </div>
     </div>
