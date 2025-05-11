@@ -14,21 +14,28 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 class BackendController
 {
     protected array $defaultSettings = [
-        "color-highlight" => "#ecf000",
-        "color-icon" => "#ffffff",
-        "color-main-menue-background" => "#000000",
-        "color-main-menue-border" => "#ffffff",
-        "color-main-menue-color" => "#ffffff",
-        "color-module-background" => "#000000",
-        "color-module-border" => "#ffffff",
-        "color-module-color" => "#ffffff",
-        "color-pagetree-background" => "#000000",
-        "color-pagetree-border" => "#ffffff",
-        "color-pagetree-color" => "#ffffff",
-        "color-scrollbar" => "#ecf000",
-        "color-topbar-background" => "#000000",
-        "color-topbar-border" => "#ffffff",
-        "color-topbar-color" => "#ffffff",
+        "color-main-menue-background"=> "#0d0d0d",
+        "color-main-menue-color"=> "#ffffff",
+        "color-main-menue-border"=> "#383838",
+        "color-pagetree-background"=> "#1a1a1a",
+        "color-pagetree-color"=> "#ffffff",
+        "color-pagetree-border"=> "#363636",
+        "color-module-background"=> "#1c1c1c",
+        "color-module-color"=> "#ffffff",
+        "color-module-border"=> "#2e2e2e",
+        "color-element-background"=> "#1a1a1a",
+        "color-element-color"=> "#ffffff",
+        "color-element-border"=> "#383838",
+        "color-topbar-background"=> "#0f0f0f",
+        "color-topbar-color"=> "#ffffff",
+        "color-topbar-border"=> "#2b2b2b",
+        "color-button-background"=> "#424242",
+        "color-button-color"=> "#ffffff",
+        "color-button-border"=> "#bababa",
+        "color-highlight"=> "#ecf000",
+        "color-scrollbar-color"=> "#8a8500",
+        "width-scrollbar"=> "thin",
+        "color-icon" => "#ffffff"
     ];
 
     /**

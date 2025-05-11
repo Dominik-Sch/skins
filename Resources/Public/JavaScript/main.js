@@ -45,7 +45,6 @@ extension.querySelectorAll('.colorpicker-input').forEach((element) => {
         }
     })
 })
-
 // load be_user settings for color picker
 new AjaxRequest(TYPO3.settings.ajaxUrls.load_settings)
     .get()
@@ -53,10 +52,11 @@ new AjaxRequest(TYPO3.settings.ajaxUrls.load_settings)
         const resolved = await response.resolve();
         if (Object.keys(resolved.result).length > 0) {
             const settingsObject = JSON.parse(resolved.result.tx_skins_dark_mode_settings);
-            console.log(settingsObject);
+            //uncomment console.log below - use copy and paste in chrome to generate preset for php faster
+            //console.log(settingsObject);
 
             for (const key in settingsObject) {
-                // set color
+                // set value of input/select
                 extension.querySelectorAll('#' + key)[0].value = settingsObject[key];
             }
 

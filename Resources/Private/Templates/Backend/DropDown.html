@@ -158,7 +158,16 @@
         </div>
         <div class="color-box">
             <div class="color-box-item">
-                <input class="colorpicker-input" id="color-scrollbar" type="color"/>
+                <label for="color-scrollbar-color">{f:translate(key:'LLL:EXT:skins/Resources/Private/Language/locallang.xlf:tx_skins.toolbar.dropdown.color_scrollbar_color')}</label>
+                <input class="colorpicker-input" id="color-scrollbar-color" type="color"/>
+            </div>
+            <div class="color-box-item">
+                <label for="width-scrollbar">{f:translate(key:'LLL:EXT:skins/Resources/Private/Language/locallang.xlf:tx_skins.toolbar.dropdown.color_scrollbar_width')}</label>
+                <select class="colorpicker-input" id="width-scrollbar">
+                    <option value="auto">auto</option>
+                    <option value="thin">thin</option>
+                    <option value="none">none</option>
+                </select>
             </div>
         </div>
     </div>
