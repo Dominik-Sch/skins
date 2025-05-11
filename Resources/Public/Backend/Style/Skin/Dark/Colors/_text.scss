@@ -21,6 +21,9 @@ menue
   --typo3-state-default-focus-color: var(--color-main-menue-color);
   --toolbar-item-link-color-state: var(--color-main-menue-color);
 }
+.dropdown-menu {
+  --typo3-component-color: var(--color-main-menue-color);
+}
 
 /**
 page tree
@@ -37,6 +40,79 @@ module
  */
 .module {
   --module-color: var(--color-module-color);
+}
+.recordlist-heading {
+  --typo3-table-color: var(--color-module-color);
+}
+.table {
+  --typo3-component-color: var(--color-module-color);
+}
+.panel-heading {
+  --typo3-panel-header-color: var(--color-module-color);
+}
+
+/**
+element + modal
+ */
+.widget {
+  --widget-color: var(--color-element-color);
+}
+a {
+  --typo3-text-color-link: var(--color-highlight);
+}
+.dropdown-menu a:not([class]) {
+  --typo3-component-link-color: var(--color-highlight);
+}
+// edit view of elements
+.form-section {
+  --typo3-text-color-base: var(--color-element-color);
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-item.show .nav-link:hover, .nav-tabs .nav-link.active, .nav-tabs .nav-link.active:hover {
+  --typo3-nav-tabs-link-state-color: var(--color-element-color);
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+  --typo3-nav-tabs-link-state-color: var(--color-element-color);
+  color: var(--typo3-nav-tabs-link-state-color);
+}
+// modal
+.modal-content {
+  --typo3-modal-color: var(--color-element-color);
+}
+.modal-header {
+  --typo3-modal-header-color: var(--color-element-color);
+}
+.form-select {
+  --typo3-input-focus-color: var(--color-element-color);
+  --typo3-input-hover-color: var(--color-element-color);
+  --typo3-input-color: var(--color-element-color);
+}
+.form-control {
+  --typo3-input-focus-color: var(--color-element-color);
+  --typo3-input-hover-color: var(--color-element-color);
+  --typo3-input-color: var(--color-element-color);
+  --typo3-form-control-placeholder-color: color-mix(in srgb, var(--color-element-color), transparent 50%);
+  &::placeholder, &:placeholder-shown {
+    color: var(--typo3-form-control-placeholder-color);
+  }
+}
+.text-code, .text-code-emphasis, code {
+  --typo3-text-color-code: var(--color-element-color);
+}
+// callout
+.callout-info {
+  --typo3-surface-container-info-text: var(--color-element-color);
+}
+// treelist
+.treelist, .treelist ul {
+  --treelist-color: var(--color-element-color);
+}
+// alert-info
+.alert-info {
+  --typo3-alert-color: var(--color-element-color);
+}
+// context menu
+body {
+  --typo3-component-color: var(--color-element-color);
 }
 
 /**

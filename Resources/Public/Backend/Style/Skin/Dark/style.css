@@ -30,6 +30,10 @@ menue
   --toolbar-item-link-color-state: var(--color-main-menue-color);
 }
 
+.dropdown-menu {
+  --typo3-component-color: var(--color-main-menue-color);
+}
+
 /**
 page tree
  */
@@ -46,6 +50,90 @@ module
  */
 .module {
   --module-color: var(--color-module-color);
+}
+
+.recordlist-heading {
+  --typo3-table-color: var(--color-module-color);
+}
+
+.table {
+  --typo3-component-color: var(--color-module-color);
+}
+
+.panel-heading {
+  --typo3-panel-header-color: var(--color-module-color);
+}
+
+/**
+element + modal
+ */
+.widget {
+  --widget-color: var(--color-element-color);
+}
+
+a {
+  --typo3-text-color-link: var(--color-highlight);
+}
+
+.dropdown-menu a:not([class]) {
+  --typo3-component-link-color: var(--color-highlight);
+}
+
+.form-section {
+  --typo3-text-color-base: var(--color-element-color);
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-item.show .nav-link:hover, .nav-tabs .nav-link.active, .nav-tabs .nav-link.active:hover {
+  --typo3-nav-tabs-link-state-color: var(--color-element-color);
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+  --typo3-nav-tabs-link-state-color: var(--color-element-color);
+  color: var(--typo3-nav-tabs-link-state-color);
+}
+
+.modal-content {
+  --typo3-modal-color: var(--color-element-color);
+}
+
+.modal-header {
+  --typo3-modal-header-color: var(--color-element-color);
+}
+
+.form-select {
+  --typo3-input-focus-color: var(--color-element-color);
+  --typo3-input-hover-color: var(--color-element-color);
+  --typo3-input-color: var(--color-element-color);
+}
+
+.form-control {
+  --typo3-input-focus-color: var(--color-element-color);
+  --typo3-input-hover-color: var(--color-element-color);
+  --typo3-input-color: var(--color-element-color);
+  --typo3-form-control-placeholder-color: color-mix(in srgb, var(--color-element-color), transparent 50%);
+}
+.form-control::placeholder, .form-control:placeholder-shown {
+  color: var(--typo3-form-control-placeholder-color);
+}
+
+.text-code, .text-code-emphasis, code {
+  --typo3-text-color-code: var(--color-element-color);
+}
+
+.callout-info {
+  --typo3-surface-container-info-text: var(--color-element-color);
+}
+
+.treelist, .treelist ul {
+  --treelist-color: var(--color-element-color);
+}
+
+.alert-info {
+  --typo3-alert-color: var(--color-element-color);
+}
+
+body {
+  --typo3-component-color: var(--color-element-color);
 }
 
 /**
@@ -87,6 +175,15 @@ menue
   --toolbar-item-link-bg-state: var(--typo3-state-default-focus-bg);
 }
 
+.dropdown-menu {
+  --typo3-component-bg: hsl(
+                  calc(var(--h-color-topbar-background) + 20)
+                  calc(var(--s-color-topbar-background) + 5%)
+                  calc(var(--l-color-topbar-background) + 5%)
+  );
+  background-color: var(--typo3-component-bg);
+}
+
 /**
 page tree
  */
@@ -125,11 +222,161 @@ module
   background-color: hsl(calc(var(--h-color-module-background) + 20), calc(var(--s-color-module-background) + 5%), calc(var(--l-color-module-background) + 5%));
 }
 
+.dashboard-header {
+  --dashboard-header-bg: var(--color-module-background);
+}
+
+.recordlist-heading {
+  --typo3-recordlist-header-bg: rgb(
+                  calc(var(--r-color-module-background) + 15)
+                  calc(var(--g-color-module-background) + 15)
+                  calc(var(--b-color-module-background) + 15)
+  );
+}
+
+.table {
+  --typo3-component-bg: rgb(
+                  calc(var(--r-color-module-background) + 15)
+                  calc(var(--g-color-module-background) + 15)
+                  calc(var(--b-color-module-background) + 15)
+  );
+}
+
+.panel-heading {
+  --typo3-panel-header-bg: rgb(
+                  calc(var(--r-color-module-background) + 15)
+                  calc(var(--g-color-module-background) + 15)
+                  calc(var(--b-color-module-background) + 15)
+  );
+}
+
 /**
-element
+element + modal
  */
 .t3-page-ce-element {
-  --pagemodule-element-bg: rgba(var(--rgb-color-element-background),1);
+  --pagemodule-element-bg: var(--color-element-background);
+  --pagemodule-element-hidden-bg: var(--color-element-background);
+}
+
+.widget {
+  --widget-bg: var(--color-element-background);
+}
+
+.form-section-tabs {
+  --typo3-surface-container-low: hsl(
+                  calc(var(--h-color-element-background) + 0)
+                  calc(var(--s-color-element-background) + 0%)
+                  calc(var(--l-color-element-background) + 20%)
+  );
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-item.show .nav-link:hover, .nav-tabs .nav-link.active, .nav-tabs .nav-link.active:hover {
+  --typo3-nav-tabs-link-bg: hsl(
+                  calc(var(--h-color-element-background) - 20)
+                  calc(var(--s-color-element-background) + 5%)
+                  calc(var(--l-color-element-background) + 5%)
+  );
+}
+
+.form-section {
+  --typo3-surface-container-low: hsl(
+                  calc(var(--h-color-element-background) - 20)
+                  calc(var(--s-color-element-background) + 5%)
+                  calc(var(--l-color-element-background) + 5%)
+  );
+}
+
+.form-control {
+  --typo3-input-bg: hsl(
+                  calc(var(--h-color-element-background) + 0)
+                  calc(var(--s-color-element-background) + 0%)
+                  calc(var(--l-color-element-background) + 20%)
+  );
+  --typo3-input-hover-bg: hsl(
+                  calc(var(--h-color-element-background) + 0)
+                  calc(var(--s-color-element-background) + 0%)
+                  calc(var(--l-color-element-background) + 30%)
+  );
+  --typo3-input-focus-bg: hsl(
+                  calc(var(--h-color-element-background) + 0)
+                  calc(var(--s-color-element-background) + 0%)
+                  calc(var(--l-color-element-background) + 30%)
+  );
+}
+
+.form-select {
+  --typo3-input-bg: hsl(
+                  calc(var(--h-color-element-background) + 0)
+                  calc(var(--s-color-element-background) + 0%)
+                  calc(var(--l-color-element-background) + 20%)
+  );
+  --typo3-input-hover-bg: hsl(
+                  calc(var(--h-color-element-background) + 0)
+                  calc(var(--s-color-element-background) + 0%)
+                  calc(var(--l-color-element-background) + 30%)
+  );
+  --typo3-input-focus-bg: hsl(
+                  calc(var(--h-color-element-background) + 0)
+                  calc(var(--s-color-element-background) + 0%)
+                  calc(var(--l-color-element-background) + 30%)
+  );
+}
+
+.modal-content {
+  --typo3-modal-bg: rgb(
+                  calc(var(--r-color-element-background) + 10)
+                  calc(var(--g-color-element-background) + 10)
+                  calc(var(--b-color-element-background) + 10)
+  );
+}
+
+.modal-header {
+  --typo3-modal-header-bg: var(--color-element-background);
+}
+
+.callout-info {
+  --typo3-surface-container-info: rgb(
+                  calc(var(--r-color-element-background) + 10)
+                  calc(var(--g-color-element-background) + 10)
+                  calc(var(--b-color-element-background) + 10)
+  );
+}
+
+.treelist, .treelist ul {
+  --treelist-bg: rgb(
+                  calc(var(--r-color-element-background) + 10)
+                  calc(var(--g-color-element-background) + 10)
+                  calc(var(--b-color-element-background) + 10)
+  );
+}
+
+.alert-info {
+  --typo3-alert-bg: rgb(
+                  calc(var(--r-color-element-background) + 10)
+                  calc(var(--g-color-element-background) + 10)
+                  calc(var(--b-color-element-background) + 10)
+  );
+}
+
+body {
+  --typo3-component-bg: rgb(
+                  calc(var(--r-color-element-background) + 10)
+                  calc(var(--g-color-element-background) + 10)
+                  calc(var(--b-color-element-background) + 10)
+  );
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+  --typo3-component-focus-bg: rgb(
+                  calc(var(--r-color-element-background) + 20)
+                  calc(var(--g-color-element-background) + 20)
+                  calc(var(--b-color-element-background) + 20)
+  );
+  --typo3-component-hover-bg: rgb(
+                  calc(var(--r-color-element-background) + 20)
+                  calc(var(--g-color-element-background) + 20)
+                  calc(var(--b-color-element-background) + 20)
+  );
 }
 
 /**
@@ -162,7 +409,7 @@ menue
 element
  */
 .t3-page-ce-element {
-  --pagemodule-element-border-color: rgba(var(--rgb-color-element-border),1);
+  --pagemodule-element-border-color: var(--color-element-border);
 }
 
 /**
@@ -178,35 +425,16 @@ button
 /**
 general
  */
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+* {
+  scrollbar-width: var(--width-scrollbar);
+  scrollbar-color: var(--color-scrollbar-color) transparent;
 }
 
-::-webkit-scrollbar-button {
-  display: none;
-}
-
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
-  border-radius: 0;
-}
-
-::-webkit-scrollbar-track-piece { /* 4 */ }
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
-  background: transparent;
-}
-
-::-webkit-scrollbar-corner { /* 6 */ }
-
-::-webkit-resizer { /* 7 */ }
-
-body:hover ::-webkit-scrollbar-thumb {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background: var(--color-8);
+/**
+custom
+ */
+.toolbar-item .dropdown-menu {
+  scrollbar-gutter: stable;
 }
 
 /*# sourceMappingURL=style.css.map */

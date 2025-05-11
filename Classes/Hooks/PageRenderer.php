@@ -44,13 +44,17 @@ class PageRenderer implements SingletonInterface
             $cssString = "";
 
             foreach ($settingsArray as $key => $value) {
-                $rgb = $this->convertHexToRgb($value);
-                $hsl = $this->convertRgbToHsl($rgb['r'],$rgb['g'],$rgb['b']);
                 $cssString .= '--' . $key . ': ' . $value . '; ';
-                $cssString .= '--rgb-' . $key . ': ' . implode(',',$rgb) . '; ';
-                $cssString .= '--h-' . $key . ': ' . $hsl['h'] . '; ';
-                $cssString .= '--s-' . $key . ': ' . $hsl['s'] . '%; ';
-                $cssString .= '--l-' . $key . ': ' . $hsl['l'] . '%; ';
+                if (str_contains($key,'color')) {
+                    $rgb = $this->convertHexToRgb($value);
+                    $hsl = $this->convertRgbToHsl($rgb['r'],$rgb['g'],$rgb['b']);
+                    $cssString .= '--r-' . $key . ': ' . $rgb['r'] . '; ';
+                    $cssString .= '--g-' . $key . ': ' . $rgb['g'] . '; ';
+                    $cssString .= '--b-' . $key . ': ' . $rgb['b'] . '; ';
+                    $cssString .= '--h-' . $key . ': ' . $hsl['h'] . '; ';
+                    $cssString .= '--s-' . $key . ': ' . $hsl['s'] . '%; ';
+                    $cssString .= '--l-' . $key . ': ' . $hsl['l'] . '%; ';
+                }
             }
 
             /**

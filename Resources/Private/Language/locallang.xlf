@@ -45,6 +45,15 @@
             <trans-unit id="tx_skins.toolbar.dropdown.color_scrollbar">
                 <source>Scrollbar</source>
             </trans-unit>
+            <trans-unit id="tx_skins.toolbar.dropdown.color_scrollbar_background">
+                <source>Background</source>
+            </trans-unit>
+            <trans-unit id="tx_skins.toolbar.dropdown.color_scrollbar_color">
+                <source>Color</source>
+            </trans-unit>
+            <trans-unit id="tx_skins.toolbar.dropdown.color_scrollbar_width">
+                <source>Width</source>
+            </trans-unit>
             <trans-unit id="tx_skins.toolbar.dropdown.color_icon">
                 <source>Icon</source>
             </trans-unit>

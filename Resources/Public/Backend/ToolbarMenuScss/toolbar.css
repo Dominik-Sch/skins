@@ -41,7 +41,7 @@
   text-align: center;
   font-size: 0.8em;
 }
-.toolbar-list #rubb1-skins-toolbar-darkmode .color-box > div input {
+.toolbar-list #rubb1-skins-toolbar-darkmode .color-box > div input, .toolbar-list #rubb1-skins-toolbar-darkmode .color-box > div select {
   display: block;
   width: 100%;
 }
