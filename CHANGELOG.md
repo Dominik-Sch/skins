@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [11.4.0] - 2025-06-30
+
+### First release after rework
+- better support for current v13
+- add some missing styles
+- save and close can be enabled in extension configuration
+- new preview renderer for textmedia and textpic can be enabled in extension configuration
+
 ## [11.1.5] - 2024-09-12
 
 ### Bugfix and compatibility release
