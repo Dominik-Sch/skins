@@ -1,5 +1,5 @@
 <div style="text-align: center" >
-    <img src="Resources/Public/Icon/Extension.svg" width="120px" height="120px" alt="Skins" title="TYPO3 extension skins" style="margin: 0 auto;">
+    <img src="Resources/Public/Icons/Extension.svg" width="120px" height="120px" alt="Skins" title="TYPO3 extension skins" style="margin: 0 auto;">
 
 # TYPO3 extension `skins`
 
