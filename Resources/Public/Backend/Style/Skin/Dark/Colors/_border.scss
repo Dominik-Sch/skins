@@ -11,12 +11,30 @@ menue
 .open .toolbar-item-link, .toolbar-item-link.show, .toolbar-item-link:focus, .toolbar-item-link:hover {
   --typo3-state-default-focus-border-color: var(--color-main-menue-border);
 }
+.dropdown-menu {
+  --typo3-component-border-color: var(--color-topbar-border);
+}
+.toolbar-list #rubb1-skins-toolbar-darkmode .header .save-wrap .save-skin-settings {
+  border-color: var(--color-topbar-border);
+}
+.dropdown-item:hover {
+  --typo3-dropdown-item-hover-border-color: var(--color-topbar-border);
+}
 
 /**
 element
  */
 .t3-page-ce-element {
   --pagemodule-element-border-color: var(--color-element-border);
+}
+/**
+modal
+ */
+.modal-content {
+  --typo3-modal-border-color: var(--color-element-border);
+}
+.panel-default {
+  --typo3-panel-default-border-color: var(--color-element-border);
 }
 
 /**
@@ -27,4 +45,25 @@ button
   --typo3-state-default-disabled-border-color: var(--color-button-border);
   --typo3-state-default-focus-border-color: var(--color-button-border);
   --typo3-state-default: var(--color-button-border);
+  --typo3-state-default-border-color: var(--color-button-border);
+}
+
+/**
+page tree
+ */
+.scaffold-content-navigation-drag {
+  --scaffold-content-navigation-drag-bg: var(--color-pagetree-border);
+}
+.tree-toolbar {
+  --module-docheader-border-color: var(--color-pagetree-border);
+}
+
+/**
+module
+ */
+.module-docheader {
+  --module-docheader-border-color: var(--color-module-border);
+}
+.t3-grid-container {
+  --pagemodule-grid-border-color: var(--color-module-border);
 }

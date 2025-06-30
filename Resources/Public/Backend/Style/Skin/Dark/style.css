@@ -34,6 +34,10 @@ menue
   --typo3-component-color: var(--color-main-menue-color);
 }
 
+.dropdown-item:hover {
+  --typo3-dropdown-item-hover-color: var(--color-main-menue-color);
+}
+
 /**
 page tree
  */
@@ -42,6 +46,10 @@ page tree
 }
 
 .node {
+  --tree-node-color: var(--color-pagetree-color);
+}
+
+.node-hover, .node:hover {
   --tree-node-color: var(--color-pagetree-color);
 }
 
@@ -120,6 +128,14 @@ a {
   --typo3-text-color-code: var(--color-element-color);
 }
 
+.input-group-text {
+  --typo3-input-color: var(--color-element-color);
+}
+
+.element-browser-body .h1, .element-browser-body .h2, .element-browser-body .h3, .element-browser-body .h4, .element-browser-body .h5, .element-browser-body .h6, .element-browser-body h1, .element-browser-body h2, .element-browser-body h3, .element-browser-body h4, .element-browser-body h5, .element-browser-body h6, .element-browser-body typo3-backend-editable-page-title {
+  --bs-heading-color: var(--color-element-color);
+}
+
 .callout-info {
   --typo3-surface-container-info-text: var(--color-element-color);
 }
@@ -146,8 +162,23 @@ button
   --typo3-state-default-disabled-color: var(--color-button-color);
 }
 
+/**
+ckeditor
+ */
+.ck-reset_all :not(.ck-reset_all-excluded *), .ck.ck-reset_all {
+  --ck-color-text: inherit;
+}
+
+html[data-color-scheme=light] .ck-reset_all :not(.ck-reset_all-excluded *), html[data-color-scheme=light] .ck.ck-reset_all {
+  --ck-color-text: black;
+}
+
 .icon svg {
   color: var(--color-icon);
+}
+
+.input-group-text {
+  --typo3-input-group-addon-bg: transparent;
 }
 
 /**
@@ -184,6 +215,14 @@ menue
   background-color: var(--typo3-component-bg);
 }
 
+.dropdown-item:hover {
+  --typo3-dropdown-item-hover-bg: hsl(
+                  calc(var(--h-color-topbar-background) + 40)
+                  calc(var(--s-color-topbar-background) + 10%)
+                  calc(var(--l-color-topbar-background) + 10%)
+  );
+}
+
 /**
 page tree
  */
@@ -201,6 +240,14 @@ page tree
 
 .node {
   --tree-node-bg: var(--color-pagetree-background);
+}
+
+.node-hover, .node:hover {
+  --tree-node-bg: hsl(
+                  calc(var(--h-color-pagetree-background) + 20)
+                  calc(var(--s-color-pagetree-background) + 5%)
+                  calc(var(--l-color-pagetree-background) + 5%)
+  );
 }
 
 /**
@@ -334,6 +381,10 @@ element + modal
   --typo3-modal-header-bg: var(--color-element-background);
 }
 
+.element-browser-main {
+  --typo3-surface-base: var(--color-element-background);
+}
+
 .callout-info {
   --typo3-surface-container-info: rgb(
                   calc(var(--r-color-element-background) + 10)
@@ -390,6 +441,13 @@ button
 }
 
 /**
+ckeditor
+ */
+.ck.ck-button:not(.ck-disabled):hover, a.ck.ck-button:not(.ck-disabled):hover {
+  --ck-color-button-default-hover-background: inherit;
+}
+
+/**
 menue
  */
 .modulemenu-action.modulemenu-action-active:not(:has(~ ul.collapse.show)) {
@@ -405,11 +463,34 @@ menue
   --typo3-state-default-focus-border-color: var(--color-main-menue-border);
 }
 
+.dropdown-menu {
+  --typo3-component-border-color: var(--color-topbar-border);
+}
+
+.toolbar-list #rubb1-skins-toolbar-darkmode .header .save-wrap .save-skin-settings {
+  border-color: var(--color-topbar-border);
+}
+
+.dropdown-item:hover {
+  --typo3-dropdown-item-hover-border-color: var(--color-topbar-border);
+}
+
 /**
 element
  */
 .t3-page-ce-element {
   --pagemodule-element-border-color: var(--color-element-border);
+}
+
+/**
+modal
+ */
+.modal-content {
+  --typo3-modal-border-color: var(--color-element-border);
+}
+
+.panel-default {
+  --typo3-panel-default-border-color: var(--color-element-border);
 }
 
 /**
@@ -420,6 +501,29 @@ button
   --typo3-state-default-disabled-border-color: var(--color-button-border);
   --typo3-state-default-focus-border-color: var(--color-button-border);
   --typo3-state-default: var(--color-button-border);
+  --typo3-state-default-border-color: var(--color-button-border);
+}
+
+/**
+page tree
+ */
+.scaffold-content-navigation-drag {
+  --scaffold-content-navigation-drag-bg: var(--color-pagetree-border);
+}
+
+.tree-toolbar {
+  --module-docheader-border-color: var(--color-pagetree-border);
+}
+
+/**
+module
+ */
+.module-docheader {
+  --module-docheader-border-color: var(--color-module-border);
+}
+
+.t3-grid-container {
+  --pagemodule-grid-border-color: var(--color-module-border);
 }
 
 /**

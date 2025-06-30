@@ -1,3 +1,6 @@
 .icon svg {
   color: var(--color-icon);
 }
+.input-group-text {
+  --typo3-input-group-addon-bg: transparent;
+}

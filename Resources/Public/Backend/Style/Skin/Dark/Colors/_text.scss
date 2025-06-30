@@ -24,6 +24,9 @@ menue
 .dropdown-menu {
   --typo3-component-color: var(--color-main-menue-color);
 }
+.dropdown-item:hover {
+  --typo3-dropdown-item-hover-color: var(--color-main-menue-color);
+}
 
 /**
 page tree
@@ -32,6 +35,9 @@ page tree
   --tree-bg: var(--color-pagetree-color);
 }
 .node {
+  --tree-node-color: var(--color-pagetree-color);
+}
+.node-hover, .node:hover {
   --tree-node-color: var(--color-pagetree-color);
 }
 
@@ -98,6 +104,14 @@ a {
 .text-code, .text-code-emphasis, code {
   --typo3-text-color-code: var(--color-element-color);
 }
+.input-group-text {
+  --typo3-input-color: var(--color-element-color);
+}
+.element-browser-body {
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, typo3-backend-editable-page-title {
+    --bs-heading-color: var(--color-element-color);
+  }
+}
 // callout
 .callout-info {
   --typo3-surface-container-info-text: var(--color-element-color);
@@ -123,4 +137,18 @@ button
   --typo3-state-default-hover-color: var(--color-button-color);
   --typo3-state-default-focus-color: var(--color-button-color);
   --typo3-state-default-disabled-color: var(--color-button-color);
+}
+
+/**
+ckeditor
+ */
+.ck-reset_all :not(.ck-reset_all-excluded *), .ck.ck-reset_all {
+  --ck-color-text: inherit;
+}
+html {
+  &[data-color-scheme="light"] {
+    .ck-reset_all :not(.ck-reset_all-excluded *), .ck.ck-reset_all {
+      --ck-color-text: black;
+    }
+  }
 }

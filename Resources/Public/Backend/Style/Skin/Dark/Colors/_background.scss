@@ -26,6 +26,13 @@ menue
   );
   background-color: var(--typo3-component-bg);
 }
+.dropdown-item:hover {
+  --typo3-dropdown-item-hover-bg: hsl(
+                  calc(var(--h-color-topbar-background) + 40)
+                  calc(var(--s-color-topbar-background) + 10%)
+                  calc(var(--l-color-topbar-background) + 10%)
+  );
+}
 
 /**
 page tree
@@ -41,6 +48,13 @@ page tree
 }
 .node {
   --tree-node-bg: var(--color-pagetree-background);
+}
+.node-hover, .node:hover {
+  --tree-node-bg: hsl(
+                  calc(var(--h-color-pagetree-background) + 20)
+                  calc(var(--s-color-pagetree-background) + 5%)
+                  calc(var(--l-color-pagetree-background) + 5%)
+  );
 }
 
 /**
@@ -164,6 +178,9 @@ element + modal
 .modal-header {
   --typo3-modal-header-bg: var(--color-element-background);
 }
+.element-browser-main {
+  --typo3-surface-base: var(--color-element-background);
+}
 // callout
 .callout-info {
   --typo3-surface-container-info: rgb(
@@ -217,4 +234,11 @@ button
   --typo3-state-default-focus-bg: var(--color-button-background);
   --typo3-state-default-hover-bg: var(--color-button-background);
   --typo3-state-default-bg: var(--color-button-background);
+}
+
+/**
+ckeditor
+ */
+.ck.ck-button:not(.ck-disabled):hover, a.ck.ck-button:not(.ck-disabled):hover {
+  --ck-color-button-default-hover-background: inherit;
 }
