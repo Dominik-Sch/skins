@@ -4,9 +4,7 @@
 # TYPO3 extension `skins`
 
 [![release](https://img.shields.io/github/v/release/Dominik-Sch/skins?sort=semver)](https://github.com/Dominik-Sch/skins/releases/latest)
-[![TYPO3](https://img.shields.io/badge/TYPO3-v12-ff8700)](https://typo3.org/)
-[![TYPO3](https://img.shields.io/badge/TYPO3-v11-ff8700)](https://typo3.org/)
-[![TYPO3](https://img.shields.io/badge/TYPO3-v10-ff8700)](https://typo3.org/)
+[![TYPO3](https://img.shields.io/badge/TYPO3-v13-ff8700)](https://typo3.org/)
 [![License](https://img.shields.io/github/license/Dominik-Sch/skins)](LICENSE)
 </div>
 
@@ -28,12 +26,18 @@ All notable changes to this project will be documented in the [Changelog](CHANGE
 1. Click on the paint brush in the top bar
 2. Choose your skin and enabled it by activating the toggle
 
-   <br><img src="Documentation/Resources/skins-be-dropdown.png" height="600px">
+   <br><img src="Documentation/Resources/skins-be-dropdown-2.png" height="600px">
 
 ## save-and-close
 
 - You can enable the save-and-close button in the "Extension Configuration (Global Configuration)"
     - Admin Tools -> Settings -> Configure extensions -> skins -> basic.saveAndCloseEnabled
+    - default value is 0
+
+## preview renderer
+
+- You can enable preview renderer for textmedia and textpic in the "Extension Configuration (Global Configuration)"
+    - Admin Tools -> Settings -> Configure extensions -> skins -> basic.enableCustomPreviewRenderer
     - default value is 0
 
 ## Features planned
