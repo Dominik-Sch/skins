@@ -1,4 +1,5 @@
-<div class="skins-custom-contentelement skins-custom-textmedia imageorient-{record.imageorient}" id="element-tt_content-{identifier}">
+<div class="skins-custom-contentelement skins-custom-textmedia imageorient-{record.imageorient}"
+     id="element-tt_content-{record.uid}">
     <f:if condition="{record.imageorient} != 17 && {record.imageorient} != 18">
         <div class="skins-column skins-column-text">
             {record.bodytext -> f:format.raw()}

@@ -12,7 +12,8 @@ try {
 }
 
 if (isset($extConf['enableCustomPreviewRenderer']) && $extConf['enableCustomPreviewRenderer'] == '1') {
-    // Use a different preview renderer for CType shortcut
     $GLOBALS['TCA']['tt_content']['types']['textmedia']['previewRenderer']
+        = TextmediaPreviewRenderer::class;
+    $GLOBALS['TCA']['tt_content']['types']['textpic']['previewRenderer']
         = TextmediaPreviewRenderer::class;
 }
